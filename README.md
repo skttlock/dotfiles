@@ -6,9 +6,11 @@ poopy get config/skttlock
 ```
 ### OS-specific installation steps
 ## Tooling:
-Alacritty
-Tmux
 Neovim
 
 ## Languages
+Ruby
 Crystal
+
+## Frameworks
+DragonRuby GTK
