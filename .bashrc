@@ -22,7 +22,9 @@ if [ -d ~/.bashrc.d ]; then
         fi
     done
 fi
-alias ls='lsd'
+alias ls='lsd --group-dirs=first'
+alias lsa='lsd --all --group-dirs=first'
+alias lstree='lsd --all --tree --depth=2 --group-dirs=first'
 
 # User specific prompt
 PS1='\[\e[92m\]\H\[\e[0m\]:\[\e[92m\]\w\[\e[0m\]\\$ '

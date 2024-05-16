@@ -1,0 +1,7 @@
+[user]
+	email = joshmforeman@gmail.com
+	name = Joshua Foreman
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
