@@ -68,7 +68,8 @@ Currently pretty vanilla. None installed, but here's a list of possible future p
     - UBlock Origin
     - Privacy Badger
     - Dark Reader
-    -
+    - Flagfox
+    - Tree Style Tab
 ### Obsidian (Note Taking) - config occurs on Sync
 - Theme: Minimal
 - (Community) Plugins:
