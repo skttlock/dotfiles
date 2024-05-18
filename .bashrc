@@ -44,10 +44,10 @@ bat_alias_wrapper() {
     sys_color_scheme_is_dark
     if [[ $? -eq 0 ]]; then
         # bat command with dark color scheme
-        bat --theme=gruvbox-dark
+        bat --theme=gruvbox-dark "$@"
     else
         # bat command with light color scheme
-        bat --theme=gruvbox-light
+        bat --theme=gruvbox-light "$@"
     fi
 }
 alias cat='bat_alias_wrapper'
