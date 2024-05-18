@@ -1,0 +1,22 @@
+-- You can add your own plugins here or in other files in this directory!
+--  I promise not to create any merge conflicts in this directory :)
+--
+-- See the kickstart.nvim README for more information
+
+return {
+  -- colors
+  { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
+  -- plugins
+  require 'custom/plugins/vim-rails.lua',
+  require 'custom/plugins/vim-bundler.lua',
+  require 'custom/plugins/vim-endwise.lua',
+  require 'custom/plugins/vim-commentary.lua',
+  require 'custom/plugins/vim-surround.lua',
+  require 'custom/plugins/vim-fugitive.lua',
+
+  require 'custom/plugins/vim-tmux.lua',
+
+  require 'custom/plugins/neoscroll.lua',
+
+  require 'custom/plugins/auto-dark-mode.lua',
+}
