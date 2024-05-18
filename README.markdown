@@ -57,9 +57,11 @@ Currently based on Kickstart.nvim
         - Vim-Tmux
         - Neoscroll
 ### Tmux
-Currently pretty vanilla. None installed, but here's a list of possible future plugins.
+Currently pretty vanilla.
 - Plugins:
     - TPM (plugin manager)
+    - Tmux-Sensible
+    - Tmux-Which-Key
 ## GUI - not included. download urself
 - Synfig (Animation Software)
 - Google Chrome (Keyboard Training via zsa.io)
