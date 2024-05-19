@@ -1,5 +1,6 @@
 [user]
-	email = joshmforeman@gmail.com
+	; email = joshmforeman@gmail.com
+	email = 49174473+skttlock@users.noreply.github.com 
 	name = Joshua Foreman
 [init]
 	defaultBranch = main
