@@ -13,16 +13,18 @@ Ensure you have the following installed on your system
 1. Clone the repo to your $HOME path
 2. Navigate to the repo
 3. `stow .` in your shell
-4. Test & Debug
+4. (WIP) Utlize the `install.sh` script.
+5. Test & Debug
 # Appearance
 ## Font(s)
-- FiraCode
-- Liberation Mono patched with Nerds Font
+- Liberation Font Family (including Narrow, all patched with Nerds Fonts)
+    - Fedora Users :
+        - One can manually install the fonts by copying the TTFs to `~/.fonts` for user wide usage and/or to `/usr/share/fonts/liberation` for system-wide availability. Then, run `fc-cache` to let that cached.
+## Wallpaper(s)
+- Currently using Trauma Team from Cyberpunk 2077 found on Wallhaven
 ## Colorscheme(s)
 - Currently using Catppuccin in Nvim
 - Default GNOME terminal colors in Gnome Terminal, based on System Light/Dark setting
-## Wallpaper(s)
-- Currently using Trauma Team from Cyberpunk 2077 found on Wallhaven
 # Applications
 ## Terminal
 - GNU Stow
@@ -85,3 +87,6 @@ Currently pretty vanilla.
     - Waypoint
 # (Probably) Necessary Steps
 ## Git(Hub) Connection
+
+# TODO
+- install shell script

@@ -22,6 +22,7 @@ if [ -d ~/.bashrc.d ]; then
         fi
     done
 fi
+#
     #system color scheme function, built in Bash on Fedora 39 GNOME true/0==dark, false/1==light
 sys_color_scheme_is_dark() {
     #read system setting
@@ -34,10 +35,12 @@ sys_color_scheme_is_dark() {
         return 1
     fi
 }
+
     #ls -> lsd
 alias ls='lsd --group-dirs=first'
 alias lsa='lsd --all --group-dirs=first'
 alias lstree='lsd --all --tree --depth=2 --group-dirs=first'
+#
     #cat -> bat but the theme based on color-scheme
 bat_alias_wrapper() {
     #get color scheme
