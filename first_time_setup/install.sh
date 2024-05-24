@@ -37,7 +37,7 @@ sudo $PACKAGE_MANAGER update -y -q
 sudo $PACKAGE_MANAGER clean packages
 
 # run the install scripts found in this directory.
-echo -e "${UNDERLNE}Running install scripts.${RESET}"
+echo -e "${UNDERLINE}Running install scripts.${RESET}"
 source bash_installs.sh
 source programming_language_installs.sh
 source font_installs.sh

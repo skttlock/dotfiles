@@ -12,11 +12,11 @@ FOLDER_PATH="$SCRIPT_DIR/$RELATIVE_FOLDER/*/"
 FILE_PATH="$SCRIPT_DIR/$RELATIVE_FOLDER/custom_wallpapers.xml"
 # echo "full path=$FOLDER_PATH"
 # echo "file path=$FILE_PATH"
-DESTINATION_DIR="~/.local/share/backgrounds/"
+DESTINATION_DIR="$HOME/.local/share/backgrounds/"
 # copy patched wallpapers to .local/share/backgrounds
-mkdir $DESTINATION_PATH
+mkdir -p $DESTINATION_PATH
 cp -r $FOLDER_PATH $DESTINATION_DIR
 # copy xml to .local/share/gnome-background-properties
-mkdir ~/.local/share/gnome-background-properties
-cp $FILE_PATH ~/.local/share/gnome-background-properties
+mkdir -p "$HOME/.local/share/gnome-background-properties/"
+cp $FILE_PATH "$HOME/.local/share/gnome-background-properties/"
 echo -e "${GREEN}Completed:${RESET} wallpaper_installs.sh"
