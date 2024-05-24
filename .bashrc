@@ -61,3 +61,8 @@ PS1='\[\e[92m\]\H\[\e[0m\]:\[\e[92m\]\w\[\e[0m\]\\$ '
 export PROMPT_DIRTRIM=1
 
 unset rc
+
+# Shell Inits
+#
+# Added by `rbenv init` on Thu May 23 01:30:23 PM PDT 2024
+eval "$(~/.rbenv/bin/rbenv init - bash)"

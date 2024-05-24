@@ -5,6 +5,16 @@ This directory contains the dotfiles for my system. Currently, this will configu
 - Git
 - NeoVim
 - Tmux
+
+This directory also contains wallpapers and fonts I like. Eventually, these- as well as applications I use- will be installed using the scripts found in the `/first_time_setup/` directory.
+- **PROGRAMMING LANGUAGES**
+    - Ruby
+        - Rails
+    - Julia
+    - *to be installed*
+        - rust
+        - go
+        - typescript (sigh)
 # Requirements
 Ensure you have the following installed on your system
 - Git
@@ -26,10 +36,44 @@ Ensure you have the following installed on your system
 - Currently using Catppuccin in Nvim
 - Default GNOME terminal colors in Gnome Terminal, based on System Light/Dark setting
 # Applications
-## Terminal
+## Tools I Use
+### Back-Ups
+- Backups (provided by `deja-dup`) for Home Directory backups
+- Btrfs-Assistant for "restore point\[s] when a system configuration goes wrong"
+### Productivity
+#### General
+##### GUI - not included. download urself
+- Synfig (Animation Software)
+- Google Chrome (Keyboard Training via zsa.io)
+- LibreOffice Suite (Office Productivity Suite)
+###### Firefox (Web Browser)
+- Extensions:
+    - UBlock Origin
+    - Privacy Badger
+    - Dark Reader
+    - Flagfox
+    - Tree Style Tab
+###### Obsidian (Note Taking) - config occurs on Sync
+- Theme: Minimal
+- (Community) Plugins:
+    - Highightr
+    - Calendar
+    - Periodic Notes
+    - Style Settings
+    - Minimal Theme Settings
+    - Hider
+    - Folder Notes
+    - Waypoint
+#### Development
+##### Terminal
 - GNU Stow
 - Git
-### NeoVIM
+- Bat (`cat` improvement)
+- **Ruby Development**
+    - Ruby
+        - rbenv
+            - ruby-build
+###### NeoVIM
 Currently based on Kickstart.nvim
 - Plugins:
     - Colorschemes:
@@ -58,35 +102,18 @@ Currently based on Kickstart.nvim
         - Vim-Rails
         - Vim-Tmux
         - Neoscroll
-### Tmux
+###### Tmux
 Currently pretty vanilla.
 - Plugins:
     - TPM (plugin manager)
     - Tmux-Sensible
     - Tmux-Which-Key
-## GUI - not included. download urself
-- Synfig (Animation Software)
-- Google Chrome (Keyboard Training via zsa.io)
-### Firefox (Web Browser)
-- Extensions:
-    - UBlock Origin
-    - Privacy Badger
-    - Dark Reader
-    - Flagfox
-    - Tree Style Tab
-### Obsidian (Note Taking) - config occurs on Sync
-- Theme: Minimal
-- (Community) Plugins:
-    - Highightr
-    - Calendar
-    - Periodic Notes
-    - Style Settings
-    - Minimal Theme Settings
-    - Hider
-    - Folder Notes
-    - Waypoint
 # (Probably) Necessary Steps
 ## Git(Hub) Connection
 
 # TODO
+- add ignore first_time_setup to stow
 - install shell script
+    - app install shell script
+        - add rbenv installs
+-
