@@ -9,22 +9,21 @@ This directory contains the dotfiles for my system. Currently, this will configu
 This directory also contains wallpapers and fonts I like. Eventually, these- as well as applications I use- will be installed using the scripts found in the `/first_time_setup/` directory.
 - **PROGRAMMING LANGUAGES**
     - Ruby
-        - Rails
-    - Julia
+    - Rust
     - *to be installed*
-        - rust
         - go
-        - typescript (sigh)
+        - typescript
 # Requirements
 Ensure you have the following installed on your system
 - Git
 - GNU Stow
 # Installation
 1. Clone the repo to your $HOME path
-2. Navigate to the repo
-3. `stow .` in your shell
-4. (WIP) Utlize the `install.sh` script.
-5. Test & Debug
+2. Backup your `.bashrc` and `.bash_profile` files.
+3. Navigate to the repo
+4. `stow .` in your shell
+5. (WIP) Utlize the `install.sh` script.
+6. Test & Debug
 # Appearance
 ## Font(s)
 - Liberation Font Family (including Narrow, all patched with Nerds Fonts)
@@ -42,10 +41,10 @@ Ensure you have the following installed on your system
 - Btrfs-Assistant for "restore point\[s] when a system configuration goes wrong"
 ### Productivity
 #### General
-##### GUI - not included. download urself
+##### GUI
 - Synfig (Animation Software)
-- Google Chrome (Keyboard Training via zsa.io)
-- LibreOffice Suite (Office Productivity Suite)
+- Google Chrome (Keyboard Training via zsa.io) - not included. download urself
+- LibreOffice Suite (Office Productivity Suite) - not included. download urself
 ###### Firefox (Web Browser)
 - Extensions:
     - UBlock Origin
@@ -73,6 +72,8 @@ Ensure you have the following installed on your system
     - Ruby
         - rbenv
             - ruby-build
+- **Rust Development**
+    - Rust
 ###### NeoVIM
 Currently based on Kickstart.nvim
 - Plugins:
@@ -112,8 +113,4 @@ Currently pretty vanilla.
 ## Git(Hub) Connection
 
 # TODO
-- add ignore first_time_setup to stow
-- install shell script
-    - app install shell script
-        - add rbenv installs
--
+- test install scripts

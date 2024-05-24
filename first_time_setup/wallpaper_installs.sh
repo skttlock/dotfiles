@@ -1,7 +1,7 @@
 #!/bin/bash
 # called by install.sh
 
-echo "Running: wallpaper_installs.sh"
+echo "${YELLOW}Running: wallpaper_installs.sh${RESET}"
 # find wallpaper folder
 # path setups
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -18,4 +18,4 @@ cp -r $FOLDER_PATH $DESTINATION_DIR
 # copy xml to .local/share/gnome-background-properties
 mkdir .local/share/gnome-background-properties
 cp $FILE_PATH .local/share/gnome-background-properties
-echo "Completed: wallpaper_installs.sh"
+echo "${GREEN}Completed:${RESET} wallpaper_installs.sh"

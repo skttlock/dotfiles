@@ -1,9 +1,9 @@
 #!/bin/bash
 # called by install.sh
 
-echo "Running: bash_installs.sh"
+echo "${YELLOW}Running: bash_installs.sh${RESET}"
 # general bash tools
-sudo $PACKAGE_MANAGER install -y git nvim tmux bat lsd tldr
-echo "Git, NeoVIM, TMUX, Bat, LSD, and TLDR installed."
+sudo $PACKAGE_MANAGER install -y neovim tmux bat lsd tldr
+echo "NeoVIM, TMUX, Bat, LSD, and TLDR installed."
 #
-echo "Completed: bash_installs.sh"
+echo "${GREEN}Completed:${RESET} bash_installs.sh"

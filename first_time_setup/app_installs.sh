@@ -1,7 +1,7 @@
 #!/bin/bash
 # called by install.sh
 
-echo "Running: app_installs.sh"
+echo "${YELLOW}Running: app_installs.sh${RESET}"
 # run default package manager installs
 sudo $PACKAGE_MANAGER install -y deja-dup
 echo "deja-dup, AKA Backups, installed."
@@ -18,7 +18,8 @@ echo "To install ProtonMail, find the package on their website."
 
 # run flatpak installs
 if [ "$FLATPAK_FOUND" -eq 1 ]; then
-	flatpak install -y obsidian synfig
+	flatpak install flathub org.synfig.SynfigStudio -y
+	flatpak install flathub md.obsidian.Obsidian -y
 	echo "Obsidian, Synfig installed via Flatpak."
 fi
-echo "Completed: app_installs.sh"
+echo "${GREEN}Completed:${RESET} app_installs.sh"
