@@ -14,7 +14,7 @@ FILE_PATH="$SCRIPT_DIR/$RELATIVE_FOLDER/custom_wallpapers.xml"
 # echo "file path=$FILE_PATH"
 DESTINATION_DIR="$HOME/.local/share/backgrounds/"
 # copy patched wallpapers to .local/share/backgrounds
-mkdir -p $DESTINATION_PATH
+mkdir -p $DESTINATION_DIR
 cp -r $FOLDER_PATH $DESTINATION_DIR
 # copy xml to .local/share/gnome-background-properties
 mkdir -p "$HOME/.local/share/gnome-background-properties/"

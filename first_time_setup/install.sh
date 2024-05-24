@@ -22,8 +22,9 @@ echo -e  "${GREEN}Detected:${RESET} $PACKAGE_MANAGER."
 # detect flatpak presence.
 if [ -x "$(command -v flatpak)" ]; then
 	echo -e "${GREEN}Detected:${RESET} flatpak."
-	echo -e "Updating: flatpak."
+	echo -e "Adding repo: flatpak."
 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+	echo -e "Updating: flatpak."
 	flatpak update -y
 	FLATPAK_FOUND=1
 else
