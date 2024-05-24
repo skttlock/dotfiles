@@ -1,11 +1,11 @@
 #!/bin/bash
 # called by install.sh
 
-echo "${YELLOW}Running: programming_language_installs.sh{$RESET}"
+echo -e "${YELLOW}Running: programming_language_installs.sh{$RESET}"
 # ruby bash tools
 # using git
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-echo "rbenv installed via Git."
+echo -e "rbenv installed via Git."
 # echo "rbenv, ruby, ruby-gem installed."
 # rust
 # curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
@@ -17,4 +17,4 @@ echo "rbenv installed via Git."
 # typescript
 # echo "typescript installed."
 
-echo "${GREEN}Completed:${RESET} programming_language_installs.sh"
+echo -e "${GREEN}Completed:${RESET} programming_language_installs.sh"

@@ -30,7 +30,7 @@ else
 fi
 
 # # update packages
-echo "Updating $PACKAGE_MANAGER."
+echo "Updating: $PACKAGE_MANAGER."
 echo "This may take a minute."
 sudo $PACKAGE_MANAGER update -y -q
 sudo $PACKAGE_MANAGER clean packages
