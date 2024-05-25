@@ -4,9 +4,13 @@
 echo -e "${YELLOW}Running: programming_language_installs.sh{$RESET}"
 # ruby bash tools
 # using git
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-echo -e "rbenv installed via Git."
-# echo "rbenv, ruby, ruby-gem installed."
+git clone --quiet https://github.com/rbenv/rbenv.git ~/.rbenv
+if [ $? -eq 0 ]; then
+	echo -e "rbenv installed via Git."
+else
+	echo -e "{$RED}Failed:{$RESET} rbenv install via Git."
+fi
+
 # rust
 # curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 # echo "rust installed via RustUp."

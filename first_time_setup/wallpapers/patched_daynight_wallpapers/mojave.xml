@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Mojave</name>
+	<filename>$home_var/.local/share/backgrounds/mojave/MojaveV2-1.jpg</filename>
+	<filename-dark>$home_var/.local/share/backgrounds/mojave/MojaveV2-2.jpg</filename-dark>
+    <options>zoom</options>
+  </wallpaper>
+</wallpapers>
