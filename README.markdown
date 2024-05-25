@@ -36,8 +36,8 @@ Ensure you have the following installed on your system
 - Default GNOME terminal colors in Gnome Terminal, based on System Light/Dark setting
 # Applications
 <details>
-
 <summary>Tools I Use</summary>
+
 - Back-Ups
   - Backups (provided by `deja-dup`) for Home Directory backups
   - Btrfs-Assistant for "restore point\[s] when a system configuration goes wrong"
@@ -113,8 +113,6 @@ Ensure you have the following installed on your system
           - Tmux-Which-Key
 
 </details>
-# (Probably) Necessary Steps
-## Git(Hub) Connection
 
 # TODO
 - test install scripts
