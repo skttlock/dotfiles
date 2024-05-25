@@ -1,40 +1,43 @@
 # My dotfiles
 
-This directory contains the dotfiles for my system. Currently, this will configure:
+This directory contains the dotfiles for my system. Currently, this will install/configure:
 - Bash
 - Git
 - NeoVim
 - Tmux
+- Wallpapers & Fonts
+- Applications
 
-This directory also contains wallpapers and fonts I like. Eventually, these- as well as applications I use- will be installed using the scripts found in the `/first_time_setup/` directory.
 - **PROGRAMMING LANGUAGES**
     - Ruby
     - Rust
     - *to be installed*
+        - julia
+        - v-lang
         - go
         - typescript
-# Requirements
+## Getting Started
+### Prerequisites
 Ensure you have the following installed on your system
 - Git
 - GNU Stow
-# Installation
-1. Clone the repo to your $HOME path
-2. Backup your `.bashrc` and `.bash_profile` files.
-3. Navigate to the repo
-4. `stow .` in your shell
-5. (WIP) Utlize the `install.sh` script.
+### Installation
+1. Clone the repo to your $HOME path, that's it!
+### Usage
+1. Backup your `.bashrc` and `.bash_profile` files.
+2. Navigate to the repo
+3. `stow .` in your shell
+4. Navigate to `/first_time_setup/`.
+5. Utilize the `install.sh` script.
 6. Test & Debug
-# Appearance
-## Font(s)
-- Liberation Font Family (including Narrow, all patched with Nerds Fonts)
-    - Fedora Users :
-        - One can manually install the fonts by copying the TTFs to `~/.fonts` for user wide usage and/or to `/usr/share/fonts/liberation` for system-wide availability. Then, run `fc-cache` to let that cached.
-## Wallpaper(s)
-- Patched to have Light/Dark mode versions in GNOME.
-## Colorscheme(s)
-- Currently using Catppuccin in Nvim
-- Default GNOME terminal colors in Gnome Terminal, based on System Light/Dark setting
-# Applications
+
+## Whats Included?
+### Appearance
+- **Fonts** patched with Nerds Font Patcher
+- **Wallpapers** patched to have Light/Dark mode versions in GNOME.
+- **Catppuccin** color scheme in Nvim
+
+### Applications
 <details>
 <summary>Tools I Use</summary>
 
@@ -99,13 +102,13 @@ Ensure you have the following installed on your system
             - WhichKey
           - Custom plugins:
             - Auto Dark Mode
-              - Vim-Bundler
-              - Vim-Commentary
-              - Vim-Endwise
-              - Vim-Fugitive
-              - Vim-Rails
-              - Vim-Tmux
-              - Neoscroll
+            - Vim-Bundler
+            - Vim-Commentary
+            - Vim-Endwise
+            - Vim-Fugitive
+            - Vim-Rails
+            - Vim-Tmux
+            - Neoscroll
       - Tmux
         - Plugins:
           - TPM (plugin manager)
@@ -115,5 +118,6 @@ Ensure you have the following installed on your system
 </details>
 
 # TODO
-- test install scripts
-- link external github repos, i.e. rbenv, plugins, bash scripts, etc.
+- [x] test install scripts
+- [ ] add dialogs: "install ruby? y/n" etc.
+- [ ] link external github repos, i.e. rbenv, plugins, bash scripts, etc.
