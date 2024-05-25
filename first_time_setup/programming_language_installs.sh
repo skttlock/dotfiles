@@ -1,7 +1,7 @@
 #!/bin/bash
 # called by install.sh
 
-echo -e "${YELLOW}Running: programming_language_installs.sh{$RESET}"
+echo -e "${YELLOW}Running: programming_language_installs.sh${RESET}"
 # ruby bash tools
 # using git
 git clone --quiet https://github.com/rbenv/rbenv.git ~/.rbenv

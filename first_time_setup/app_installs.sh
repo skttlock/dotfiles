@@ -20,8 +20,8 @@ echo -e "To install ProtonMail and ProtonVPN, find the package on their website.
 
 # run flatpak installs
 if [ "$FLATPAK_FOUND" -eq 1 ]; then
-	flatpak install flathub org.synfig.SynfigStudio -y --noninteractive
-	flatpak install flathub md.obsidian.Obsidian -y --noninteractive
+	flatpak install flathub -y --noninteractive org.synfig.SynfigStudio
+	flatpak install flathub -y --noninteractive md.obsidian.Obsidian
 	echo -e "Obsidian, Synfig installed via Flatpak."
 fi
 echo -e "${GREEN}Completed:${RESET} app_installs.sh"

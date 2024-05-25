@@ -36,9 +36,10 @@ echo -e "Updating: $PACKAGE_MANAGER."
 echo -e "This may take a minute."
 sudo $PACKAGE_MANAGER update -y -q
 sudo $PACKAGE_MANAGER clean packages
+echo -e "${GREEN}Updates completed.${RESET}"
 
 # run the install scripts found in this directory.
-echo -e "${UNDERLINE}Running install scripts.${RESET}"
+echo -e "${UNDERLINE}Running install subscripts.${RESET}"
 source bash_installs.sh
 source programming_language_installs.sh
 source font_installs.sh
