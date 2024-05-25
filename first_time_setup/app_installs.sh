@@ -8,18 +8,20 @@ echo -e "deja-dup, AKA Backups, installed."
 
 # install proton vpn
 # TODO: add proton mail for fedora&ubuntu + protonVPN for ubuntu
-if [ -x "$(command -v dnf)" ]; then
-	wget "https://repo.protonvpn.com/fedora-$(cat /etc/fedora-release | cut -d\  -f 3)-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.1-2.noarch.rpm"
-	sudo dnf install -y -q ./protonvpn-stable-release-1.0.1-2.noarch.rpm
-	sudo dnf install -y --refresh -q proton-vpn-gnome-desktop 
-	echo -e "ProtonVPN for Fedora installed."
-fi
-echo -e "To install ProtonMail, find the package on their website."
+#
+# if [ -x "$(command -v dnf)" ]; then
+# 	wget "https://repo.protonvpn.com/fedora-$(cat /etc/fedora-release | cut -d\  -f 3)-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.1-2.noarch.rpm"
+# 	sudo dnf install -y -q ./protonvpn-stable-release-1.0.1-2.noarch.rpm
+# 	sudo dnf install -y --refresh -q proton-vpn-gnome-desktop 
+# 	echo -e "ProtonVPN for Fedora installed."
+# fi
+
+echo -e "To install ProtonMail and ProtonVPN, find the package on their website."
 
 # run flatpak installs
 if [ "$FLATPAK_FOUND" -eq 1 ]; then
-	flatpak install flathub org.synfig.SynfigStudio -y
-	flatpak install flathub md.obsidian.Obsidian -y
+	flatpak install flathub org.synfig.SynfigStudio -y --noninteractive
+	flatpak install flathub md.obsidian.Obsidian -y --noninteractive
 	echo -e "Obsidian, Synfig installed via Flatpak."
 fi
 echo -e "${GREEN}Completed:${RESET} app_installs.sh"

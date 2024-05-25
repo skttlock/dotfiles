@@ -42,6 +42,6 @@ update_xml_files "$XML_PATH"
 
 # copy xml files to .local/share/gnome-background-properties
 mkdir -p "$HOME/.local/share/gnome-background-properties/"
-cp "$XML_PATH*.xml" "$HOME/.local/share/gnome-background-properties/"
+cp -t "$HOME/.local/share/gnome-background-properties/" "$XML_PATH*.xml"
 
 echo -e "${GREEN}Completed:${RESET} wallpaper_installs.sh"
