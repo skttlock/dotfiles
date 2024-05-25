@@ -47,4 +47,13 @@ source wallpaper_installs.sh
 source app_installs.sh
 echo -e "${UNDERLINE}Finished install scripts. Cleaning up.${RESET}"
 
+echo -e "Updating: $PACKAGE_MANAGER."
+echo -e "This may take a minute."
+sudo $PACKAGE_MANAGER update -y -q
+echo -e "${GREEN}Updates complete.${RESET}"
+sudo $PACKAGE_MANAGER clean packages
+echo -e "${GREEN}Clean-up complete.${RESET}"
+
 echo -e  "${GREEN}Install complete.${RESET}"
+
+echo -e "Please restart your shell to see full changes."

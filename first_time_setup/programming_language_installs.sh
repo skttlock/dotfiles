@@ -7,7 +7,7 @@ git clone --quiet https://github.com/rbenv/rbenv.git ~/.rbenv
 if [ $? -eq 0 ]; then
 	echo -e "rbenv installed via Git."
 else
-	echo -e "${RED}Failed:${RESET} rbenv install via Git."
+	echo -e "${RED}Failed:${RESET} rbenv install via Git. See error message above."
 fi
 
 # rust

@@ -14,7 +14,7 @@ update_xml_files() {
             if [ -f "$xml_file" ] && [ -r "$xml_file" ]; then
                 # Replace $home_var with the value of HOME environment variable in the XML file
                 sed -i "s|\$home_var|$HOME|g" "$xml_file"
-                echo "Updated: $xml_file"
+                # echo "Updated: $xml_file"
             fi
         done
     else
