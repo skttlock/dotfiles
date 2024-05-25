@@ -5,9 +5,7 @@
 # this was all written by chatgpt- double check it later
 # for example: remove home_dir variable and replace with $HOME
 update_xml_files() {
-    local home_dir="$HOME"
     local xml_folder="$1"
-
     # Check if the folder exists and is readable
     if [ -d "$xml_folder" ] && [ -r "$xml_folder" ]; then
         # Loop through each XML file in the folder
@@ -15,7 +13,7 @@ update_xml_files() {
             # Check if the file is a regular file and is readable
             if [ -f "$xml_file" ] && [ -r "$xml_file" ]; then
                 # Replace $home_var with the value of HOME environment variable in the XML file
-                sed -i "s|\$home_var|$home_dir|g" "$xml_file"
+                sed -i "s|\$home_var|$HOME|g" "$xml_file"
                 echo "Updated: $xml_file"
             fi
         done
