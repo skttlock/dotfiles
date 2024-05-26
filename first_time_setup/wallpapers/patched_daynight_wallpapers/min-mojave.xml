@@ -3,8 +3,8 @@
 <wallpapers>
   <wallpaper deleted="false">
     <name>Minimal Mojave</name>
-	<filename>$home_var/.local/share/backgrounds/min-mojave/Minimal-Mojave-1.jpg</filename>
-	<filename-dark>$home_var/.local/share/backgrounds/min-mojave/Minimal-Mojave-2.jpg</filename-dark>
+	<filename>/home/joshuaforeman/.local/share/backgrounds/min-mojave/Minimal-Mojave-1.jpg</filename>
+	<filename-dark>/home/joshuaforeman/.local/share/backgrounds/min-mojave/Minimal-Mojave-2.jpg</filename-dark>
     <options>zoom</options>
   </wallpaper>
 </wallpapers>

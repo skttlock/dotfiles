@@ -3,8 +3,8 @@
 <wallpapers>
   <wallpaper deleted="false">
     <name>Trauma Team</name>
-	<filename>$home_var/.local/share/backgrounds/trauma-team/trauma-team-light-reddit.png</filename>
-	<filename-dark>$home_var/.local/share/backgrounds/trauma-team/trauma-team-dark-wallhaven.jpg</filename-dark>
+	<filename>/home/joshuaforeman/.local/share/backgrounds/trauma-team/trauma-team-light-reddit.png</filename>
+	<filename-dark>/home/joshuaforeman/.local/share/backgrounds/trauma-team/trauma-team-dark-wallhaven.jpg</filename-dark>
     <options>zoom</options>
   </wallpaper>
 </wallpapers>

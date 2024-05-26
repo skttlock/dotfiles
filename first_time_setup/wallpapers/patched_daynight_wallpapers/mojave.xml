@@ -3,8 +3,8 @@
 <wallpapers>
   <wallpaper deleted="false">
     <name>Mojave</name>
-	<filename>$home_var/.local/share/backgrounds/mojave/MojaveV2-1.jpg</filename>
-	<filename-dark>$home_var/.local/share/backgrounds/mojave/MojaveV2-2.jpg</filename-dark>
+	<filename>/home/joshuaforeman/.local/share/backgrounds/mojave/MojaveV2-1.jpg</filename>
+	<filename-dark>/home/joshuaforeman/.local/share/backgrounds/mojave/MojaveV2-2.jpg</filename-dark>
     <options>zoom</options>
   </wallpaper>
 </wallpapers>

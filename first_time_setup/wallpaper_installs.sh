@@ -25,7 +25,7 @@ update_xml_files() {
 echo -e "${YELLOW}Running: wallpaper_installs.sh${RESET}"
 
 # path setups
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 RELATIVE_FOLDER="wallpapers/patched_daynight_wallpapers"
 IMAGE_PATH="$SCRIPT_DIR/$RELATIVE_FOLDER/*/"
 XML_PATH="$SCRIPT_DIR/$RELATIVE_FOLDER/"

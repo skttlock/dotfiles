@@ -3,8 +3,8 @@
 <wallpapers>
   <wallpaper deleted="false">
     <name>Forest Tops</name>
-	<filename>$home_var/.local/share/backgrounds/forest-top/forest-clear-unsplash.jpg</filename>
-	<filename-dark>$home_var/.local/share/backgrounds/forest-top/forest-cloudy-unsplash.jpg</filename-dark>
+	<filename>/home/joshuaforeman/.local/share/backgrounds/forest-top/forest-clear-unsplash.jpg</filename>
+	<filename-dark>/home/joshuaforeman/.local/share/backgrounds/forest-top/forest-cloudy-unsplash.jpg</filename-dark>
     <options>zoom</options>
   </wallpaper>
 </wallpapers>

@@ -1,21 +1,7 @@
 # My dotfiles
 
 This directory contains the dotfiles for my system. Currently, this will install/configure:
-- Bash
-- Git
-- NeoVim
-- Tmux
-- Wallpapers & Fonts
-- Applications
 
-- **PROGRAMMING LANGUAGES**
-    - Ruby
-    - Rust
-    - *to be installed*
-        - julia
-        - v-lang
-        - go
-        - typescript
 ## Getting Started
 ### Prerequisites
 Ensure you have the following installed on your system
@@ -23,6 +9,7 @@ Ensure you have the following installed on your system
 - GNU Stow
 ### Installation
 1. Clone the repo to your $HOME path, that's it!
+
 ### Usage
 1. Backup your `.bashrc` and `.bash_profile` files.
 2. Navigate to the repo
@@ -58,17 +45,17 @@ Ensure you have the following installed on your system
           - Dark Reader
           - Flagfox
           - Tree Style Tab
-        - Obsidian (Note Taking) - config occurs on Sync
-          - Theme: Minimal
-          - (Community) Plugins:
-            - Highightr
-            - Calendar
-            - Periodic Notes
-            - Folder Notes
-            - Waypoint
-            - Hider
-            - Style Settings
-            - Minimal Theme Settings
+      - Obsidian (Note Taking) - config occurs on Sync
+        - Theme: Minimal
+        - (Community) Plugins:
+          - Highightr
+          - Calendar
+          - Periodic Notes
+          - Folder Notes
+          - Waypoint
+          - Hider
+          - Style Settings
+          - Minimal Theme Settings
 - Development Tools
   - Terminal
     - GNU Stow
@@ -80,7 +67,7 @@ Ensure you have the following installed on your system
       - **Rust Development**
         - rustup
       - **V Development**
-        - *TBA*
+        - *TBD*
       - NeoVIM
         - Plugins:
           - Colorschemes:
@@ -118,6 +105,28 @@ Ensure you have the following installed on your system
 </details>
 
 # TODO
-- [x] test install scripts
-- [ ] add dialogs: "install ruby? y/n" etc.
 - [ ] link external github repos, i.e. rbenv, plugins, bash scripts, etc.
+- [ ] install scripts
+  - [x] test install scripts
+  - [ ] add programming languages
+    - [x] v
+    - [ ] ruby, not just rbenv
+    - [ ] rust
+    - [ ] test
+    - [ ] print versions
+  - [ ] add dialogs: "install ruby? y/n" etc.
+    - [ ] detect already installed things...
+      - [ ] prog langs
+      - [ ] uhh
+  - [ ] retest install scripts
+  - [ ] finalize functionality
+    - [ ] options? -y for full... 
+    - [ ] make shell-agnostic?
+    - [ ] GNOME settings? (dconf)
+    - [ ] gsettings?
+    - [ ] uninstall?
+  - [ ] retest install scripts
+  - [ ] test on Ubuntu
+- [ ] common-use scripts...?
+  - [ ] update all
+  - [ ] backup?
