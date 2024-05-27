@@ -23,7 +23,7 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 #
-    #system color scheme function, built in Bash on Fedora 39 GNOME true/0==dark, false/1==light
+#system color scheme function, built in Bash on Fedora 39 GNOME true/0==dark, false/1==light
 sys_color_scheme_is_dark() {
     #read system setting
     condition=$(gsettings get org.gnome.desktop.interface color-scheme)
@@ -36,12 +36,12 @@ sys_color_scheme_is_dark() {
     fi
 }
 
-    #ls -> lsd
+#ls -> lsd
 alias ls='lsd --group-dirs=first'
 alias lsa='lsd --all --group-dirs=first'
 alias lstree='lsd --all --tree --depth=2 --group-dirs=first'
 #
-    #cat -> bat but the theme based on color-scheme
+#cat -> bat but the theme based on color-scheme
 bat_alias_wrapper() {
     #get color scheme
     sys_color_scheme_is_dark
@@ -64,5 +64,5 @@ unset rc
 
 # Shell Inits
 #
-# Added by `rbenv init` on Thu May 23 01:30:23 PM PDT 2024
 eval "$(~/.rbenv/bin/rbenv init - bash)"
+. "$HOME/.cargo/env"

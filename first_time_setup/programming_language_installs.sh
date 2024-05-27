@@ -2,6 +2,7 @@
 # called by install.sh
 
 # TODO: add different languages, ensure good file location, test, print versions?
+# TODO: make it clean.
 
 echo -e "${YELLOW}Running: programming_language_installs.sh${RESET}"
 #TODO: test

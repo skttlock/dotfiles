@@ -135,3 +135,5 @@ Ensure you have the following installed on your system
 - [ ] common-use scripts...?
   - [ ] update all
   - [ ] backup?
+- [ ] install scripts rewrite
+  - use BASH3Boilerplate?
