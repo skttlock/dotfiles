@@ -1,6 +1,7 @@
 # My dotfiles
 
-This directory contains the dotfiles for my system. Currently, this will install/configure:
+This directory contains the dotfiles for my system and an install script to get started.
+This script was written in and for Fedora 39/40 on GNOME DE.
 
 ## Getting Started
 ### Prerequisites
@@ -33,97 +34,86 @@ Ensure you have the following installed on your system
   - Btrfs-Assistant for "restore point\[s] when a system configuration goes wrong"
 - General Productivity
   - GUI
+    - Firefox (Web Browser)
+      - Extensions:
+        - ProtonPass
+        - ProtonVPN
+        - UBlock Origin
+        - Privacy Badger
+        - Dark Reader
+        - Flagfox
+        - Tree Style Tab
+    - Obsidian (Note Taking) - config occurs on Sync
+      - Theme: Minimal
+      - (Community) Plugins:
+        - Highightr
+        - Calendar
+        - Periodic Notes
+        - Folder Notes
+        - Waypoint
+        - Hider
+        - Style Settings
+        - Minimal Theme Settings
     - Synfig (Animation Software)
-      - Google Chrome (Keyboard Training via zsa.io) - not included. download urself
-      - LibreOffice Suite (Office Productivity Suite) - not included. download urself
-      - Firefox (Web Browser)
-        - Extensions:
-          - ProtonPass
-          - ProtonVPN
-          - UBlock Origin
-          - Privacy Badger
-          - Dark Reader
-          - Flagfox
-          - Tree Style Tab
-      - Obsidian (Note Taking) - config occurs on Sync
-        - Theme: Minimal
-        - (Community) Plugins:
-          - Highightr
-          - Calendar
-          - Periodic Notes
-          - Folder Notes
-          - Waypoint
-          - Hider
-          - Style Settings
-          - Minimal Theme Settings
+    - Google Chrome (Keyboard Training via zsa.io) - not included. download urself
+    - LibreOffice Suite (Office Productivity Suite) - not included. download urself
+    - Thunderbird (Email & RSS)
+    - ProtonVPN
+    - Proton Mail Bridge
 - Development Tools
   - Terminal
     - GNU Stow
-      - Git
-      - Bat (`cat` improvement)
-      - LSD
-      - **Ruby Development**
-        - rbenv
-      - **Rust Development**
-        - rustup
-      - **V Development**
-        - *TBD*
-      - NeoVIM
-        - Plugins:
-          - Colorschemes:
-            - Catppuccin
-          - Kickstart defaults:
-            - Autopairs
-            - Cmp
-            - Conform
-            - Debug
-            - Git Signs
-            - Indent Line
-            - Lint
-            - LSP Config
-            - Mini
-            - NeoTree
-            - Telescope
-            - Todo Comments
-            - Treesitter
-            - WhichKey
-          - Custom plugins:
-            - Auto Dark Mode
-            - Vim-Bundler
-            - Vim-Commentary
-            - Vim-Endwise
-            - Vim-Fugitive
-            - Vim-Rails
-            - Vim-Tmux
-            - Neoscroll
-      - Tmux
-        - Plugins:
-          - TPM (plugin manager)
-          - Tmux-Sensible
-          - Tmux-Which-Key
+    - Git
+    - Bat (`cat` improvement)
+    - Bats (Bash test framework)
+    - LSD
+    - TLDR
+    - NeoVIM
+      - Plugins:
+        - Colorschemes:
+          - Catppuccin
+        - Kickstart defaults:
+          - Autopairs
+          - Cmp
+          - Conform
+          - Debug
+          - Git Signs
+          - Indent Line
+          - Lint
+          - LSP Config
+          - Mini
+          - NeoTree
+          - Telescope
+          - Todo Comments
+          - Treesitter
+          - WhichKey
+        - Custom plugins:
+          - Auto Dark Mode
+          - Vim-Bundler
+          - Vim-Commentary
+          - Vim-Endwise
+          - Vim-Fugitive
+          - Vim-Rails
+          - Vim-Tmux
+          - Neoscroll
+    - Tmux
+      - Plugins:
+        - TPM (plugin manager)
+        - Tmux-Sensible
+        - Tmux-Which-Key
 
 </details>
 
 # TODO
 - [ ] link external github repos, i.e. rbenv, plugins, bash scripts, etc.
+- [x] semantic ANSI text styling variables
 - [ ] install scripts
   - [x] test install scripts
-  - [ ] add dialogs: "install ruby? y/n" etc.
-    - [ ] detect already installed things...
-      - [ ] prog langs
-      - [ ] uhh
-  - [ ] add programming languages
-    - [x] v...?
-      - [ ] remove v?
-    - [ ] vala
-    - [ ] julia?
-    - [ ] odin
-    - [ ] crystal?
-    - [ ] zig
-    - [ ] ruby, not just rbenv...
-    - [ ] rust, not just rustup...
-    - [ ] print versions
-  - [ ] retest install scripts
+  - [x] retest install scripts
+  - [x] rewrite with mise
+  - [ ] retest
+  - [ ] fix errors
+  - [ ] repeat
   - [ ] finalize functionality
     - [ ] options? -y for full... 
     - [ ] make shell-agnostic?
@@ -135,5 +125,4 @@ Ensure you have the following installed on your system
 - [ ] common-use scripts...?
   - [ ] update all
   - [ ] backup?
-- [ ] install scripts rewrite
-  - use BASH3Boilerplate?
+  - [ ] uninstall/remove?

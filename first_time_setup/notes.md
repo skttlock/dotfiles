@@ -15,7 +15,8 @@
     - elm
     - julia
     - mercury
-    - rust... ?
+    - rust
+    - vala
     - zig
     - later:
         - crystal
@@ -28,9 +29,7 @@
         - onyx?
         - purescript?
         - python...?
-5. (bash) Tools added:
-    - has?
-    - 
+        - r
 
 
 - Readme update...
