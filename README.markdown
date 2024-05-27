@@ -108,16 +108,21 @@ Ensure you have the following installed on your system
 - [ ] link external github repos, i.e. rbenv, plugins, bash scripts, etc.
 - [ ] install scripts
   - [x] test install scripts
-  - [ ] add programming languages
-    - [x] v
-    - [ ] ruby, not just rbenv
-    - [ ] rust
-    - [ ] test
-    - [ ] print versions
   - [ ] add dialogs: "install ruby? y/n" etc.
     - [ ] detect already installed things...
       - [ ] prog langs
       - [ ] uhh
+  - [ ] add programming languages
+    - [x] v...?
+      - [ ] remove v?
+    - [ ] vala
+    - [ ] julia?
+    - [ ] odin
+    - [ ] crystal?
+    - [ ] zig
+    - [ ] ruby, not just rbenv...
+    - [ ] rust, not just rustup...
+    - [ ] print versions
   - [ ] retest install scripts
   - [ ] finalize functionality
     - [ ] options? -y for full... 
