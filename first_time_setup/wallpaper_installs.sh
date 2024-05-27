@@ -1,6 +1,8 @@
 #!/bin/bash
 # called by install.sh
 
+echo -e "${INFO}Running:${RESET} wallpaper_installs.sh"
+
 # Function to update XML files in a folder
 # this was all written by chatgpt- double check it later
 # for example: remove home_dir variable and replace with $HOME
@@ -18,11 +20,9 @@ update_xml_files() {
             fi
         done
     else
-        echo "Error: XML folder not found or not readable."
+        echo "${ERROR}Error:${RESET} XML folder not found or not readable."
     fi
 }
-
-echo -e "${YELLOW}Running: wallpaper_installs.sh${RESET}"
 
 # path setups
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

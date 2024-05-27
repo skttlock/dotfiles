@@ -64,5 +64,3 @@ unset rc
 
 # Shell Inits
 #
-eval "$(~/.rbenv/bin/rbenv init - bash)"
-. "$HOME/.cargo/env"
