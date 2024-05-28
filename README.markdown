@@ -106,7 +106,6 @@ Ensure you have the following installed on your system
     - julia
     - ruby
     - rust
-    - mercury
     - vala
     - zig
 </details>
@@ -118,18 +117,17 @@ Ensure you have the following installed on your system
   - [x] test install scripts
   - [x] retest install scripts
   - [x] rewrite with mise
-  - [ ] retest
-  - [ ] fix errors
+  - [x] retest
+  - [x] fix errors
   - [ ] repeat
   - [ ] finalize functionality
-    - [ ] options? -y for full... 
+    - [ ] options?
     - [ ] make shell-agnostic?
-    - [ ] GNOME settings? (dconf)
-    - [ ] gsettings?
     - [ ] uninstall?
   - [ ] retest install scripts
   - [ ] test on Ubuntu
 - [ ] common-use scripts...?
-  - [ ] update all
-  - [ ] backup?
-  - [ ] uninstall/remove?
+  - [ ] update all?
+  - [ ] backup...?
+    - [ ] GNOME settings? (dconf)
+    - [ ] gsettings?
