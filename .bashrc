@@ -64,3 +64,5 @@ unset rc
 
 # Shell Inits
 #
+. "$HOME/.cargo/env"
+eval "$(~/.local/bin/mise activate bash)"

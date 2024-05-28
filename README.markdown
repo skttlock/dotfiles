@@ -101,7 +101,14 @@ Ensure you have the following installed on your system
         - TPM (plugin manager)
         - Tmux-Sensible
         - Tmux-Which-Key
-
+  - Programming Languages
+    - elm
+    - julia
+    - ruby
+    - rust
+    - mercury
+    - vala
+    - zig
 </details>
 
 # TODO

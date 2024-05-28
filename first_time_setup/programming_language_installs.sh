@@ -12,7 +12,7 @@ echo -e "${INFO}Running:${RESET} programming_language_installs.sh"
 
 # install: rust
 echo -e "Installing: rustup via sh.rustup.rs."
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y -q
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -q -y >/dev/null
 if [ $? -eq 0 ]; then
 	~/.cargo/bin/rustup --version
 	echo -e "${SUCCESS}Success:${RESET} rustup installed via sh.rustup.rs."
@@ -24,98 +24,79 @@ else
 fi
 
 # install: vala
-#TODO: test
-echo -e "Installing Prerequisites (Vala): GCC, glibc, glib, gobject-introspection, flex, bison, Graphviz, make, autoconf, autoconf-archive, automake, and libtool via $PACKAGE_MANAGER."
-sudo $PACKAGE_MANAGER install -y -q gcc glibc glib gobject-introspection flex bison graphviz make autoconf autoconf-archive automake libtool
+echo -e "Installing: Vala via $PACKAGE_MANAGER"
+sudo $PACKAGE_MANAGER install vala -y -q
 if [ $? -eq 0 ]; then
-	echo -e "${SUCCESS}Success:${RESET} GCC, glibc, glib, gobject-introspection, flex, bison, Graphviz, make, autoconf, autoconf-archive, automake, and libtool installed via $PACKAGE_MANAGER."
-	echo -e "Installing: Vala via Git"
-	git clone --quiet https://gitlab.gnome.org/Archive/vala-bootstrap ~/.vala-bootstrap
-	if [ $? -eq 0 ]; then
-		echo -e "${SUCCESS}Success:${RESET} vala-bootstrap installed via Git."
-		cd ~/.vala-bootstrap
-		touch */*.stamp
-		VALAC=/no-valac ./configure --prefix=/opt/vala-bootstrap
-		make && sudo make install
-		if [ $? -eq 0 ]; then
-			echo -e "${SUCCESS}Success:${RESET} vala-bootstrap compiled via Make."
-			git clone https://gitlab.gnome.org/GNOME/vala ~/.vala
-			if [ $? -eq 0 ]; then
-				echo -e "${SUCCESS}Success:${RESET} vala installed via Git."
-				cd ~/.vala
-				VALAC=/opt/vala-bootstrap/bin/valac ./autogen.sh
-				make && sudo make install
-				if [ $? -eq 0 ]; then
-					valac --version
-					echo -e "${SUCCESS}Success:${RESET} vala compiled via Make."
-				else
-					echo -e "${ERROR}Failed:${RESET} vala compilation via Make."
-				fi
-			else
-				echo -e "${ERROR}Failed:${RESET} vala install via Git. See error message above."
-			fi
-		else
-			echo -e "${ERROR}Failed:${RESET} vala-bootstrap compilation via Make."
-		fi
-	else
-		echo -e "${ERROR}Failed:${RESET} vala-bootstrap install via Git. See error message above."
-	fi
-	cd $RESET_DIR
+	echo -e "${SUCCESS}Success:${RESET} Vala installed via $PACKAGE_MANAGER."
 else
-	echo -e "${ERROR}Failed:{$RESET} GCC, glibc, glib, gobject-introspection, flex, bison, Graphviz, make, autoconf, autoconf-archive, automake, and libtool installs."
+	echo -e "${ERROR}Failed:${RESET} Vala install via $PACKAGE_MANAGER."
 fi
 
 # install: ruby, elm, julia, mercury, zig
 #TODO: test, add -q or -y options according to tests
 echo -e "Installing: mise for language install & version management. Similiar to rbenv."
-curl https://mise.run | sh
+curl https://mise.run | sh -s -- -y -q
 if [ $? -eq 0 ]; then
+	~/.local/bin/mise version
 	echo -e "${SUCCESS}Success:${RESET} mise installed."
+	# echo 'eval "$(~/.local/bin/mise activate -q bash)"' >>~/.bashrc
 	echo 'eval "$(~/.local/bin/mise activate bash)"' >>~/.bashrc
 	if [ $? -eq 0 ]; then
 		source ~/.bashrc
 		echo -e "${SUCCESS}Success:${RESET} mise symlinked in ~/.bashrc."
+		echo -e "mise will symlink all installs."
 
 		echo -e "Installing: Ruby"
-		mise use -g ruby@3.2
+		echo -e "Installing: Prerequisites for Ruby via $PACKAGE_MANAGER."
+		sudo $PACKAGE_MANAGER install autoconf gcc rust patch make bzip2 openssl-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel -y -q
+		mise use -g ruby --quiet -y
 		if [ $? -eq 0 ]; then
+			echo "pre source"
+			source ~/.bashrc
+			echo "post source"
 			ruby -v
+			echo "post ruby -v"
 			echo -e "${SUCCESS}Success:${RESET} Ruby installed with mise."
 		else
 			echo -e "${ERROR}Failed:${RESET} Ruby install."
 		fi
+		echo "post ruby conditional"
 
 		echo -e "Installing: Elm"
-		mise use -g elm
+		mise use -g elm --quiet -y
 		if [ $? -eq 0 ]; then
-			elm -v
+			source ~/.bashrc
+			elm --version
 			echo -e "${SUCCESS}Success:${RESET} Elm installed with mise."
 		else
 			echo -e "${ERROR}Failed:${RESET} Elm install."
 		fi
 
 		echo -e "Installing: Julia"
-		mise use -g julia
+		mise use -g julia --quiet -y
 		if [ $? -eq 0 ]; then
-			julia -v
+			source ~/.bashrc
+			julia --version
 			echo -e "${SUCCESS}Success:${RESET} Julia installed with mise."
 		else
 			echo -e "${ERROR}Failed:${RESET} Julia install."
 		fi
 
-		echo -e "Installing: Mercury"
-		mise use -g mercury
-		if [ $? -eq 0 ]; then
-			julia -v
-			echo -e "${SUCCESS}Success:${RESET} Mercury installed with mise."
-		else
-			echo -e "${ERROR}Failed:${RESET} Mercury install."
-		fi
+		# echo -e "Installing: Mercury"
+		# mise use -g mercury --quiet -y
+		# if [ $? -eq 0 ]; then
+		#	source ~/.bashrc
+		# 	mmc -v
+		# 	echo -e "${SUCCESS}Success:${RESET} Mercury installed with mise."
+		# else
+		# 	echo -e "${ERROR}Failed:${RESET} Mercury install."
+		# fi
 
 		echo -e "Installing: Zig"
-		mise use -g zig
+		mise use -g zig --quiet -y
 		if [ $? -eq 0 ]; then
-			julia -v
+			source ~/.bashrc
+			zig version
 			echo -e "${SUCCESS}Success:${RESET} Zig installed with mise."
 		else
 			echo -e "${ERROR}Failed:${RESET} Zig install."
