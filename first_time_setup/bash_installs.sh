@@ -3,12 +3,61 @@
 
 echo -e "${INFO}Running:${RESET} bash_installs.sh"
 # general bash tools
-echo -e "Installing: NeoVIM, TMUX, Bat, LSD, TLDR, and Bats via $PACKAGE_MANAGER."
-sudo $PACKAGE_MANAGER install -y -q neovim tmux bat lsd tldr bats
+echo -e "Installing: NeoVIM, TMUX, Bat, LSD, TLDR, Bats, and GitHub-CLI via $PACKAGE_MANAGER."
+echo -e "Installing: NeoVIM via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q neovim
 if [ $? -eq 0 ]; then
-	echo -e "${SUCCESS}Success:${RESET} NeoVIM, TMUX, Bat, LSD, and TLDR installed via $PACKAGE_MANAGER."
+	echo -e "${SUCCESS}Success:${RESET} NeoVIM installed via $PACKAGE_MANAGER."
 else
-	echo -e "${ERROR}Failed:{$RESET} NeoVIM, TMUX, Bat, LSD, TLDR installs."
+	echo -e "${ERROR}Failed:{$RESET} NeoVIM install."
+fi
+
+echo -e "Installing: TMUX via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q tmux
+if [ $? -eq 0 ]; then
+	echo -e "${SUCCESS}Success:${RESET} TMUX installed via $PACKAGE_MANAGER."
+else
+	echo -e "${ERROR}Failed:{$RESET} TMUX install."
+fi
+
+echo -e "Installing: Bat via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q bat
+if [ $? -eq 0 ]; then
+	echo -e "${SUCCESS}Success:${RESET} Bat installed via $PACKAGE_MANAGER."
+else
+	echo -e "${ERROR}Failed:{$RESET} Bat install."
+fi
+
+echo -e "Installing: LSD via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q lsd
+if [ $? -eq 0 ]; then
+	echo -e "${SUCCESS}Success:${RESET} LSD installed via $PACKAGE_MANAGER."
+else
+	echo -e "${ERROR}Failed:{$RESET} LSD install."
+fi
+
+echo -e "Installing: TLDR via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q tldr
+if [ $? -eq 0 ]; then
+	echo -e "${SUCCESS}Success:${RESET} TLDR installed via $PACKAGE_MANAGER."
+else
+	echo -e "${ERROR}Failed:{$RESET} TLDR install."
+fi
+
+echo -e "Installing: Bats via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q bats
+if [ $? -eq 0 ]; then
+	echo -e "${SUCCESS}Success:${RESET} Bats installed via $PACKAGE_MANAGER."
+else
+	echo -e "${ERROR}Failed:{$RESET} Bats install."
+fi
+
+echo -e "Installing: GitHub-CLI via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q gh
+if [ $? -eq 0 ]; then
+	echo -e "${SUCCESS}Success:${RESET} GitHub-CLI installed via $PACKAGE_MANAGER."
+else
+	echo -e "${ERROR}Failed:{$RESET} GitHub-CLI install."
 fi
 
 echo -e "${INFO}Completed:${RESET} bash_installs.sh"
