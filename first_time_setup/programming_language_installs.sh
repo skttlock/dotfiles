@@ -32,8 +32,7 @@ else
 	echo -e "${ERROR}Failed:${RESET} Vala install via $PACKAGE_MANAGER."
 fi
 
-# install: ruby, elm, julia, mercury, zig
-#TODO: add node & via node add ts
+# install: ruby, elm, julia, mercury, npm, typescript+repl, zig
 echo -e "Installing: mise for language install & version management. Similiar to rbenv."
 curl https://mise.run | sh -s -- -y -q
 if [ $? -eq 0 ]; then
