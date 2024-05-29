@@ -12,13 +12,12 @@ else
 	echo -e "${ERROR}Failed:${RESET} deja-dup install via $PACKAGE_MANAGER."
 fi
 
-echo -e "Installing: rsnapshot via $PACKAGE_MANAGER."
-sudo $PACKAGE_MANAGER install -y -q rsnapshot
+echo -e "Installing: rsync via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q rsync
 if [ $? -eq 0 ]; then
-	echo -e "${SUCCESS}Success:${RESET} rsnapshot installed."
-	echo -e "${TIP}Note:${RESET} configure rsnapshot at /etc/rsnapshot.conf"
+	echo -e "${SUCCESS}Success:${RESET} rsync installed."
 else
-	echo -e "${ERROR}Failed:${RESET} rsnapshot install via $PACKAGE_MANAGER."
+	echo -e "${ERROR}Failed:${RESET} rsync install via $PACKAGE_MANAGER."
 fi
 
 # run flatpak installs
