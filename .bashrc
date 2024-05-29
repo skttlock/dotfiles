@@ -68,3 +68,5 @@ unset rc
 eval "$(~/.local/bin/mise activate bash)"
 eval "$(~/.local/bin/mise activate bash)"
 eval "$(~/.local/bin/mise activate bash)"
+eval "$(~/.local/bin/mise activate bash)"
+eval "$(~/.local/bin/mise activate bash)"

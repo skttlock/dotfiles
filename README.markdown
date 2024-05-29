@@ -57,9 +57,8 @@ Ensure you have the following installed on your system
     - Synfig (Animation Software)
     - Google Chrome (Keyboard Training via zsa.io) - not included. download urself
     - LibreOffice Suite (Office Productivity Suite) - not included. download urself
-    - Thunderbird (Email & RSS)
-    - ProtonVPN
-    - Proton Mail Bridge
+    - ProtonMail (Mail & Calendar) - not included. download urself
+    - ProtonVPN (VPN Client) - not included. download urself
 - Development Tools
   - Terminal
     - GNU Stow
@@ -131,3 +130,4 @@ Ensure you have the following installed on your system
   - [ ] backup...?
     - [ ] GNOME settings? (dconf)
     - [ ] gsettings?
+- [ ] obsidian -> standard notes, wait to see proton offering

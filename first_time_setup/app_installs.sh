@@ -12,6 +12,15 @@ else
 	echo -e "${ERROR}Failed:${RESET} deja-dup install via $PACKAGE_MANAGER."
 fi
 
+echo -e "Installing: rsnapshot via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q rsnapshot
+if [ $? -eq 0 ]; then
+	echo -e "${SUCCESS}Success:${RESET} rsnapshot installed."
+	echo -e "${TIP}Note:${RESET} configure rsnapshot at /etc/rsnapshot.conf"
+else
+	echo -e "${ERROR}Failed:${RESET} rsnapshot install via $PACKAGE_MANAGER."
+fi
+
 # run flatpak installs
 if [ "$FLATPAK_FOUND" -eq 1 ]; then
 	# synfig, animation tool
@@ -50,16 +59,8 @@ if [ "$FLATPAK_FOUND" -eq 1 ]; then
 		echo -e "${ERROR}Failed:${RESET} Authenticator install via Flatpak."
 	fi
 
-	# thunderbird, email&calendar&rss client
-	echo -e "Installing: Thunderbird via Flatpak."
-	flatpak install flathub -y org.mozilla.Thunderbird
-	if [ $? -eq 0 ]; then
-		echo -e "${SUCCESS}Success:${RESET} Thunderbird installed via Flatpak."
-	else
-		echo -e "${ERROR}Failed:${RESET} Thunderbird install via Flatpak."
-	fi
 fi
 
-echo -e "${TIP}NOTE:${RESET} To install ProtonMail, Proton Mail Bridge, and/or ProtonVPN, find the packages on their website."
+echo -e "${TIP}NOTE:${RESET} To install ProtonMail and ProtonVPN, find the packages on their website."
 
 echo -e "${INFO}Completed:${RESET} app_installs.sh"

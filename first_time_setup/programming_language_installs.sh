@@ -38,7 +38,6 @@ curl https://mise.run | sh -s -- -y -q
 if [ $? -eq 0 ]; then
 	~/.local/bin/mise version
 	echo -e "${SUCCESS}Success:${RESET} mise installed."
-	# echo 'eval "$(~/.local/bin/mise activate -q bash)"' >>~/.bashrc
 	echo 'eval "$(~/.local/bin/mise activate bash)"' >>~/.bashrc
 	if [ $? -eq 0 ]; then
 		source ~/.bashrc
@@ -50,22 +49,22 @@ if [ $? -eq 0 ]; then
 		sudo $PACKAGE_MANAGER install autoconf gcc rust patch make bzip2 openssl-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel -y -q
 		mise use -g ruby --quiet -y
 		if [ $? -eq 0 ]; then
-			echo "pre source"
-			source ~/.bashrc
-			echo "post source"
-			ruby -v
-			echo "post ruby -v"
 			echo -e "${SUCCESS}Success:${RESET} Ruby installed with mise."
 		else
 			echo -e "${ERROR}Failed:${RESET} Ruby install."
 		fi
-		echo "post ruby conditional"
+
+		echo -e "Installing: Crystal"
+		mise use -g crystal --quiet -y
+		if [ $? -eq 0 ]; then
+			echo -e "${SUCCESS}Success:${RESET} Crystal installed with mise."
+		else
+			echo -e "${ERROR}Failed:${RESET} Crystal install."
+		fi
 
 		echo -e "Installing: Elm"
 		mise use -g elm --quiet -y
 		if [ $? -eq 0 ]; then
-			source ~/.bashrc
-			elm --version
 			echo -e "${SUCCESS}Success:${RESET} Elm installed with mise."
 		else
 			echo -e "${ERROR}Failed:${RESET} Elm install."
@@ -74,8 +73,6 @@ if [ $? -eq 0 ]; then
 		echo -e "Installing: Julia"
 		mise use -g julia --quiet -y
 		if [ $? -eq 0 ]; then
-			source ~/.bashrc
-			julia --version
 			echo -e "${SUCCESS}Success:${RESET} Julia installed with mise."
 		else
 			echo -e "${ERROR}Failed:${RESET} Julia install."
@@ -94,8 +91,6 @@ if [ $? -eq 0 ]; then
 		echo -e "Installing Node.js"
 		mise use -g node --quiet -y
 		if [ $? -eq 0 ]; then
-			source ~/.bashrc
-			node --version
 			echo -e "${SUCCESS}Success:${RESET} Node.js installed with mise."
 
 			echo -e "Installing: TypeScript via NPM"
@@ -120,8 +115,6 @@ if [ $? -eq 0 ]; then
 		echo -e "Installing: Zig"
 		mise use -g zig --quiet -y
 		if [ $? -eq 0 ]; then
-			source ~/.bashrc
-			zig version
 			echo -e "${SUCCESS}Success:${RESET} Zig installed with mise."
 		else
 			echo -e "${ERROR}Failed:${RESET} Zig install."
