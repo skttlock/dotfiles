@@ -20,6 +20,15 @@ else
 	echo -e "${ERROR}Failed:${RESET} rsync install via $PACKAGE_MANAGER."
 fi
 
+# echo -e "Installing: FirefoxPWA via $PACKAGE_MANAGER."
+# echo -e "Importing GPG key & enabling repo."
+# sudo rpm --import https://packagecloud.io/filips/FirefoxPWA/gpgkey -y -q
+# echo -e "[firefoxpwa]\nname=FirefoxPWA\nmetadata_expire=300\nbaseurl=https://packagecloud.io/filips/FirefoxPWA/rpm_any/rpm_any/\$basearch\ngpgkey=https://packagecloud.io/filips/FirefoxPWA/gpgkey\nrepo_gpgcheck=1\ngpgcheck=0\nenabled=1" | sudo tee /etc/yum.repos.d/firefoxpwa.repo
+# echo -e "Updating $PACKAGE_MANAGER cache."
+# sudo $PACKAGE_MANAGER -q makecache -y --disablerepo="*" --enablerepo="firefoxpwa"
+# echo -e "Installing package."
+# sudo $PACKAGE_MANAGER install -y -q firefoxpwa
+
 # run flatpak installs
 if [ "$FLATPAK_FOUND" -eq 1 ]; then
 	# synfig, animation tool
@@ -60,6 +69,7 @@ if [ "$FLATPAK_FOUND" -eq 1 ]; then
 
 fi
 
+echo -e "${TIP}NOTE:${RESET} To install Excalidraw and FirefoxPWA, follow the instructions on the FirefoxPWA Extension page."
 echo -e "${TIP}NOTE:${RESET} To install ProtonMail and ProtonVPN, find the packages on their website."
 
 echo -e "${INFO}Completed:${RESET} app_installs.sh"
