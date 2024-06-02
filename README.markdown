@@ -32,6 +32,7 @@ Ensure you have the following installed on your system
 - Back-Ups
   - Backups (provided by `deja-dup`) for Home Directory backups
   - Btrfs-Assistant for "restore point\[s] when a system configuration goes wrong"
+  - rsync for Obsidian Vault backup to local folder.
 - General Productivity
   - GUI
     - Firefox (Web Browser)
