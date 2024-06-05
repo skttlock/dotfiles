@@ -119,6 +119,14 @@ if [ $? -eq 0 ]; then
 		else
 			echo -e "${ERROR}Failed:${RESET} Zig install."
 		fi
+
+		echo -e "Installing: SQLite"
+		mise use -g sqlite --quiet -y
+		if [ $? -eq 0 ]; then
+			echo -e "${SUCCESS}Success:${RESET} SQLite installed with mise."
+		else
+			echo -e "${ERROR}Failed:${RESET} SQLite install."
+		fi
 	else
 		echo -e "${ERROR}Failed:${RESET} mise symlink."
 	fi
