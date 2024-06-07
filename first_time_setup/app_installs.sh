@@ -19,8 +19,8 @@ if [ $? -eq 0 ]; then
 	sudo $PACKAGE_MANAGER install -y -q wezterm
 	if [ $? -eq 0 ]; then
 		echo -e "${SUCCESS}Success:${RESET} wezterm installed via $PACKAGE_MANAGER."
-		echo -e "Setting: wezterm as default terminal."
-		sudo gsettings set org.gnome.desktop.default_application.terminal exec 'wezterm'
+		# echo -e "Setting: wezterm as default terminal."
+		# sudo gsettings set org.gnome.desktop.default_application.terminal exec 'wezterm'
 	else
 		echo -e "${ERROR}Failed:${RESET} wezterm install via $PACKAGE_MANAGER."
 	fi
