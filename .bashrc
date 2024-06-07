@@ -59,6 +59,7 @@ alias cat='bat_alias_wrapper'
 PS1='\[\e[92m\]\H\[\e[0m\]:\[\e[92m\]\w\[\e[0m\]\\$ '
 # User specific environment variables
 export PROMPT_DIRTRIM=1
+export EDITOR=nvim
 
 unset rc
 
