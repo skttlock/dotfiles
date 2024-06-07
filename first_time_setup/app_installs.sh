@@ -12,13 +12,15 @@ else
 	echo -e "${ERROR}Failed:${RESET} deja-dup install via $PACKAGE_MANAGER."
 fi
 
-echo -e "Installing: rsync via $PACKAGE_MANAGER + Copr."
+echo -e "Installing: wezterm via $PACKAGE_MANAGER + Copr."
 sudo $PACKAGE_MANAGER copr enable -y -q wezfurlong/wezterm-nightly
 if [ $? -eq 0 ]; then
 	echo -e "${SUCCESS}Success:${RESET} wezterm-nightly enabled."
 	sudo $PACKAGE_MANAGER install -y -q wezterm
 	if [ $? -eq 0 ]; then
 		echo -e "${SUCCESS}Success:${RESET} wezterm installed via $PACKAGE_MANAGER."
+		echo -e "Setting: wezterm as default terminal."
+		sudo gsettings set org.gnome.desktop.default_application.terminal exec 'wezterm'
 	else
 		echo -e "${ERROR}Failed:${RESET} wezterm install via $PACKAGE_MANAGER."
 	fi
@@ -26,7 +28,7 @@ else
 	echo -e "${ERROR}Failed:${RESET} wezterm-nightlyv enable via $PACKAGE_MANAGER (Copr)."
 fi
 
-echo -e "Installing: wezter via $PACKAGE_MANAGER."
+echo -e "Installing: rsync via $PACKAGE_MANAGER."
 sudo $PACKAGE_MANAGER install -y -q rsync
 if [ $? -eq 0 ]; then
 	echo -e "${SUCCESS}Success:${RESET} rsync installed."
