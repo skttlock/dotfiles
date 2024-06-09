@@ -6,8 +6,8 @@ This script was written in and for Fedora 39/40 on GNOME DE.
 ## Getting Started
 ### Prerequisites
 Ensure you have the following installed on your system
-- Git
-- GNU Stow
+- [Git](https://git-scm.com/)
+- [GNU Stow](https://www.gnu.org/software/stow/)
 ### Installation
 1. Clone the repo to your $HOME path, that's it!
 
@@ -23,7 +23,7 @@ Ensure you have the following installed on your system
 ### Appearance
 - **Fonts** patched with Nerds Font Patcher
 - **Wallpapers** patched to have Light/Dark mode versions in GNOME.
-- **Catppuccin** color scheme in Nvim
+- [**Catppuccin**](https://github.com/catppuccin/catppuccin) color scheme in Nvim
 
 ### Applications
 <details>
@@ -32,10 +32,10 @@ Ensure you have the following installed on your system
 - Back-Ups
   - Backups (provided by `deja-dup`) for Home Directory backups
   - Btrfs-Assistant for "restore point\[s] when a system configuration goes wrong"
-  - rsync for Obsidian Vault backup to local folder.
+  - [rsync](https://rsync.samba.org/) for Obsidian Vault backup to local folder.
 - General Productivity
   - GUI
-    - Firefox (Web Browser)
+    - [Firefox](https://www.mozilla.org/en-US/firefox/) (Web Browser)
       - Extensions:
         - ProtonPass
         - ProtonVPN
@@ -44,7 +44,7 @@ Ensure you have the following installed on your system
         - Dark Reader
         - Flagfox
         - Tree Style Tab
-    - Obsidian (Note Taking) - config occurs on Sync
+    - [Obsidian](https://obsidian.md/) (Note Taking) - config occurs on Sync
       - Theme: Minimal
       - (Community) Plugins:
         - Highightr
@@ -55,24 +55,25 @@ Ensure you have the following installed on your system
         - Hider
         - Style Settings
         - Minimal Theme Settings
-    - Synfig (Animation Software)
+    - [Synfig](https://www.synfig.org/) (Animation Software)
     - Google Chrome (Keyboard Training via zsa.io) - not included. download urself
     - LibreOffice Suite (Office Productivity Suite) - not included. download urself
     - ProtonMail (Mail & Calendar) - not included. download urself
     - ProtonVPN (VPN Client) - not included. download urself
 - Development Tools
-  - Terminal
-    - GNU Stow
-    - Git
-    - Bat (`cat` improvement)
+  - [WezTerm](https://wezfurlong.org/wezterm/) (terminal emulator) (to be added)
+  - CLI
+    - [GNU Stow](https://www.gnu.org/software/stow/)
+    - [Git](https://git-scm.com/)
+    - [Bat](https://github.com/sharkdp/bat) (`cat` improvement)
     - Bats (Bash test framework)
-    - LSD
-    - TLDR
-    - NeoVIM
+    - [LSD](https://github.com/lsd-rs/lsd) (prettier `ls`)
+    - [TLDR](https://github.com/tldr-pages/tldr)
+    - [NeoVIM](https://github.com/neovim/neovim)
       - Plugins:
         - Colorschemes:
           - Catppuccin
-        - Kickstart defaults:
+        - [Kickstart](https://github.com/nvim-lua/kickstart.nvim) defaults:
           - Autopairs
           - Cmp
           - Conform
@@ -95,8 +96,9 @@ Ensure you have the following installed on your system
           - Vim-Fugitive
           - Vim-Rails
           - Vim-Tmux
-          - Neoscroll
-    - Tmux
+          - Neoscroll (remove?)
+          - wezterm nvim pane
+    - Tmux (to be removed as WezTerm becomes main)
       - Plugins:
         - TPM (plugin manager)
         - Tmux-Sensible
@@ -110,9 +112,41 @@ Ensure you have the following installed on your system
     - zig
 </details>
 
-# TODO
+### Keybinds
+####  General:
+  - SUPER/ALT + TAB = Switch Application
+  - SUPER + ESC = Switch Window of Application Directly
+  - SUPER + Num = Open or Switch Directly to Favorite Application
+#### Obsidian:
+#### NeoVIM:
+  - SPACE = Show WhichKey
+  - U (normal mode) = Undo
+  - CTRL + R (normal mode) = Redo
+  - NeoScroll:
+    - CTRL + U = Scroll Up
+    - CTRL + D = Scroll Down
+####  WezTerm:
+  - Spawning:
+    - SHIFT + CTRL + N = spawn window
+    - SHIFT + CTRL + T = spawn tab
+  - Navigating:
+    - SHIFT + CTRL + ARROW_KEY = activate pane relative to current pane
+    - SHIFT + SUPER + [ or ] = activate next or previous tab relative to current tab
+  - Other:
+    - SHIFT + CONTROL + P = activate command palette
+
+# TODO(s)
+## Repo Stuff
 - [ ] link external github repos, i.e. rbenv, plugins, bash scripts, etc.
+## Config Stuff
+- [ ] set-up keybinds for:
+  - [ ] WezTerm
+- [ ] determine:
+  - [ ] wezterm functionality to keep or remove
+    - [ ] command palette?
+## "User" Friendliness
 - [x] semantic ANSI text styling variables
+## Install Scripts
 - [ ] install scripts
   - [x] test install scripts
   - [x] retest install scripts
@@ -126,9 +160,12 @@ Ensure you have the following installed on your system
     - [ ] uninstall?
   - [ ] retest install scripts
   - [ ] test on Ubuntu
+## Other Scripts
 - [ ] common-use scripts...?
   - [ ] update all?
   - [ ] backup...?
     - [ ] GNOME settings? (dconf)
     - [ ] gsettings?
-- [ ] obsidian -> standard notes, wait to see proton offering
+## Miscellaneous
+- [ ] obsidian -> standard notes?, wait to see proton offering
+- [ ] prune unneccessary stuff
