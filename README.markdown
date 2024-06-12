@@ -6,8 +6,8 @@ This script was written in and for Fedora 39/40 on GNOME DE.
 ## Getting Started
 ### Prerequisites
 Ensure you have the following installed on your system
-- [Git](https://git-scm.com/)
-- [GNU Stow](https://www.gnu.org/software/stow/)
+- [Git](https://git-scm.com/ )
+- [GNU Stow](https://www.gnu.org/software/stow/ )
 ### Installation
 1. Clone the repo to your $HOME path, that's it!
 
@@ -23,7 +23,9 @@ Ensure you have the following installed on your system
 ### Appearance
 - **Fonts** patched with Nerds Font Patcher
 - **Wallpapers** patched to have Light/Dark mode versions in GNOME.
-- [**Catppuccin**](https://github.com/catppuccin/catppuccin) color scheme in Nvim
+- [**Catppuccin**](https://github.com/catppuccin/catppuccin ) color scheme for WezTerm, NeoVIM, Polybar
+- [ Polybar ](https://github.com/polybar/polybar )
+- [ Starship ](https://github.com/starship/starship )
 
 ### Applications
 <details>
@@ -32,10 +34,10 @@ Ensure you have the following installed on your system
 - Back-Ups
   - Backups (provided by `deja-dup`) for Home Directory backups
   - Btrfs-Assistant for "restore point\[s] when a system configuration goes wrong"
-  - [rsync](https://rsync.samba.org/) for Obsidian Vault backup to local folder.
+  - [rsync](https://rsync.samba.org/ ) for Obsidian Vault backup to local folder.
 - General Productivity
   - GUI
-    - [Firefox](https://www.mozilla.org/en-US/firefox/) (Web Browser)
+    - [Firefox](https://www.mozilla.org/en-US/firefox/ ) (Web Browser)
       - Extensions:
         - ProtonPass
         - ProtonVPN
@@ -44,7 +46,7 @@ Ensure you have the following installed on your system
         - Dark Reader
         - Flagfox
         - Tree Style Tab
-    - [Obsidian](https://obsidian.md/) (Note Taking) - config occurs on Sync
+    - [Obsidian](https://obsidian.md/ ) (Note Taking) - config occurs via Sync plugin
       - Theme: Minimal
       - (Community) Plugins:
         - Highightr
@@ -55,25 +57,28 @@ Ensure you have the following installed on your system
         - Hider
         - Style Settings
         - Minimal Theme Settings
-    - [Synfig](https://www.synfig.org/) (Animation Software)
+    - [Synfig](https://www.synfig.org/ ) (Animation Software)
+    - [Godot](https://godotengine.org/ ) (Game Egnine)
     - Google Chrome (Keyboard Training via zsa.io) - not included. download urself
-    - LibreOffice Suite (Office Productivity Suite) - not included. download urself
+    - [ LibreOffice Suite ](https://www.libreoffice.org/ ) (Office Productivity Suite)
+      - [ Vibreoffice ](https://github.com/seanyeh/vibreoffice )
+      - CodeHighlighter
     - ProtonMail (Mail & Calendar) - not included. download urself
     - ProtonVPN (VPN Client) - not included. download urself
 - Development Tools
-  - [WezTerm](https://wezfurlong.org/wezterm/) (terminal emulator) (to be added)
-  - CLI
-    - [GNU Stow](https://www.gnu.org/software/stow/)
-    - [Git](https://git-scm.com/)
-    - [Bat](https://github.com/sharkdp/bat) (`cat` improvement)
+  - [WezTerm](https://wezfurlong.org/wezterm/ ) (terminal emulator)
+  - CLI (Bash)
+    - [GNU Stow](https://www.gnu.org/software/stow/ )
+    - [Git](https://git-scm.com/ )
+    - [Bat](https://github.com/sharkdp/bat ) (`cat` improvement)
     - Bats (Bash test framework)
-    - [LSD](https://github.com/lsd-rs/lsd) (prettier `ls`)
-    - [TLDR](https://github.com/tldr-pages/tldr)
-    - [NeoVIM](https://github.com/neovim/neovim)
+    - [LSD](https://github.com/lsd-rs/lsd ) (prettier `ls`)
+    - [TLDR](https://github.com/tldr-pages/tldr )
+    - [NeoVIM](https://github.com/neovim/neovim )
       - Plugins:
         - Colorschemes:
           - Catppuccin
-        - [Kickstart](https://github.com/nvim-lua/kickstart.nvim) defaults:
+        - [Kickstart](https://github.com/nvim-lua/kickstart.nvim ) defaults:
           - Autopairs
           - Cmp
           - Conform
@@ -97,8 +102,8 @@ Ensure you have the following installed on your system
           - Vim-Rails
           - Vim-Tmux
           - Neoscroll (remove?)
-          - wezterm nvim pane
-    - Tmux (to be removed as WezTerm becomes main)
+          - wezterm/nvim interaction plugin (tbd & added)
+   - Tmux (to be removed as WezTerm becomes main)
       - Plugins:
         - TPM (plugin manager)
         - Tmux-Sensible
@@ -106,44 +111,109 @@ Ensure you have the following installed on your system
   - Programming Languages
     - elm
     - julia
-    - ruby
+    - [ruby]
     - rust
     - vala
     - zig
 </details>
 
-### Keybinds
-####  General:
-  - SUPER/ALT + TAB = Switch Application
+### Keybinds (WIP)
+Notes:
+- design keybinds to be easy on laptop keyboard
+- Voyager keyboard to have macros to handle keybinds.
+#### Leader Keys
+  - Tactile
+  - WezTerm
+  - NeoVIM
+  - 
+#### Defaults
+  - Open a new window
+  - Close current window
+  - Open a new tab
+  - Close current tab
+
+##### OS-Wide
+  - (SHIFT) + SUPER/ALT + TAB = (Reverse) Switch Application
+  - = Switch Window
   - SUPER + ESC = Switch Window of Application Directly
   - SUPER + Num = Open or Switch Directly to Favorite Application
-#### Obsidian:
+##### Leader Keys
+  - Tactile: SUPER + W
+  - Wezterm: uhhh
+  - Neovim: SPACE
+##### Instancing
+  - Close/Open Workspace
+  - Close/Open Application
+  - Close/Open Window = (SHIFT) CTRL + W
+  - Close/Open Tab = (SHIFT) CTRL + T
+##### Switching
+  - Prev/Next Workspace
+  - Prev/Next Application
+  - Prev/Next Window
+  - Prev/Next Tab = (SHIFT) CTRL + TAB
+##### Sizing/Positioning 
+  - Prev/Next Monitor
+  - Maximize
+  - Minimize
+  - Left split
+  - Right split
+  - Up split
+  - Down split
+
+#### [ GNOME ](https://help.gnome.org/users/gnome-help/stable/keyboard.html.en ):
+- hint: `gsettings list-recursively | grep -i "keybinding"`
+#### [ Obsidian ](https://help.obsidian.md/User+interface/Hotkeys ):
 #### NeoVIM:
-  - SPACE = Show WhichKey
+  - LEADER = SPACE
   - U (normal mode) = Undo
   - CTRL + R (normal mode) = Redo
   - NeoScroll:
     - CTRL + U = Scroll Up
     - CTRL + D = Scroll Down
-####  WezTerm:
+####  [WezTerm](https://wezfurlong.org/wezterm/config/keys.html ):
+use window macros for panes?
+- LEADER = 
+  - Searching:
+    - SHIFT + CTRL + F = enter scrollback search mode
   - Spawning:
+    - LEADER + N
+    - LEADER + T
     - SHIFT + CTRL + N = spawn window
     - SHIFT + CTRL + T = spawn tab
   - Navigating:
+    - LEADER + ARROW_KEY
     - SHIFT + CTRL + ARROW_KEY = activate pane relative to current pane
-    - SHIFT + SUPER + [ or ] = activate next or previous tab relative to current tab
+    - LEADER + 
+    - CTRL + TAB = next tab
+    - SHIFT + SUPER + \[ or \] = activate next or previous tab relative to current tab
+  - Sizing:
+    - LEADER + 
   - Other:
     - SHIFT + CONTROL + P = activate command palette
 
 # TODO(s)
 ## Repo Stuff
-- [ ] link external github repos, i.e. rbenv, plugins, bash scripts, etc.
+- [/] link external github repos, i.e. rbenv, plugins, bash scripts, etc.
 ## Config Stuff
-- [ ] set-up keybinds for:
+- [ ] Voyager keybinds
+  - application specific macros:
+    - prev/next tab macros
+    - 
+    - wezterm tab management...
+- [ ] keybinds:
+  - [ ] Make Reliable/Sensible Defaults
   - [ ] WezTerm
+      - [ ] delete all keybinds, then:
+      - [ ] leader key(bind)
+      - [ ] pane: create, delete, size, selection
+      - [ ] tab: create, delete, selection
 - [ ] determine:
   - [ ] wezterm functionality to keep or remove
     - [ ] command palette?
+- [ ] test i3, other WMs
+- [ ] find a better way to manage keybinds
+  - test:
+    - [ ] xbindkeys
 ## "User" Friendliness
 - [x] semantic ANSI text styling variables
 ## Install Scripts
@@ -164,8 +234,26 @@ Ensure you have the following installed on your system
 - [ ] common-use scripts...?
   - [ ] update all?
   - [ ] backup...?
+    - [ ] humble bundle documents
     - [ ] GNOME settings? (dconf)
     - [ ] gsettings?
+  - [ ] compression
+    - [ ] individually compress directories in this directories
 ## Miscellaneous
 - [ ] obsidian -> standard notes?, wait to see proton offering
 - [ ] prune unneccessary stuff
+- [ ] might rice
+  - to add:
+    - [x] polybar - feels redundant on GNOME
+    - [ ] starship
+    - [ ] poketerm?
+    - [ ] nerdfetch
+    - [ ] vibreoffice
+    - [ ] fzf
+    - [ ] atuin?
+    - [ ] chezmoi?
+    - [ ] powertop
+    - 
+  - to add to dotfile and config:
+    - polybar
+    - starship

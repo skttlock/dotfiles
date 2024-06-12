@@ -36,6 +36,14 @@ else
 	echo -e "${ERROR}Failed:${RESET} rsync install via $PACKAGE_MANAGER."
 fi
 
+echo -e "Installing: LibreOffice via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q libreoffice
+if [ $? -eq 0 ]; then
+	echo -e "${SUCCESS}Success:${RESET} libreoffice installed."
+else
+	echo -e "${ERROR}Failed:${RESET} libreoffice  install via $PACKAGE_MANAGER."
+fi
+
 # echo -e "Installing: FirefoxPWA via $PACKAGE_MANAGER."
 # echo -e "Importing GPG key & enabling repo."
 # sudo rpm --import https://packagecloud.io/filips/FirefoxPWA/gpgkey -y -q
