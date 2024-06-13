@@ -3,7 +3,7 @@
 
 echo -e "${INFO}Running:${RESET} bash_installs.sh"
 # general bash tools
-echo -e "Installing: NeoVIM, TMUX, Bat, LSD, TLDR, Bats, and GitHub-CLI via $PACKAGE_MANAGER."
+echo -e "Installing: NeoVIM, TMUX, Starship, Bat, LSD, TLDR, Bats, and GitHub-CLI via $PACKAGE_MANAGER."
 echo -e "Installing: NeoVIM via $PACKAGE_MANAGER."
 sudo $PACKAGE_MANAGER install -y -q neovim
 if [ $? -eq 0 ]; then
@@ -18,6 +18,22 @@ if [ $? -eq 0 ]; then
 	echo -e "${SUCCESS}Success:${RESET} TMUX installed via $PACKAGE_MANAGER."
 else
 	echo -e "${ERROR}Failed:{$RESET} TMUX install."
+fi
+
+
+echo -e "Enabling: Starship in $PACKAGE_MANAGER via copr (dnf)."
+sudo dnf copr enable -y -q atim/starship
+if [ $? -eq 0 ]; then
+	echo -e "${SUCCESS}Success:${RESET} Starship repo added to $PACKAGE_MANAGER from copr."
+	echo -e "Installing: Starship via $PACKAGE_MANAGER."
+	sudo $PACKAGE_MANAGER install -y -q starship
+	if [ $? -eq 0 ]; then
+		echo -e "${SUCCESS}Success:${RESET} Starship installed via $PACKAGE_MANAGER."
+	else
+		echo -e "${ERROR}Failed:{$RESET} Starship install."
+	fi
+else
+	echo -e "${ERROR}Failed:{$RESET} Starship repo enable."
 fi
 
 echo -e "Installing: Bat via $PACKAGE_MANAGER."
