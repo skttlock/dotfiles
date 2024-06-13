@@ -22,21 +22,47 @@ Ensure you have the following installed on your system
 ## Whats Included?
 ### Appearance
 - **Fonts** patched with Nerds Font Patcher
+  - Liberation Fonts
+  - Geist Fonts (manual install)
 - **Wallpapers** patched to have Light/Dark mode versions in GNOME.
-- [**Catppuccin**](https://github.com/catppuccin/catppuccin ) color scheme for WezTerm, NeoVIM, Polybar
-- [ Polybar ](https://github.com/polybar/polybar )
+- [**Catppuccin**](https://github.com/catppuccin/catppuccin ) color scheme for WezTerm, NeoVIM, <!-- Polybar -->
+<!-- - [ Polybar ](https://github.com/polybar/polybar ) -->
 - [ Starship ](https://github.com/starship/starship )
 
 ### Applications
 <details>
 <summary>Tools I Use</summary>
 
-- Back-Ups
-  - Backups (provided by `deja-dup`) for Home Directory backups
-  - Btrfs-Assistant for "restore point\[s] when a system configuration goes wrong"
-  - [rsync](https://rsync.samba.org/ ) for Obsidian Vault backup to local folder.
-- General Productivity
+<details>
+<summary>GNOME Extensions</summary>
+  - User Extensions
+    - App Hider
+    - Applications Overview Tooltip
+    - Bedtime Mode
+    - Clipboard History
+    - Display Scale Switcher
+    - Gravatar
+    - GSConnect
+    - Just Perfection
+    - Notification Banner Reloaded
+    - Open Bar (disabled for performance)
+    - PiP on top
+    - Quick Setting Tweaker
+    - Quick Settings Audio Devices Renamer
+    - Removable Drive Menu
+    - spotify-tray
+    - Status Area Horizontal Spacing
+    - Tactile
+    - User Avater in Quick Settings
+    - Vitals
+  - System Extensions
+    - Appindicator and KStatusNotifierItem Support
+    - Background Logo
+</details>
+<details>
+<summary>General Productivity</summary>
   - GUI
+    - Backups (provided by `deja-dup`) for Home Directory backups
     - [Firefox](https://www.mozilla.org/en-US/firefox/ ) (Web Browser)
       - Extensions:
         - ProtonPass
@@ -65,13 +91,16 @@ Ensure you have the following installed on your system
       - CodeHighlighter
     - ProtonMail (Mail & Calendar) - not included. download urself
     - ProtonVPN (VPN Client) - not included. download urself
-- Development Tools
+</details>
+<details>
+<summary>Development Tools</summary>
   - [WezTerm](https://wezfurlong.org/wezterm/ ) (terminal emulator)
-  - CLI (Bash)
-    - [GNU Stow](https://www.gnu.org/software/stow/ )
+  - Bash (CLI)
     - [Git](https://git-scm.com/ )
+    - [GNU Stow](https://www.gnu.org/software/stow/ )
     - [Bat](https://github.com/sharkdp/bat ) (`cat` improvement)
     - Bats (Bash test framework)
+    - [rsync](https://rsync.samba.org/ ) for Obsidian Vault backup to local folder.
     - [LSD](https://github.com/lsd-rs/lsd ) (prettier `ls`)
     - [TLDR](https://github.com/tldr-pages/tldr )
     - [NeoVIM](https://github.com/neovim/neovim )
@@ -93,7 +122,7 @@ Ensure you have the following installed on your system
           - Todo Comments
           - Treesitter
           - WhichKey
-        - Custom plugins:
+        - User plugins:
           - Auto Dark Mode
           - Vim-Bundler
           - Vim-Commentary
@@ -110,11 +139,14 @@ Ensure you have the following installed on your system
         - Tmux-Which-Key
   - Programming Languages
     - elm
+    - javascript
     - julia
-    - [ruby]
+    - python
+    - ruby
     - rust
     - vala
     - zig
+</details>
 </details>
 
 ### Keybinds (WIP)
@@ -122,8 +154,9 @@ Notes:
 - design keybinds to be easy on laptop keyboard
 - Voyager keyboard to have macros to handle keybinds.
 #### Leader Keys
-  - Tactile
-  - WezTerm
+  - GNOME = SUPER
+  - Tactile = SUPER + W... change to T?
+  - WezTerm = SUPER + 
   - NeoVIM
   - 
 #### Defaults
@@ -238,22 +271,30 @@ use window macros for panes?
     - [ ] GNOME settings? (dconf)
     - [ ] gsettings?
   - [ ] compression
-    - [ ] individually compress directories in this directories
+    - [ ] individually compress directories in this directory
 ## Miscellaneous
 - [ ] obsidian -> standard notes?, wait to see proton offering
 - [ ] prune unneccessary stuff
+- [ ] stuff to add to dotfiles
+  - [ ] gnome extensions + extension settings
+  - [ ] gnome tweaks + settings
+  - [ ] starship
+  - [x] discord desktop
+  - [x] vencord (does this break discord rules?)
 - [ ] might rice
   - to add:
-    - [x] polybar - feels redundant on GNOME
-    - [ ] starship
-    - [ ] poketerm?
-    - [ ] nerdfetch
+    - [x] fastfetch
     - [ ] vibreoffice
-    - [ ] fzf
+    - [x] fzf
     - [ ] atuin?
     - [ ] chezmoi?
     - [ ] powertop
-    - 
+    - [x] discord desktop
+    - [x] vencord (does this break discord rules?)
+    - [ ] pomotroid
   - to add to dotfile and config:
-    - polybar
-    - starship
+    - [ ] fastfetch
+    - [ ] vibreoffice
+    - [ ] pomotroid
+    - [ ] starship
+  - [ ] to remove
