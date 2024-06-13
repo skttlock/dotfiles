@@ -100,8 +100,9 @@ Ensure you have the following installed on your system
     - [GNU Stow](https://www.gnu.org/software/stow/ )
     - [Bat](https://github.com/sharkdp/bat ) (`cat` improvement)
     - Bats (Bash test framework)
-    - [rsync](https://rsync.samba.org/ ) for Obsidian Vault backup to local folder.
     - [LSD](https://github.com/lsd-rs/lsd ) (prettier `ls`)
+    - [rsync](https://rsync.samba.org/ ) for Obsidian Vault backup to local folder.
+    - (Starship)[https://github.com/starship/starship] (nice prompt)
     - [TLDR](https://github.com/tldr-pages/tldr )
     - [NeoVIM](https://github.com/neovim/neovim )
       - Plugins:
@@ -157,7 +158,7 @@ Notes:
   - GNOME = SUPER
   - Tactile = SUPER + W... change to T?
   - WezTerm = SUPER + 
-  - NeoVIM
+  - NeoVIM = SPACE... add SUPER?
   - 
 #### Defaults
   - Open a new window
@@ -170,10 +171,6 @@ Notes:
   - = Switch Window
   - SUPER + ESC = Switch Window of Application Directly
   - SUPER + Num = Open or Switch Directly to Favorite Application
-##### Leader Keys
-  - Tactile: SUPER + W
-  - Wezterm: uhhh
-  - Neovim: SPACE
 ##### Instancing
   - Close/Open Workspace
   - Close/Open Application
@@ -278,11 +275,14 @@ use window macros for panes?
 - [ ] stuff to add to dotfiles
   - [ ] gnome extensions + extension settings
   - [ ] gnome tweaks + settings
-  - [ ] starship
+  - [x] starship
   - [x] discord desktop
   - [x] vencord (does this break discord rules?)
+  - [ ] fastfetch
+  - [ ] vibreoffice
+  - [ ] pomotroid ?
 - [ ] might rice
-  - to add:
+  - to test/add:
     - [x] fastfetch
     - [ ] vibreoffice
     - [x] fzf
@@ -292,9 +292,4 @@ use window macros for panes?
     - [x] discord desktop
     - [x] vencord (does this break discord rules?)
     - [ ] pomotroid
-  - to add to dotfile and config:
-    - [ ] fastfetch
-    - [ ] vibreoffice
-    - [ ] pomotroid
-    - [ ] starship
   - [ ] to remove
