@@ -25,9 +25,9 @@ Ensure you have the following installed on your system
   - Liberation Fonts
   - Geist Fonts (manual install)
 - **Wallpapers** patched to have Light/Dark mode versions in GNOME.
-- [**Catppuccin**](https://github.com/catppuccin/catppuccin ) color scheme for WezTerm, NeoVIM, <!-- Polybar -->
+- [ **Starship** ](https://github.com/starship/starship )
+- [**Catppuccin**](https://github.com/catppuccin/catppuccin ) color scheme for WezTerm, NeoVIM, Starship, <!-- Polybar -->
 <!-- - [ Polybar ](https://github.com/polybar/polybar ) -->
-- [ Starship ](https://github.com/starship/starship )
 
 ### Applications
 <details>
@@ -35,6 +35,7 @@ Ensure you have the following installed on your system
 
 <details>
 <summary>GNOME Extensions</summary>
+
 - User Extensions
   - App Hider
   - Applications Overview Tooltip
@@ -58,6 +59,7 @@ Ensure you have the following installed on your system
 - System Extensions
   - Appindicator and KStatusNotifierItem Support
   - Background Logo
+
 </details>
 <details>
 <summary>General Productivity</summary>
