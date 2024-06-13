@@ -35,118 +35,118 @@ Ensure you have the following installed on your system
 
 <details>
 <summary>GNOME Extensions</summary>
-  - User Extensions
-    - App Hider
-    - Applications Overview Tooltip
-    - Bedtime Mode
-    - Clipboard History
-    - Display Scale Switcher
-    - Gravatar
-    - GSConnect
-    - Just Perfection
-    - Notification Banner Reloaded
-    - Open Bar (disabled for performance)
-    - PiP on top
-    - Quick Setting Tweaker
-    - Quick Settings Audio Devices Renamer
-    - Removable Drive Menu
-    - spotify-tray
-    - Status Area Horizontal Spacing
-    - Tactile
-    - User Avater in Quick Settings
-    - Vitals
-  - System Extensions
-    - Appindicator and KStatusNotifierItem Support
-    - Background Logo
+- User Extensions
+  - App Hider
+  - Applications Overview Tooltip
+  - Bedtime Mode
+  - Clipboard History
+  - Display Scale Switcher
+  - Gravatar
+  - GSConnect
+  - Just Perfection
+  - Notification Banner Reloaded
+  - Open Bar (disabled for performance)
+  - PiP on top
+  - Quick Setting Tweaker
+  - Quick Settings Audio Devices Renamer
+  - Removable Drive Menu
+  - spotify-tray
+  - Status Area Horizontal Spacing
+  - Tactile
+  - User Avater in Quick Settings
+  - Vitals
+- System Extensions
+  - Appindicator and KStatusNotifierItem Support
+  - Background Logo
 </details>
 <details>
 <summary>General Productivity</summary>
-  - GUI
-    - Backups (provided by `deja-dup`) for Home Directory backups
-    - [Firefox](https://www.mozilla.org/en-US/firefox/ ) (Web Browser)
-      - Extensions:
-        - ProtonPass
-        - ProtonVPN
-        - UBlock Origin
-        - Privacy Badger
-        - Dark Reader
-        - Flagfox
-        - Tree Style Tab
-    - [Obsidian](https://obsidian.md/ ) (Note Taking) - config occurs via Sync plugin
-      - Theme: Minimal
-      - (Community) Plugins:
-        - Highightr
-        - Calendar
-        - Periodic Notes
-        - Folder Notes
-        - Waypoint
-        - Hider
-        - Style Settings
-        - Minimal Theme Settings
-    - [Synfig](https://www.synfig.org/ ) (Animation Software)
-    - [Godot](https://godotengine.org/ ) (Game Egnine)
-    - Google Chrome (Keyboard Training via zsa.io) - not included. download urself
-    - [ LibreOffice Suite ](https://www.libreoffice.org/ ) (Office Productivity Suite)
-      - [ Vibreoffice ](https://github.com/seanyeh/vibreoffice )
-      - CodeHighlighter
-    - ProtonMail (Mail & Calendar) - not included. download urself
-    - ProtonVPN (VPN Client) - not included. download urself
+- GUI
+  - Backups (provided by `deja-dup`) for Home Directory backups
+  - [Firefox](https://www.mozilla.org/en-US/firefox/ ) (Web Browser)
+    - Extensions:
+      - ProtonPass
+      - ProtonVPN
+      - UBlock Origin
+      - Privacy Badger
+      - Dark Reader
+      - Flagfox
+      - Tree Style Tab
+  - [Obsidian](https://obsidian.md/ ) (Note Taking) - config occurs via Sync plugin
+    - Theme: Minimal
+    - (Community) Plugins:
+      - Highightr
+      - Calendar
+      - Periodic Notes
+      - Folder Notes
+      - Waypoint
+      - Hider
+      - Style Settings
+      - Minimal Theme Settings
+  - [Synfig](https://www.synfig.org/ ) (Animation Software)
+  - [Godot](https://godotengine.org/ ) (Game Egnine)
+  - Google Chrome (Keyboard Training via zsa.io) - not included. download urself
+  - [ LibreOffice Suite ](https://www.libreoffice.org/ ) (Office Productivity Suite)
+    - [ Vibreoffice ](https://github.com/seanyeh/vibreoffice )
+    - CodeHighlighter
+  - ProtonMail (Mail & Calendar) - not included. download urself
+  - ProtonVPN (VPN Client) - not included. download urself
 </details>
 <details>
 <summary>Development Tools</summary>
-  - [WezTerm](https://wezfurlong.org/wezterm/ ) (terminal emulator)
-  - Bash (CLI)
-    - [Git](https://git-scm.com/ )
-    - [GNU Stow](https://www.gnu.org/software/stow/ )
-    - [Bat](https://github.com/sharkdp/bat ) (`cat` improvement)
-    - Bats (Bash test framework)
-    - [LSD](https://github.com/lsd-rs/lsd ) (prettier `ls`)
-    - [rsync](https://rsync.samba.org/ ) for Obsidian Vault backup to local folder.
-    - (Starship)[https://github.com/starship/starship] (nice prompt)
-    - [TLDR](https://github.com/tldr-pages/tldr )
-    - [NeoVIM](https://github.com/neovim/neovim )
-      - Plugins:
-        - Colorschemes:
-          - Catppuccin
-        - [Kickstart](https://github.com/nvim-lua/kickstart.nvim ) defaults:
-          - Autopairs
-          - Cmp
-          - Conform
-          - Debug
-          - Git Signs
-          - Indent Line
-          - Lint
-          - LSP Config
-          - Mini
-          - NeoTree
-          - Telescope
-          - Todo Comments
-          - Treesitter
-          - WhichKey
-        - User plugins:
-          - Auto Dark Mode
-          - Vim-Bundler
-          - Vim-Commentary
-          - Vim-Endwise
-          - Vim-Fugitive
-          - Vim-Rails
-          - Vim-Tmux
-          - Neoscroll (remove?)
-          - wezterm/nvim interaction plugin (tbd & added)
-   - Tmux (to be removed as WezTerm becomes main)
-      - Plugins:
-        - TPM (plugin manager)
-        - Tmux-Sensible
-        - Tmux-Which-Key
-  - Programming Languages
-    - elm
-    - javascript
-    - julia
-    - python
-    - ruby
-    - rust
-    - vala
-    - zig
+- [WezTerm](https://wezfurlong.org/wezterm/ ) (terminal emulator)
+- Bash (CLI)
+  - [Git](https://git-scm.com/ )
+  - [GNU Stow](https://www.gnu.org/software/stow/ )
+  - [Bat](https://github.com/sharkdp/bat ) (`cat` improvement)
+  - Bats (Bash test framework)
+  - [LSD](https://github.com/lsd-rs/lsd ) (prettier `ls`)
+  - [rsync](https://rsync.samba.org/ ) for Obsidian Vault backup to local folder.
+  - (Starship)[https://github.com/starship/starship] (nice prompt)
+  - [TLDR](https://github.com/tldr-pages/tldr )
+  - [NeoVIM](https://github.com/neovim/neovim )
+    - Plugins:
+      - Colorschemes:
+        - Catppuccin
+      - [Kickstart](https://github.com/nvim-lua/kickstart.nvim ) defaults:
+        - Autopairs
+        - Cmp
+        - Conform
+        - Debug
+        - Git Signs
+        - Indent Line
+        - Lint
+        - LSP Config
+        - Mini
+        - NeoTree
+        - Telescope
+        - Todo Comments
+        - Treesitter
+        - WhichKey
+      - User plugins:
+        - Auto Dark Mode
+        - Vim-Bundler
+        - Vim-Commentary
+        - Vim-Endwise
+        - Vim-Fugitive
+        - Vim-Rails
+        - Vim-Tmux
+        - Neoscroll (remove?)
+        - wezterm/nvim interaction plugin (tbd & added)
+ - Tmux (to be removed as WezTerm becomes main)
+    - Plugins:
+      - TPM (plugin manager)
+      - Tmux-Sensible
+      - Tmux-Which-Key
+- Programming Languages
+  - elm
+  - javascript
+  - julia
+  - python
+  - ruby
+  - rust
+  - vala
+  - zig
 </details>
 </details>
 
