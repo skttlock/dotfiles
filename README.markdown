@@ -63,6 +63,7 @@ Ensure you have the following installed on your system
 </details>
 <details>
 <summary>General Productivity</summary>
+
 - GUI
   - Backups (provided by `deja-dup`) for Home Directory backups
   - [Firefox](https://www.mozilla.org/en-US/firefox/ ) (Web Browser)
@@ -96,6 +97,7 @@ Ensure you have the following installed on your system
 </details>
 <details>
 <summary>Development Tools</summary>
+
 - [WezTerm](https://wezfurlong.org/wezterm/ ) (terminal emulator)
 - Bash (CLI)
   - [Git](https://git-scm.com/ )
