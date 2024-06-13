@@ -168,8 +168,6 @@ symbol = " "
 
 
 # colorscheme
-
-
 # Sets user-defined palette
 palette = "catppuccin_macchiato"
 
