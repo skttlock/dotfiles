@@ -55,6 +55,22 @@ fi
 
 # run flatpak installs
 if [ "$FLATPAK_FOUND" -eq 1 ]; then
+	# discord
+	echo -e "Installing: Discord via Flatpak."
+	flatpak install flathub -y com.discordapp.Discord
+	if [ $? -eq 0 ]; then
+		echo -e "${SUCCESS}Success:${RESET} Discord installed via Flatpak."
+		echo -e "Installing: Vencord via curl."
+		sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
+		if [ $? -eq 0 ]; then
+			echo -e "${SUCCESS}Success:${RESET} Vencord installed via curl."
+		else
+			echo -e "${ERROR}Failed:${RESET} Vencord install via curl."
+		fi
+	else
+		echo -e "${ERROR}Failed:${RESET} Discord install via Flatpak."
+	fi
+
 	# synfig, animation tool
 	echo -e "Installing: Synfig via Flatpak."
 	flatpak install flathub -y org.synfig.SynfigStudio
