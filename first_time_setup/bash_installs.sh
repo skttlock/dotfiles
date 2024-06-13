@@ -3,7 +3,16 @@
 
 echo -e "${INFO}Running:${RESET} bash_installs.sh"
 # general bash tools
-echo -e "Installing: NeoVIM, TMUX, Starship, Bat, LSD, TLDR, Bats, and GitHub-CLI via $PACKAGE_MANAGER."
+echo -e "Installing: Fastfetch, NeoVIM, TMUX, Starship, Bat, LSD, TLDR, Bats, and GitHub-CLI via $PACKAGE_MANAGER."
+
+echo -e "Installing: Fastfetch via $PACKAGE_MANAGER."
+sudo $PACKAGE_MANAGER install -y -q fastfetch
+if [ $? -eq 0 ]; then
+	echo -e "${SUCCESS}Success:${RESET} Fastfetch installed via $PACKAGE_MANAGER."
+else
+	echo -e "${ERROR}Failed:{$RESET} Fastfetch install."
+fi
+
 echo -e "Installing: NeoVIM via $PACKAGE_MANAGER."
 sudo $PACKAGE_MANAGER install -y -q neovim
 if [ $? -eq 0 ]; then

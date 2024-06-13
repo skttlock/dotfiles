@@ -1,5 +1,7 @@
 #!/bin/bash
 # called by install.sh
+#
+# TODO: seperate into functions
 
 echo -e "${INFO}Running:${RESET} app_installs.sh"
 # run default package manager installs
@@ -71,6 +73,10 @@ if [ "$FLATPAK_FOUND" -eq 1 ]; then
 		echo -e "${ERROR}Failed:${RESET} Discord install via Flatpak."
 	fi
 
+	# audactiy. audio editor
+	
+	# kdenlive. video editor
+
 	# synfig, animation tool
 	echo -e "Installing: Synfig via Flatpak."
 	flatpak install flathub -y org.synfig.SynfigStudio
@@ -110,6 +116,26 @@ if [ "$FLATPAK_FOUND" -eq 1 ]; then
 fi
 
 echo -e "${TIP}NOTE:${RESET} To install Excalidraw and FirefoxPWA, follow the instructions on the FirefoxPWA Extension page."
-echo -e "${TIP}NOTE:${RESET} To install ProtonMail and ProtonVPN, find the packages on their website."
+echo -e "${TIP}NOTE:${RESET} To install ProtonMail, ProtonPass, and ProtonVPN, find the packages on their website."
 
 echo -e "${INFO}Completed:${RESET} app_installs.sh"
+
+install_Utils() {
+	# command ...
+}
+
+install_AV_editors() {
+	# command ...
+}
+
+install_Note_editors() {
+	# command ...
+}
+
+install_Communication_apps() {
+	# command ...
+}
+
+install_Misc_apps() {
+	# command ...
+}

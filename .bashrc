@@ -58,6 +58,9 @@ alias cat='bat_alias_wrapper'
 #vi/vim -> nvim
 alias vi='nvim'
 alias vim='nvim'
+#
+# fetch -> fastfetch
+alias fetch="fastfetch"
 
 # User specific prompt
 PS1='\[\e[92m\]\H\[\e[0m\]:\[\e[92m\]\w\[\e[0m\]\\$ '
