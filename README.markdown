@@ -106,7 +106,7 @@ Ensure you have the following installed on your system
   - Bats (Bash test framework)
   - [LSD](https://github.com/lsd-rs/lsd ) (prettier `ls`)
   - [rsync](https://rsync.samba.org/ ) for Obsidian Vault backup to local folder.
-  - (Starship)[https://github.com/starship/starship] (nice prompt)
+  - [ Starship ](https://github.com/starship/starship) (nice prompt)
   - [TLDR](https://github.com/tldr-pages/tldr )
   - [NeoVIM](https://github.com/neovim/neovim )
     - Plugins:
@@ -160,8 +160,8 @@ Notes:
 - Voyager keyboard to have macros to handle keybinds.
 #### Leader Keys
   - GNOME = SUPER
-  - Tactile = SUPER + W... change to T?
-  - WezTerm = SUPER + 
+  - Tactile = SUPER + W... change?
+  - WezTerm = SUPER + ... E?
   - NeoVIM = SPACE... add SUPER?
   - 
 #### Defaults
@@ -169,6 +169,10 @@ Notes:
   - Close current window
   - Open a new tab
   - Close current tab
+  - Prev/Next Workspace
+  - Prev/Next Application
+  - Prev/Next Window
+  - Prev/Next Tab = (SHIFT) CTRL + TAB
 
 ##### OS-Wide
   - (SHIFT) + SUPER/ALT + TAB = (Reverse) Switch Application
@@ -257,12 +261,19 @@ use window macros for panes?
   - [x] rewrite with mise
   - [x] retest
   - [x] fix errors
-  - [ ] repeat
   - [ ] finalize functionality
+    - [ ] put installs into individual functions
+    - [ ] put status printing into individual functions?
     - [ ] options?
-    - [ ] make shell-agnostic?
+      - [ ] --all (default)
+      - [ ] --no-X (by category)
+      - [ ] --only [args] (by software)
+      - [ ] ,,,
     - [ ] uninstall?
+    - [ ] finish distro-agnostism
+    - [ ] impl shell-agnostism?
   - [ ] retest install scripts
+  - [x] fix new errors
   - [ ] test on Ubuntu
 ## Other Scripts
 - [ ] common-use scripts...?
@@ -279,15 +290,18 @@ use window macros for panes?
 - [ ] stuff to add to dotfiles
   - [ ] gnome extensions + extension settings
   - [ ] gnome tweaks + settings
+  - [ ] kdenlive
+  - [ ] audactity
   - [x] starship
   - [x] discord desktop
   - [x] vencord (does this break discord rules?)
-  - [ ] fastfetch
+  - [x] fastfetch
   - [ ] vibreoffice
-  - [ ] pomotroid ?
 - [ ] might rice
   - to test/add:
     - [x] fastfetch
+    - [x] pitvi vs kdenlive
+    - [x] kdenlive
     - [ ] vibreoffice
     - [x] fzf
     - [ ] atuin?
