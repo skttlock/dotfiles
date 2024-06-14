@@ -20,11 +20,20 @@ RESET='\e[0m'
 
 RESET_DIR=$(pwd)
 
-# usage() {
-# echo "Usage: $0 [-a] [-b]"
-# exit 1
-# }
-#
+usage() {
+	echo "Usage: $0 [options]"
+	echo "Options:"
+	echo "	-h,	--help		Show this message and exit"
+	echo "	-y,	--assume-yes	Accept all"
+	echo "	-q,	--quiet		Minimum output mode"
+	echo "		--verbose	Verbose output mode"
+	echo "	-o,	--log		<file> Specify a log file to write to"
+	echo "		--noexec, --dryrun"
+	exit 1
+}
+	# echo "	-a,	--all		Install everything (default)"
+	# echo "	-s,	--select	Show software selection menu"
+
 # getopts
 
 #?TODO: add options: full install, custom install, etc.
