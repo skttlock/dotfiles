@@ -199,6 +199,10 @@ Notes:
   - Minimize
   - Grid-based Split = TACTILE + Point 1 + Point 2
 ##### WezTerm: Terminal
+##### NeoVIM: Text Editor
+  - Fold Commands: z
+
+
 
 #### [ GNOME ](https://help.gnome.org/users/gnome-help/stable/keyboard.html.en ):
 - hint: `gsettings list-recursively | grep -i "keybinding"`
