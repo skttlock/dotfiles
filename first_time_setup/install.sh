@@ -20,6 +20,9 @@ RESET='\e[0m'
 
 RESET_DIR=$(pwd)
 
+#?TODO: add options: full install, custom install, etc.
+# add selections... whole thing in selections?
+
 usage() {
 	echo "Usage: $0 [options]"
 	echo "Options:"
@@ -36,33 +39,61 @@ usage() {
 
 # getopts
 
-#?TODO: add options: full install, custom install, etc.
 echo -e "${STAGE}Start of install.sh script.${RESET}"
 
-echo -e "${INFO}Detecting:${RESET} operating system."
-if [ -f /etc/os-release ]; then
-	. /etc/os-release
-	echo -e "${SUCCESS}Detected:${RESET}"
-	echo -e "Operating System: $NAME"
-	echo -e "Version: $VERSION"
-else
-	echo -e "${ERROR}/etc/os-release file not found.${RESET}"
-	echo -e "${STAGE}Exiting Program.${RESET}"
-	exit 1
-fi
+echo -e "${STAGE}Select install options:${RESET}"
+select item in "all" "programming languages" "office applications" "art applications" "exit";
+do
+	echo "$item"
+	case "$item" in
+		"all")
+			echo "you put all, installation will proceed and then exit."
+			;;
+		"programming languages")
+			echo "you selected prog languages"
+			;;
+		"office applications")
+			echo "you selected office applications"
+			;;
+		"exit")
+			echo "cya"
+			break
+			;;
+		*)
+			echo -e "${ERROR}Invalid selection detected. How'd you do that?${RESET}"
+			;;
+	esac
+done
 
-echo -e "${INFO}Detecting:${RESET} package manager(s)."
-# detect the package manager
-if [ -x "$(command -v apt)" ]; then
-	PACKAGE_MANAGER="apt"
-elif [ -x "$(command -v dnf)" ]; then
-	PACKAGE_MANAGER="dnf"
-else
-	echo -e "${ERROR}Unsupported package manager.${RESET}"
-	echo -e "${STAGE}Exiting Program.${RESET}"
-	exit 1
-fi
-echo -e "${SUCCESS}Detected:${RESET} $PACKAGE_MANAGER."
+
+detect_os() {
+	echo -e "${INFO}Detecting:${RESET} operating system."
+	if [ -f /etc/os-release ]; then
+		. /etc/os-release
+		echo -e "${SUCCESS}Detected:${RESET}"
+		echo -e "Operating System: $NAME"
+		echo -e "Version: $VERSION"
+	else
+		echo -e "${ERROR}/etc/os-release file not found.${RESET}"
+		echo -e "${STAGE}Exiting Program.${RESET}"
+		exit 1
+	fi
+}
+
+detect_package_manager() {
+	echo -e "${INFO}Detecting:${RESET} package manager(s)."
+	# detect the package manager
+	if [ -x "$(command -v apt)" ]; then
+		PACKAGE_MANAGER="apt"
+	elif [ -x "$(command -v dnf)" ]; then
+		PACKAGE_MANAGER="dnf"
+	else
+		echo -e "${ERROR}Unsupported package manager.${RESET}"
+		echo -e "${STAGE}Exiting Program.${RESET}"
+		exit 1
+	fi
+	echo -e "${SUCCESS}Detected:${RESET} $PACKAGE_MANAGER."
+}
 
 # detect flatpak presence.
 echo -e "${INFO}Detecting:${RESET} flatpak."
