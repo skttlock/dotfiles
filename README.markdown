@@ -39,6 +39,7 @@ Ensure you have the following installed on your system
 - User Extensions
   - App Hider
   - Applications Overview Tooltip
+  - Auto Move Applications
   - Bedtime Mode
   - Clipboard History
   - Display Scale Switcher
@@ -160,18 +161,20 @@ Notes:
 - Voyager keyboard to have macros to handle keybinds.
 #### Leader Keys
   - GNOME = SUPER
-  - Tactile = SUPER + W... change?
-  - WezTerm = SUPER + ... E?
-  - NeoVIM = SPACE... add SUPER?
-  - 
+  - TACTILE = SUPER + W... change?
+  - WEZTERM = SUPER + ... E?
+  - NEOVIM = SPACE... add SUPER?
+  - ...
 #### Defaults
   - Open a new window
   - Close current window
   - Open a new tab
   - Close current tab
   - Prev/Next Workspace
-  - Prev/Next Application
+  - Prev/Next Application = (SHIFT) + SUPER/ALT + TAB
+  - Prev/Next Application in Workspace
   - Prev/Next Window
+  - Prev/Next Window of Application
   - Prev/Next Tab = (SHIFT) CTRL + TAB
 
 ##### OS-Wide
@@ -184,19 +187,18 @@ Notes:
   - Close/Open Application
   - Close/Open Window = (SHIFT) CTRL + W
   - Close/Open Tab = (SHIFT) CTRL + T
-##### Switching
+##### Gnome: Switching
   - Prev/Next Workspace
   - Prev/Next Application
   - Prev/Next Window
   - Prev/Next Tab = (SHIFT) CTRL + TAB
-##### Sizing/Positioning 
-  - Prev/Next Monitor
-  - Maximize
+  - Splite = SUPER + ARROW_KEY
+##### Tactile: Sizing/Positioning 
+  - Prev/Next Monitor = TACTILE -> (SHIFT) + SPACE
+  - Maximize = SUPER + UP or TACTILE -> 
   - Minimize
-  - Left split
-  - Right split
-  - Up split
-  - Down split
+  - Grid-based Split = TACTILE + Point 1 + Point 2
+##### WezTerm: Terminal
 
 #### [ GNOME ](https://help.gnome.org/users/gnome-help/stable/keyboard.html.en ):
 - hint: `gsettings list-recursively | grep -i "keybinding"`
@@ -234,9 +236,9 @@ use window macros for panes?
 - [/] link external github repos, i.e. rbenv, plugins, bash scripts, etc.
 ## Config Stuff
 - [ ] Voyager keybinds
+  - ctrl + a macro lol? - double tap a?
   - application specific macros:
     - prev/next tab macros
-    - 
     - wezterm tab management...
 - [ ] keybinds:
   - [ ] Make Reliable/Sensible Defaults
@@ -248,6 +250,7 @@ use window macros for panes?
 - [ ] determine:
   - [ ] wezterm functionality to keep or remove
     - [ ] command palette?
+  - [ ] use starship + wezterm to name tabs as "process: filename:" ?
 - [ ] test i3, other WMs
 - [ ] find a better way to manage keybinds
   - test:
@@ -265,14 +268,22 @@ use window macros for panes?
     - [ ] put installs into individual functions
     - [ ] put status printing into individual functions?
     - [ ] options?
-      - [ ] --all (default)
-      - [ ] --no-X (by category)
-      - [ ] --only [args] (by software)
-      - [ ] ,,,
+      - standard
+        - [ ] --help
+        - [ ] --all (install all)
+        - [ ] --list
+        - [ ] -o  (output log filename)
+        - [ ] --quiet
+        - [ ] --verbose
+        - [ ] --assume-yes
+        - [ ] --noexec
+        - [ ] --debug
+    - [ ] select menu (when no --all)
     - [ ] uninstall?
     - [ ] finish distro-agnostism
     - [ ] impl shell-agnostism?
   - [ ] retest install scripts
+  - [ ] implement BATS
   - [x] fix new errors
   - [ ] test on Ubuntu
 ## Other Scripts

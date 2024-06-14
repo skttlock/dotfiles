@@ -1,7 +1,8 @@
 #!/bin/bash
 # called by install.sh
 #
-# TODO: seperate into functions
+# TODO: - seperate into functions
+#	- other lsp suggestions
 
 echo -e "${INFO}Running:${RESET} app_installs.sh"
 # run default package manager installs
@@ -117,25 +118,31 @@ fi
 
 echo -e "${TIP}NOTE:${RESET} To install Excalidraw and FirefoxPWA, follow the instructions on the FirefoxPWA Extension page."
 echo -e "${TIP}NOTE:${RESET} To install ProtonMail, ProtonPass, and ProtonVPN, find the packages on their website."
+echo -e "${TIP}NOTE:${RESET} To install Keymapp, follow the instructions on the ZSA.io page."
 
 echo -e "${INFO}Completed:${RESET} app_installs.sh"
 
-install_Utils() {
+install_utils() {
 	# command ...
+	echo "install_utils function"
 }
 
 install_AV_editors() {
 	# command ...
+	echo "install_AV_editors function"
 }
 
 install_Note_editors() {
 	# command ...
+	echo "install_Note_editors function"
 }
 
 install_Communication_apps() {
 	# command ...
+	echo "install_Communication_apps function"
 }
 
 install_Misc_apps() {
 	# command ...
+	echo "install_Misc_apps function"
 }

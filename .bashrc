@@ -70,6 +70,12 @@ export EDITOR=nvim
 
 unset rc
 
+#set window/tab title via starship to
+# function set_win_title(){
+#     echo -ne "\033]0; $(basename "$PWD") \007"
+# }
+# starship_precmd_user_func="set_win_title"
+
 # Shell Inits
 #
 . "$HOME/.cargo/env"

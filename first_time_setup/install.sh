@@ -20,6 +20,13 @@ RESET='\e[0m'
 
 RESET_DIR=$(pwd)
 
+# usage() {
+# echo "Usage: $0 [-a] [-b]"
+# exit 1
+# }
+#
+# getopts
+
 #?TODO: add options: full install, custom install, etc.
 echo -e "${STAGE}Start of install.sh script.${RESET}"
 
