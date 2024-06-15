@@ -73,7 +73,7 @@ usage() {
 
 echo -e "${STAGE}Start of install.sh script.${RESET}"
 
-echo -e "${STAGE}Select option:${RESET}"
+echo -e "${STAGE}Select option (1-9):${RESET}"
 select item in "all" "exit" "update" "list" "programming languages" "cli apps" "dev apps" "general applications" "art applications" ;
 do
 	echo "$item"
@@ -84,6 +84,8 @@ do
 			;;
 		"update")
 			echo "[Update] selected. Updating all software."
+
+			echo "[Update] finished."
 			;;
 		"list")
 			echo "[List] selected, listing all software & their respective category and returning to this menu."
@@ -97,18 +99,32 @@ do
 			echo "${CLI_Apps[*]}"
 			echo -e "${INFO}Dev Applications:${RESET}"
 			echo "${Dev_Apps[*]}"
+			echo "[List] finished."
 			;;
 		"all")
 			echo "[All] selected, installation will proceed and then exit."
+
+			break
 			;;
 		"programming languages")
 			echo "[Programming Languages] selected, installation will proceed and return to this menu."
+
+			echo "[Programming Languages] finished."
 			;;
 		"general applications")
 			echo "[General Applications] selected, installation will proceed and return to this menu."
+
+			echo "[General Applications] finished."
 			;;
 		"art applications")
 			echo "[Art Applications] selected, installation will proceed and return to this menu."
+
+			echo "[Art Applications] finished."
+			;;
+		"cli apps")
+			echo "[CLI Applications' selected, installation will proceed and return to this menu."
+
+			echo "[CLI Applications] finished."
 			;;
 		*)
 			echo -e "${ERROR}Invalid selection detected. How'd you do that?${RESET}"
