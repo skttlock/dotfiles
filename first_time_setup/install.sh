@@ -22,8 +22,14 @@ RESET='\e[0m'
 RESET_DIR=$(pwd)
 
 # Define arrays (dictionaries?) of things to be installed
-Languages=()
-Softwares=()
+Languages=('rust' 'vala' 'crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'sqlite' 'typescript' 'zig')
+Art_Apps=('audacity' 'gimp' 'kdenlive' 'synfig')
+CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'tmux' 'tldr')
+Dev_Apps=('wezterm')
+General_Apps=('authenticator' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsidian' 'wike')
+# Extensions=()
+
+# Define dictionary of install command to use?
 
 #?TODO: add options: full install, custom install, etc.
 # add selections... whole thing in selections?
@@ -42,12 +48,12 @@ usage() {
 	# echo "	-a,	--all		Install everything (default)"
 	# echo "	-s,	--select	Show software selection menu"
 
-# getopts
+# TODO: getopts
 
 echo -e "${STAGE}Start of install.sh script.${RESET}"
 
-echo -e "${STAGE}Select install options:${RESET}"
-select item in "all" "programming languages" "office applications" "art applications" "exit";
+echo -e "${STAGE}Select option:${RESET}"
+select item in "all" "exit" "update" "list" "programming languages" "cli apps" "dev apps" "general applications" "art applications" ;
 do
 	echo "$item"
 	case "$item" in
@@ -58,14 +64,27 @@ do
 		"update")
 			echo "[Update] selected. Updating all software."
 			;;
+		"list")
+			echo "[List] selected, listing all software & their respective category and returning to this menu."
+			echo -e "${INFO}Programming Languages:${RESET}"
+			echo "${Languages[*]}"
+			echo -e "${INFO}Art Applications:${RESET}"
+			echo "${Art_Apps[*]}"
+			echo -e "${INFO}General Applications:${RESET}"
+			echo "${General_Apps[*]}"
+			echo -e "${INFO}CLI Applications:${RESET}"
+			echo "${CLI_Apps[*]}"
+			echo -e "${INFO}Dev Applications:${RESET}"
+			echo "${Dev_Apps[*]}"
+			;;
 		"all")
 			echo "[All] selected, installation will proceed and then exit."
 			;;
 		"programming languages")
 			echo "[Programming Languages] selected, installation will proceed and return to this menu."
 			;;
-		"office applications")
-			echo "[Office Applications] selected, installation will proceed and return to this menu."
+		"general applications")
+			echo "[General Applications] selected, installation will proceed and return to this menu."
 			;;
 		"art applications")
 			echo "[Art Applications] selected, installation will proceed and return to this menu."
@@ -74,6 +93,8 @@ do
 			echo -e "${ERROR}Invalid selection detected. How'd you do that?${RESET}"
 			;;
 	esac
+	echo -e "${STAGE}Select another option:${RESET}"
+	REPLY=
 done
 
 
@@ -106,48 +127,54 @@ detect_package_manager() {
 	echo -e "${SUCCESS}Detected:${RESET} $PACKAGE_MANAGER."
 }
 
-# detect flatpak presence.
-echo -e "${INFO}Detecting:${RESET} flatpak."
-if [ -x "$(command -v flatpak)" ]; then
-	echo -e "${SUCCESS}Detected:${RESET} flatpak."
-	echo -e "Adding repo: flathub."
-	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-	echo -e "Updating: flatpak."
-	flatpak update -y --noninteractive
-	echo -e "${SUCCESS}Updates completed.${RESET}"
-	FLATPAK_FOUND=1
-else
-	echo -e "${WARNING}Skipping:${RESET} Flatpak installs; Flatpak is not present."
-fi
-
-# # update packages
-echo -e "Updating: $PACKAGE_MANAGER."
-echo -e "This may take a minute."
-sudo $PACKAGE_MANAGER update -y -q
-sudo $PACKAGE_MANAGER clean packages -y -q
-echo -e "${SUCCESS}Updates completed.${RESET}"
-
-# run the install scripts found in this directory.
-echo -e "${STAGE}Running install subscripts.${RESET}"
-source bash_installs.sh
-source programming_language_installs.sh
-source font_installs.sh
-source wallpaper_installs.sh
-source app_installs.sh
-echo -e "${STAGE}Finished install scripts.${RESET}"
-
-# wrap things up
-echo -e "Updating: $PACKAGE_MANAGER."
-echo -e "This may take a minute."
-sudo $PACKAGE_MANAGER update -y -q
-echo -e "${SUCCESS}Updates complete.${RESET}"
-echo -e "${INFO}Cleaning-up:${RESET} $PACKAGE_MANAGER."
-sudo $PACKAGE_MANAGER clean packages
-echo -e "${SUCCESS}Clean-up complete.${RESET}"
-
-echo -e "${SUCCESS}Install complete.${RESET}"
+update() {
+	echo "update method"
+}
 
 echo -e "${STAGE}Finished install.sh.${RESET}"
 
-echo -e "Please restart your shell to see full changes."
+# # detect flatpak presence.
+# echo -e "${INFO}Detecting:${RESET} flatpak."
+# if [ -x "$(command -v flatpak)" ]; then
+# 	echo -e "${SUCCESS}Detected:${RESET} flatpak."
+# 	echo -e "Adding repo: flathub."
+# 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+#
+# 	echo -e "Updating: flatpak."
+# 	flatpak update -y --noninteractive
+# 	echo -e "${SUCCESS}Updates completed.${RESET}"
+# 	FLATPAK_FOUND=1
+# else
+# 	echo -e "${WARNING}Skipping:${RESET} Flatpak installs; Flatpak is not present."
+# fi
+#
+# # # update packages
+# echo -e "Updating: $PACKAGE_MANAGER."
+# echo -e "This may take a minute."
+# sudo $PACKAGE_MANAGER update -y -q
+# sudo $PACKAGE_MANAGER clean packages -y -q
+# echo -e "${SUCCESS}Updates completed.${RESET}"
+#
+# # run the install scripts found in this directory.
+# echo -e "${STAGE}Running install subscripts.${RESET}"
+# source bash_installs.sh
+# source programming_language_installs.sh
+# source font_installs.sh
+# source wallpaper_installs.sh
+# source app_installs.sh
+# echo -e "${STAGE}Finished install scripts.${RESET}"
+#
+# # wrap things up
+# echo -e "Updating: $PACKAGE_MANAGER."
+# echo -e "This may take a minute."
+# sudo $PACKAGE_MANAGER update -y -q
+# echo -e "${SUCCESS}Updates complete.${RESET}"
+# echo -e "${INFO}Cleaning-up:${RESET} $PACKAGE_MANAGER."
+# sudo $PACKAGE_MANAGER clean packages
+# echo -e "${SUCCESS}Clean-up complete.${RESET}"
+#
+# echo -e "${SUCCESS}Install complete.${RESET}"
+#
+# echo -e "${STAGE}Finished install.sh.${RESET}"
+#
+# echo -e "Please restart your shell to see full changes."
