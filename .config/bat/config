@@ -1,0 +1,6 @@
+# Set the theme to base16-256
+--theme="base16-256"
+
+# Set style to have grid, line numbers, git symbols, and header
+--style=changes,header,header-filesize,grid,numbers
+

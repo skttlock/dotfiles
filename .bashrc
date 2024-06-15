@@ -29,7 +29,7 @@ sys_color_scheme_is_dark() {
     condition=$(gsettings get org.gnome.desktop.interface color-scheme)
     # Remove leading and trailing single quotes
     condition=$(echo "$condition" | tr -d "[:space:]'")
-    if [ $condition == "prefer-dark" ]; then
+    if [ "$condition" == "prefer-dark" ]; then
         return 0
     else
         return 1
@@ -41,19 +41,8 @@ alias ls='lsd --group-dirs=first'
 alias lsa='lsd --all --group-dirs=first'
 alias lstree='lsd --all --tree --depth=2 --group-dirs=first'
 #
-#cat -> bat but the theme based on color-scheme
-bat_alias_wrapper() {
-    #get color scheme
-    sys_color_scheme_is_dark
-    if [[ $? -eq 0 ]]; then
-        # bat command with dark color scheme
-        bat --theme=gruvbox-dark "$@"
-    else
-        # bat command with light color scheme
-        bat --theme=gruvbox-light "$@"
-    fi
-}
-alias cat='bat_alias_wrapper'
+#cat -> bat
+alias cat='bat'
 #
 #vi/vim -> nvim
 alias vi='nvim'
