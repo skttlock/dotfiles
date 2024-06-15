@@ -30,6 +30,27 @@ General_Apps=('authenticator' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsi
 # Extensions=()
 
 # Define dictionary of install command to use?
+# declare -A Languages #
+# Languages[rust]=""
+# Languages[vala]=""
+# Languages[crystal]="mise"
+# Languages[elm]="mise"
+# Languages[julia]="mise"
+# Languages[mercury]="mise"
+# Languages[nodejs]="mise"
+# Languages[ruby]="mise"
+# Languages[sqlite]="mise"
+# Languages[typescript]="mise"
+# Languages[zig]=""
+#
+# declare -A Art_Apps #
+# Art_Apps[audacity]="$PACKAGE_MANAGER"
+# Art_Apps[gimp]="$PACKAGE_MANAGER"
+# Art_Apps[kdenlive]="$PACKAGE_MANAGER"
+# Art_Apps[synfig]="$PACKAGE_MANAGER"
+# 
+# declare -A CLI_Apps #
+# CLI_Apps[bat]="$PACKAGE_MANAGER"
 
 #?TODO: add options: full install, custom install, etc.
 # add selections... whole thing in selections?
@@ -45,7 +66,7 @@ usage() {
 	echo "		--noexec, --dryrun"
 	exit 1
 }
-	# echo "	-a,	--all		Install everything (default)"
+	# echo "	-a,	--all		Install everything"
 	# echo "	-s,	--select	Show software selection menu"
 
 # TODO: getopts
@@ -114,7 +135,6 @@ detect_os() {
 
 detect_package_manager() {
 	echo -e "${INFO}Detecting:${RESET} package manager(s)."
-	# detect the package manager
 	if [ -x "$(command -v apt)" ]; then
 		PACKAGE_MANAGER="apt"
 	elif [ -x "$(command -v dnf)" ]; then
@@ -127,26 +147,28 @@ detect_package_manager() {
 	echo -e "${SUCCESS}Detected:${RESET} $PACKAGE_MANAGER."
 }
 
+detect_flatpak() {
+	echo -e "${INFO}Detecting:${RESET} flatpak."
+	if [ -x "$(command -v flatpak)" ]; then
+		echo -e "${SUCCESS}Detected:${RESET} flatpak."
+		echo -e "Adding repo: flathub."
+		flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+		echo -e "Updating: flatpak."
+		flatpak update -y --noninteractive
+		echo -e "${SUCCESS}Updates completed.${RESET}"
+		FLATPAK_FOUND=1
+	else
+		echo -e "${WARNING}Skipping:${RESET} Flatpak installs; Flatpak is not present."
+	fi
+}
+
 update() {
 	echo "update method"
 }
 
 echo -e "${STAGE}Finished install.sh.${RESET}"
 
-# # detect flatpak presence.
-# echo -e "${INFO}Detecting:${RESET} flatpak."
-# if [ -x "$(command -v flatpak)" ]; then
-# 	echo -e "${SUCCESS}Detected:${RESET} flatpak."
-# 	echo -e "Adding repo: flathub."
-# 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-#
-# 	echo -e "Updating: flatpak."
-# 	flatpak update -y --noninteractive
-# 	echo -e "${SUCCESS}Updates completed.${RESET}"
-# 	FLATPAK_FOUND=1
-# else
-# 	echo -e "${WARNING}Skipping:${RESET} Flatpak installs; Flatpak is not present."
-# fi
 #
 # # # update packages
 # echo -e "Updating: $PACKAGE_MANAGER."
