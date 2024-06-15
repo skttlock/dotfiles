@@ -201,6 +201,7 @@ Notes:
 ##### WezTerm: Terminal
 ##### NeoVIM: Text Editor
   - Fold Commands: z
+  - Switch Active Window (split) = CTRL + H/J/K/L
 
 
 
