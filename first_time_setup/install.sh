@@ -18,7 +18,12 @@ WARNING=$YELLOW
 TIP=$MAGENTA
 RESET='\e[0m'
 
+# Define variables for directory switching
 RESET_DIR=$(pwd)
+
+# Define arrays (dictionaries?) of things to be installed
+Languages=()
+Softwares=()
 
 #?TODO: add options: full install, custom install, etc.
 # add selections... whole thing in selections?
@@ -46,18 +51,24 @@ select item in "all" "programming languages" "office applications" "art applicat
 do
 	echo "$item"
 	case "$item" in
-		"all")
-			echo "you put all, installation will proceed and then exit."
-			;;
-		"programming languages")
-			echo "you selected prog languages"
-			;;
-		"office applications")
-			echo "you selected office applications"
-			;;
 		"exit")
 			echo "cya"
 			break
+			;;
+		"update")
+			echo "[Update] selected. Updating all software."
+			;;
+		"all")
+			echo "[All] selected, installation will proceed and then exit."
+			;;
+		"programming languages")
+			echo "[Programming Languages] selected, installation will proceed and return to this menu."
+			;;
+		"office applications")
+			echo "[Office Applications] selected, installation will proceed and return to this menu."
+			;;
+		"art applications")
+			echo "[Art Applications] selected, installation will proceed and return to this menu."
 			;;
 		*)
 			echo -e "${ERROR}Invalid selection detected. How'd you do that?${RESET}"
