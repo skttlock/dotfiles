@@ -48,7 +48,6 @@ Ensure you have the following installed on your system
   - Just Perfection
   - Notification Banner Reloaded
   - Open Bar (disabled for performance)
-  - PiP on top
   - Quick Setting Tweaker
   - Quick Settings Audio Devices Renamer
   - Removable Drive Menu
@@ -161,8 +160,9 @@ Notes:
 - Voyager keyboard to have macros to handle keybinds.
 #### Leader Keys
   - GNOME = SUPER
-  - TACTILE = SUPER + W... change?
-  - WEZTERM = SUPER + ... E?
+    - SWITCHER = SUPER + E
+    - TACTILE = SUPER + W... change?
+  - WEZTERM = SUPER + ... ?
   - NEOVIM = SPACE... add SUPER?
   - ...
 #### Defaults
@@ -188,11 +188,13 @@ Notes:
   - Close/Open Window = (SHIFT) CTRL + W
   - Close/Open Tab = (SHIFT) CTRL + T
 ##### Gnome: Switching
+  - Window Switcher = SUPER + E
   - Prev/Next Workspace
   - Prev/Next Application
   - Prev/Next Window
   - Prev/Next Tab = (SHIFT) CTRL + TAB
-  - Splite = SUPER + ARROW_KEY
+  - Switch Focus = SUPER + H/J/K/L
+  <!-- - Split = SUPER + ARROW_KEY -->
 ##### Tactile: Sizing/Positioning 
   - Prev/Next Monitor = TACTILE -> (SHIFT) + SPACE
   - Maximize = SUPER + UP or TACTILE -> 
