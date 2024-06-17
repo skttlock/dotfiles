@@ -1,0 +1,100 @@
+[
+	{
+		"name": "System-Wide",
+		"shortcuts": [
+			{
+				"key": "SUPER",
+				"description": "Enter overview"
+			},
+			{
+				"key": "SUPER + W",
+				"description": "Tactile leader key"
+			},
+			{
+				"key": "SUPER + E",
+				"description": "Switcher leader key"
+			},
+			{
+				"key": "SHIFT + CTRL + ALT + SPACE",
+				"description": "Show/hide this menu"
+			},
+			{
+				"key": "SUPER + PAGE DOWN/UP",
+				"description": "Switch to next/previous workspace"
+			},
+			{
+				"key": "SHIFT + SUPER + PAGE DOWN/UP",
+				"description": "Move window to next/previous workspace"
+			},
+			{
+				"key": "SUPER + TAB",
+				"description": "Switches between applications"
+			},
+			{
+				"key": "SUPER + ESC",
+				"description": "Switches between windows of current applications"
+			},
+			{
+				"key": "SUPER + H/J/K/L",
+				"description": "Switch to visible window in given direction"
+			},
+			{
+				"key": "SUPER + NUM",
+				"description": "Open application by position in launcher"
+			}
+		]
+	},
+	{
+		"name": "NeoVIM",
+		"shortcuts": [
+			{
+				"key": "H, J, K, L",
+				"description": "Basic VIM directional motions"
+			},
+			{
+				"key": "CTRL + W",
+				"description": "Window management leader key"
+			}
+		]
+	},
+	{
+		"name": "WezTerm",
+		"shortcuts": [
+			{
+				"key": "MODIFER + KEY",
+				"description": "DESCRIPTION"
+			}
+		]
+	},
+	{
+		"name": "Tactile",
+		"shortcuts": [
+			{
+				"key": "SUPER + W",
+				"description": "Leader key"
+			},
+			{
+				"key": "(SHIFT) + SPACE",
+				"description": "Switch to (previous) next monitor"
+			}
+		]
+	},
+	{
+		"name": "Obsidian",
+		"shortcuts": [
+			{
+				"key": "CTRL + P",
+				"description": "Open command paletteDESCRIPTION"
+			}
+		]
+	},
+	{
+		"name": "TITLE",
+		"shortcuts": [
+			{
+				"key": "MODIFER + KEY",
+				"description": "DESCRIPTION"
+			}
+		]
+	}
+]
