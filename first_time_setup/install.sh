@@ -23,7 +23,7 @@ RESET_DIR=$(pwd)
 
 # Define arrays (dictionaries?) of things to be installed
 Languages=('rust' 'vala' 'crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'sqlite' 'typescript' 'zig')
-Art_Apps=('audacity' 'gimp' 'kdenlive' 'synfig')
+Art_Apps=('audacity' 'gimp' 'godot' 'kdenlive' 'synfig')
 CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'tmux' 'tldr')
 Dev_Apps=('wezterm')
 General_Apps=('authenticator' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsidian' 'wike')
@@ -69,12 +69,67 @@ usage() {
 	# echo "	-a,	--all		Install everything"
 	# echo "	-s,	--select	Show software selection menu"
 
+# functions lol
+detect_os() {
+	echo -e "${INFO}Detecting:${RESET} operating system."
+	if [ -f /etc/os-release ]; then
+		. /etc/os-release
+		echo -e "${SUCCESS}Detected:${RESET}"
+		echo -e "Operating System: $NAME"
+		echo -e "Version: $VERSION"
+	else
+		echo -e "${ERROR}/etc/os-release file not found.${RESET}"
+		echo -e "${STAGE}Exiting Program.${RESET}"
+		exit 1
+	fi
+}
+
+detect_package_manager() {
+	echo -e "${INFO}Detecting:${RESET} package manager(s)."
+	if [ -x "$(command -v dnf)" ]; then
+		PACKAGE_MANAGER="dnf"
+	# elif [ -x "$(command -v apt)" ]; then
+	# 	PACKAGE_MANAGER="apt"
+	else
+		echo -e "${ERROR}Unsupported package manager.${RESET}"
+		echo -e "${STAGE}Exiting Program.${RESET}"
+		exit 1
+	fi
+	echo -e "${SUCCESS}Detected:${RESET} $PACKAGE_MANAGER."
+}
+
+detect_flatpak() {
+	echo -e "${INFO}Detecting:${RESET} flatpak."
+	if [ -x "$(command -v flatpak)" ]; then
+		echo -e "${SUCCESS}Detected:${RESET} flatpak."
+		echo -e "Adding repo: flathub."
+		flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+		echo -e "Updating: flatpak."
+		flatpak update -y --noninteractive
+		echo -e "${SUCCESS}Updates completed.${RESET}"
+		FLATPAK_FOUND=1
+	else
+		echo -e "${WARNING}Skipping:${RESET} Flatpak installs; Flatpak is not present."
+	fi
+}
+
+update_software() {
+	echo "update_software method"
+}
+
+
 # TODO: getopts
 
 echo -e "${STAGE}Start of install.sh script.${RESET}"
 
+echo -e "${STAGE}Detect system tools.${RESET}"
+detect_os
+detect_package_manager
+detect_flatpak
+
 echo -e "${STAGE}Select option (1-9):${RESET}"
-select item in "all" "exit" "update" "list" "programming languages" "cli apps" "dev apps" "general applications" "art applications" ;
+select item in "all" "exit" "update" "list" "programming languages" "cli tools" "dev apps" "general applications" "art applications" ;
 do
 	echo "$item"
 	case "$item" in
@@ -84,7 +139,7 @@ do
 			;;
 		"update")
 			echo "[Update] selected. Updating all software."
-
+			update_software
 			echo "[Update] finished."
 			;;
 		"list")
@@ -121,7 +176,7 @@ do
 
 			echo "[Art Applications] finished."
 			;;
-		"cli apps")
+		"cli tools")
 			echo "[CLI Applications' selected, installation will proceed and return to this menu."
 
 			echo "[CLI Applications] finished."
@@ -134,54 +189,6 @@ do
 	REPLY=
 done
 
-
-detect_os() {
-	echo -e "${INFO}Detecting:${RESET} operating system."
-	if [ -f /etc/os-release ]; then
-		. /etc/os-release
-		echo -e "${SUCCESS}Detected:${RESET}"
-		echo -e "Operating System: $NAME"
-		echo -e "Version: $VERSION"
-	else
-		echo -e "${ERROR}/etc/os-release file not found.${RESET}"
-		echo -e "${STAGE}Exiting Program.${RESET}"
-		exit 1
-	fi
-}
-
-detect_package_manager() {
-	echo -e "${INFO}Detecting:${RESET} package manager(s)."
-	if [ -x "$(command -v apt)" ]; then
-		PACKAGE_MANAGER="apt"
-	elif [ -x "$(command -v dnf)" ]; then
-		PACKAGE_MANAGER="dnf"
-	else
-		echo -e "${ERROR}Unsupported package manager.${RESET}"
-		echo -e "${STAGE}Exiting Program.${RESET}"
-		exit 1
-	fi
-	echo -e "${SUCCESS}Detected:${RESET} $PACKAGE_MANAGER."
-}
-
-detect_flatpak() {
-	echo -e "${INFO}Detecting:${RESET} flatpak."
-	if [ -x "$(command -v flatpak)" ]; then
-		echo -e "${SUCCESS}Detected:${RESET} flatpak."
-		echo -e "Adding repo: flathub."
-		flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-		echo -e "Updating: flatpak."
-		flatpak update -y --noninteractive
-		echo -e "${SUCCESS}Updates completed.${RESET}"
-		FLATPAK_FOUND=1
-	else
-		echo -e "${WARNING}Skipping:${RESET} Flatpak installs; Flatpak is not present."
-	fi
-}
-
-update() {
-	echo "update method"
-}
 
 echo -e "${STAGE}Finished install.sh.${RESET}"
 
