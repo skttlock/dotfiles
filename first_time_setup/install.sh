@@ -39,30 +39,6 @@ Dev_Apps=('wezterm' 'penpot desktop')
 General_Apps=('authenticator' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsidian' 'wike')
 # Extensions=()
 
-# TODO: Define dictionary of install command to use?
-# 
-# declare -A Languages #
-# Languages[rust]=""
-# Languages[vala]=""
-# Languages[crystal]="mise"
-# Languages[elm]="mise"
-# Languages[julia]="mise"
-# Languages[mercury]="mise"
-# Languages[nodejs]="mise"
-# Languages[ruby]="mise"
-# Languages[sqlite]="mise"
-# Languages[typescript]="mise"
-# Languages[zig]=""
-#
-# declare -A Art_Apps #
-# Art_Apps[audacity]="$PACKAGE_MANAGER"
-# Art_Apps[gimp]="$PACKAGE_MANAGER"
-# Art_Apps[kdenlive]="$PACKAGE_MANAGER"
-# Art_Apps[synfig]="$PACKAGE_MANAGER"
-# 
-# declare -A CLI_Apps #
-# CLI_Apps[bat]="$PACKAGE_MANAGER"
-
 # TODO: OR use functions?
 # NOTE: proglangs
 install_rust() {
@@ -94,9 +70,12 @@ install_vala() {
 # NOTE: cli apps
 
 # NOTE: dev apps
-#
+
 # NOTE: art apps
-# 
+install_reaper() {
+	echo -e "${TIP}To install REAPER DAW, visit the website @ reaper.fm and download there.${RESET}"
+}
+ 
 # NOTE: general apps
 
 
