@@ -88,12 +88,15 @@ Ensure you have the following installed on your system
       - Style Settings
       - Minimal Theme Settings
   - [Synfig](https://www.synfig.org/ ) (Animation Software)
-  - [Godot](https://godotengine.org/ ) (Game Egnine)
+  - [Godot](https://godotengine.org/ ) (Game Engine)
   - Google Chrome (Keyboard Training via zsa.io) - not included. download urself
   - [ LibreOffice Suite ](https://www.libreoffice.org/ ) (Office Productivity Suite)
     - [ Vibreoffice ](https://github.com/seanyeh/vibreoffice )
     - CodeHighlighter
+  - [ Audacity ](https://www.audacityteam.org/) (Audio Editing Software)
+  - [ Reaper ](http://reaper.fm/index.php) (Digital Audio Workstation) - not included. download urself
   - ProtonMail (Mail & Calendar) - not included. download urself
+  - ProtonPass (Password Manager) - not included. download urself
   - ProtonVPN (VPN Client) - not included. download urself
 </details>
 <details>

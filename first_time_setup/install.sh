@@ -21,15 +21,26 @@ RESET='\e[0m'
 # Define variables for directory switching
 RESET_DIR=$(pwd)
 
+# NOTE:
 # Define arrays (dictionaries?) of things to be installed
+# OR: 
+# declare -a languages=( rust vala crystal )
+# rust() { echo "Hello from function: rust" }
+# etc...
+# declare -a art_apps=( audacity gimp godot )
+# audacity() { echo "Hello from function: audacity" }
+# etc...
+# etc...
+#
 Languages=('rust' 'vala' 'crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'sqlite' 'typescript' 'zig')
-Art_Apps=('audacity' 'gimp' 'godot' 'kdenlive' 'synfig')
+Art_Apps=('audacity' 'gimp' 'godot' 'kdenlive' 'linux show player' 'reaper' 'synfig')
 CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'tmux' 'tldr')
-Dev_Apps=('wezterm')
+Dev_Apps=('wezterm' 'penpot desktop')
 General_Apps=('authenticator' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsidian' 'wike')
 # Extensions=()
 
-# Define dictionary of install command to use?
+# TODO: Define dictionary of install command to use?
+# 
 # declare -A Languages #
 # Languages[rust]=""
 # Languages[vala]=""
@@ -52,8 +63,46 @@ General_Apps=('authenticator' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsi
 # declare -A CLI_Apps #
 # CLI_Apps[bat]="$PACKAGE_MANAGER"
 
+# TODO: OR use functions?
+# NOTE: proglangs
+install_rust() {
+	echo -e "Installing: rustup via sh.rustup.rs"
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -q -y >/dev/null
+	if [ $? -eq 0 ]; then
+		~/.cargo/bin/rustup --version
+		echo -e "${SUCCESS}Success:${RESET} rustup installed via sh.rustup.rs."
+		echo -e "rustup symlinks automatically."
+		rustc --version
+		echo -e "${SUCCESS}Success:${RESET} rustc installed via rustup."
+	else
+		echo -e "${ERROR}Failed:${RESET} rustup install via sh.rustup.rs."
+	fi
+}
+install_vala() {
+	echo -e "Installing: Vala via $PACKAGE_MANAGER"
+	sudo $PACKAGE_MANAGER install vala -y -q
+	if [ $? -eq 0 ]; then
+		echo -e "${SUCCESS}Success:${RESET} Vala installed via $PACKAGE_MANAGER."
+	else
+		echo -e "${ERROR}Failed:${RESET} Vala install via $PACKAGE_MANAGER."
+	fi
+}
+# install_lang() {
+# }
+
+
+# NOTE: cli apps
+
+# NOTE: dev apps
+#
+# NOTE: art apps
+# 
+# NOTE: general apps
+
+
 #?TODO: add options: full install, custom install, etc.
 # add selections... whole thing in selections?
+# NOTE: FUNCTIONS
 
 usage() {
 	echo "Usage: $0 [options]"
@@ -69,7 +118,7 @@ usage() {
 	# echo "	-a,	--all		Install everything"
 	# echo "	-s,	--select	Show software selection menu"
 
-# functions lol
+
 detect_os() {
 	echo -e "${INFO}Detecting:${RESET} operating system."
 	if [ -f /etc/os-release ]; then
@@ -119,6 +168,7 @@ update_software() {
 }
 
 
+# NOTE: MAIN LOOP
 # TODO: getopts
 
 echo -e "${STAGE}Start of install.sh script.${RESET}"
