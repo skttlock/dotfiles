@@ -92,7 +92,10 @@ Ensure you have the following installed on your system
   - [ LibreOffice Suite ](https://www.libreoffice.org/ ) (Office Productivity Suite)
     - [ Vibreoffice ](https://github.com/seanyeh/vibreoffice )
     - CodeHighlighter
+  - [ Audacity ](https://www.audacityteam.org/) (Audio Editing Software)
+  - [ Reaper ](http://reaper.fm/index.php) (Digital Audio Workstation) - not included. download urself
   - ProtonMail (Mail & Calendar) - not included. download urself
+  - ProtonPass (Password Manager) - not included. download urself
   - ProtonVPN (VPN Client) - not included. download urself
 </details>
 <details>
