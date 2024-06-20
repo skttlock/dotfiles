@@ -3,43 +3,43 @@
 		"name": "System-Wide",
 		"shortcuts": [
 			{
-				"key": "SUPER",
+				"key": "◆",
 				"description": "Enter overview"
 			},
 			{
-				"key": "SUPER + W",
+				"key": "◆ + W",
 				"description": "Tactile leader key"
 			},
 			{
-				"key": "SUPER + E",
+				"key": "◆ + E",
 				"description": "Switcher leader key"
 			},
 			{
-				"key": "SHIFT + CTRL + ALT + SPACE",
+				"key": "⇧ + ✲ + ⎇ + ␣",
 				"description": "Show/hide this menu"
 			},
 			{
-				"key": "SUPER + PAGE DOWN/UP",
+				"key": "◆ + ⇟/⇞",
 				"description": "Switch to next/previous workspace"
 			},
 			{
-				"key": "SHIFT + SUPER + PAGE DOWN/UP",
+				"key": "⇧ + ◆ + ⇟/⇞",
 				"description": "Move window to next/previous workspace"
 			},
 			{
-				"key": "SUPER + TAB",
+				"key": "◆ + ⇥",
 				"description": "Switches between applications"
 			},
 			{
-				"key": "SUPER + ESC",
+				"key": "◆ + ESC",
 				"description": "Switches between windows of current applications"
 			},
 			{
-				"key": "SUPER + H/J/K/L",
+				"key": "◆ + H/J/K/L",
 				"description": "Switch to visible window in given direction"
 			},
 			{
-				"key": "SUPER + NUM",
+				"key": "◆ + NUM",
 				"description": "Open application by position in launcher"
 			}
 		]
@@ -52,7 +52,7 @@
 				"description": "Basic VIM directional motions"
 			},
 			{
-				"key": "CTRL + W",
+				"key": "✲ + W",
 				"description": "Window management leader key"
 			}
 		]
@@ -70,11 +70,11 @@
 		"name": "Tactile",
 		"shortcuts": [
 			{
-				"key": "SUPER + W",
+				"key": "◆ + W",
 				"description": "Leader key"
 			},
 			{
-				"key": "(SHIFT) + SPACE",
+				"key": "(⇧) + ␣",
 				"description": "Switch to (previous) next monitor"
 			}
 		]
@@ -83,8 +83,17 @@
 		"name": "Obsidian",
 		"shortcuts": [
 			{
-				"key": "CTRL + P",
-				"description": "Open command paletteDESCRIPTION"
+				"key": "✲ + P",
+				"description": "Open command palette"
+			}
+		]
+	},
+	{
+		"name": "Firefox",
+		"shortcuts": [
+			{
+				"key": "✲ + E",
+				"description": "Open ⇥ Sidebar"
 			}
 		]
 	},
