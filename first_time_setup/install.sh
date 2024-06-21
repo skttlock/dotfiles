@@ -21,6 +21,17 @@ RESET='\e[0m'
 # Define variables for directory switching
 RESET_DIR=$(pwd)
 
+# Define variables for detected technologies
+FLATPAK_FOUND=0
+
+Languages=('crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'rust' 'sqlite' 'typescript' 'vala' 'zig')
+CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'tldr' 'tmux')
+Art_Apps=('audacity' 'gimp' 'godot' 'kdenlive' 'linux show player' 'obs studio' 'reaper' 'synfig')
+Dev_Apps=('penpot desktop' 'wezterm')
+General_Apps=('authenticator' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsidian' 'proton drive' 'proton mail' 'proton VPN' 'wike')
+# Extensions=()
+
+# TODO: OR use functions?
 # NOTE:
 # Define arrays (dictionaries?) of things to be installed
 # OR: 
@@ -32,15 +43,25 @@ RESET_DIR=$(pwd)
 # etc...
 # etc...
 #
-Languages=('rust' 'vala' 'crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'sqlite' 'typescript' 'zig')
-Art_Apps=('audacity' 'gimp' 'godot' 'kdenlive' 'linux show player' 'reaper' 'synfig')
-CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'tmux' 'tldr')
-Dev_Apps=('wezterm' 'penpot desktop')
-General_Apps=('authenticator' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsidian' 'wike')
-# Extensions=()
-
-# TODO: OR use functions?
 # NOTE: proglangs
+install_crystal() {
+	# TODO: implement
+}
+install_elm() {
+	# TODO: implement
+}
+install_julia() {
+	# TODO: implement
+}
+install_mercury() {
+	# TODO: implement
+}
+install_nodejs() {
+	# TODO: implement
+}
+install_ruby() {
+	# TODO: implement
+}
 install_rust() {
 	echo -e "Installing: rustup via sh.rustup.rs"
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -q -y >/dev/null
@@ -54,6 +75,12 @@ install_rust() {
 		echo -e "${ERROR}Failed:${RESET} rustup install via sh.rustup.rs."
 	fi
 }
+install_sqlite() {
+	# TODO: implement
+}
+install_typescript() {
+	# TODO: implement
+}
 install_vala() {
 	echo -e "Installing: Vala via $PACKAGE_MANAGER"
 	sudo $PACKAGE_MANAGER install vala -y -q
@@ -63,21 +90,79 @@ install_vala() {
 		echo -e "${ERROR}Failed:${RESET} Vala install via $PACKAGE_MANAGER."
 	fi
 }
-# install_lang() {
-# }
-
+install_zig() {
+	# TODO: implement
+}
 
 # NOTE: cli apps
-
-# NOTE: dev apps
+install_bat() {
+	# TODO: implement
+}
+install_bats() {
+	# TODO: implement
+}
+install_fastfetch() {
+	# TODO: implement
+}
+install_flatpak() {
+	# TODO: implement
+}
+install_gh() {
+	# TODO: implement
+}
+install_lsd() {
+	# TODO: implement
+}
+install_mise() {
+	# TODO: implement
+}
+install_neovim() {
+	# TODO: implement
+}
+install_rsync() {
+	# TODO: implement
+}
+install_starship() {
+	# TODO: implement
+}
+install_tldr() {
+	# TODO: implement
+}
+install_tmux() {
+	# TODO: implement
+}
 
 # NOTE: art apps
+install_audacity() {
+	# TODO: implement
+}
+install_gimp() {
+	# TODO: implement
+}
+install_godot() {
+	# TODO: implement
+}
+install_kdenlive() {
+	# TODO: implement
+}
+install_linux_show_player() {
+	# TODO: implement
+}
+install_obs_studio() {
+	# TODO: implement
+}
 install_reaper() {
 	echo -e "${TIP}To install REAPER DAW, visit the website @ reaper.fm and download there.${RESET}"
 }
+install_synfig() {
+	# TODO: implement
+}
  
-# NOTE: general apps
+# NOTE: dev apps
 
+# NOTE: dev apps
+
+# NOTE: general apps
 
 #?TODO: add options: full install, custom install, etc.
 # add selections... whole thing in selections?
@@ -144,6 +229,7 @@ detect_flatpak() {
 
 update_software() {
 	echo "update_software method"
+	# TODO: implement
 }
 
 
