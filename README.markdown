@@ -161,6 +161,7 @@ Ensure you have the following installed on your system
 Notes:
 - design keybinds to be easy on laptop keyboard
 - Voyager keyboard to have macros to handle keybinds.
+- See shortcuts.json
 #### Leader Keys
   - GNOME = SUPER
     - SWITCHER = SUPER + E
