@@ -15,7 +15,7 @@
 				"description": "Switcher leader key"
 			},
 			{
-				"key": "⇧ + ✲ + ⎇ + ␣",
+				"key": "⇧ + ✲ + ⎇ + S",
 				"description": "Show/hide this menu"
 			},
 			{
@@ -85,6 +85,10 @@
 			{
 				"key": "✲ + P",
 				"description": "Open command palette"
+			},
+			{
+				"key": "✲ + L",
+				"description": "Toggle left sidebar"
 			}
 		]
 	},
