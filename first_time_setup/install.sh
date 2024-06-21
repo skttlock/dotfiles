@@ -30,6 +30,8 @@ Art_Apps=('audacity' 'gimp' 'godot' 'kdenlive' 'linux show player' 'obs studio' 
 Dev_Apps=('penpot desktop' 'wezterm')
 General_Apps=('authenticator' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsidian' 'proton drive' 'proton mail' 'proton VPN' 'wike')
 # Extensions=()
+# Fonts=()
+# Wallpapers=()
 
 # TODO: OR use functions?
 # NOTE:
