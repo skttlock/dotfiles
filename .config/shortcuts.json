@@ -61,8 +61,12 @@
 		"name": "WezTerm",
 		"shortcuts": [
 			{
-				"key": "MODIFER + KEY",
-				"description": "DESCRIPTION"
+				"key": "⇧ + ✲ + ⎇ + %",
+				"description": "Create horizontal WezTerm split"
+			},
+			{
+				"key": "⇧ + ✲ + ⎇ + \"",
+				"description": "Create vertical WezTerm split"
 			}
 		]
 	},
