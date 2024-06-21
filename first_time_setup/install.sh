@@ -47,7 +47,7 @@ General_Apps=('authenticator' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsi
 #
 # NOTE: proglangs
 install_crystal() {
-	# TODO: implement
+# TODO: implement
 }
 install_elm() {
 	# TODO: implement
