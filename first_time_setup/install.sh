@@ -26,7 +26,7 @@ FLATPAK_FOUND=0
 
 Languages=('crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'rust' 'sqlite' 'typescript' 'vala' 'zig')
 CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'tldr' 'tmux')
-Art_Apps=('audacity' 'gimp' 'godot' 'kdenlive' 'linux show player' 'obs studio' 'reaper' 'synfig')
+Art_Apps=('audacity' 'gimp' 'godot' 'inkscape' 'kdenlive' 'linux show player' 'obs studio' 'reaper' 'synfig')
 Dev_Apps=('penpot desktop' 'wezterm')
 General_Apps=('authenticator' 'calibre' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsidian' 'proton drive' 'proton mail' 'proton VPN' 'wike')
 # Extensions=()
@@ -142,6 +142,9 @@ install_gimp() {
 	# TODO: implement
 }
 install_godot() {
+	# TODO: implement
+}
+install_inkscape() {
 	# TODO: implement
 }
 install_kdenlive() {
