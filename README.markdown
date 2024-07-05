@@ -296,6 +296,7 @@ use window macros for panes?
   - [ ] retest install scripts
   - [ ] implement BATS
   - [x] fix new errors
+  - [ ] add firefox-dev setup~ connection with nvim
   - [ ] test on Ubuntu
 ## Other Scripts
 - [ ] common-use scripts...?
