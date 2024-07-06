@@ -25,7 +25,7 @@ RESET_DIR=$(pwd)
 FLATPAK_FOUND=0
 
 Languages=('crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'rust' 'sqlite' 'typescript' 'vala' 'zig')
-CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'tldr' 'tmux')
+CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'yarn' 'tldr' 'tmux')
 Art_Apps=('audacity' 'gimp' 'godot' 'inkscape' 'kdenlive' 'linux show player' 'obs studio' 'reaper' 'synfig')
 Dev_Apps=('penpot desktop' 'wezterm')
 General_Apps=('authenticator' 'calibre' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsidian' 'proton drive' 'proton mail' 'proton VPN' 'wike')
@@ -131,6 +131,9 @@ install_tldr() {
 	# TODO: implement
 }
 install_tmux() {
+	# TODO: implement
+}
+install_yarn() {
 	# TODO: implement
 }
 
