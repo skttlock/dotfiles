@@ -1,0 +1,581 @@
+"manually" generated with:
+❯ lstree --depth=10 ~/Documents/Humble\ Bundle/>> Humble_Bundle_registry_07-08-2024.txt
+
+output:
+Humble Bundle
+├── Essential Knowledge_ Computers and Tech By MIT Press
+│   ├── aiassistants.epub
+│   ├── aiethics.epub
+│   ├── algorithms.epub
+│   ├── biofabrication.epub
+│   ├── cloudcomputing.epub
+│   ├── computationalthinking.epub
+│   ├── computing.epub
+│   ├── cybersecurity.epub
+│   ├── datascience_mit.epub
+│   ├── deeplearning_mit.epub
+│   ├── fakephotos.epub
+│   ├── gps.epub
+│   ├── haptics.epub
+│   ├── machinelearning_mit.epub
+│   ├── machinetranslation.epub
+│   ├── memesindigitalculture.epub
+│   ├── recommendationengines.epub
+│   ├── robots.epub
+│   ├── self-tracking.epub
+│   ├── spaceflight.epub
+│   ├── spatialcomputing.epub
+│   ├── theinternetofthings_revised.epub
+│   ├── thetechnologicalsingularity.epub
+│   └── virtualreality.epub
+├── Game Design Document STEM Bundle
+│   ├── softweircharacterandanimationdesignworksheet.zip
+│   ├── softweirgamedesigndocumentationbuilder.zip
+│   ├── softweiritemdesignworksheet.zip
+│   ├── softweirmapanddungeondesignworksheet.zip
+│   ├── softweirprojectmanagementdocumentation.zip
+│   ├── softweirscriptandlogicdesignworksheet.zip
+│   ├── softweirstoryandstoryboarddesignworksheet.zip
+│   ├── softweiruser-interfacedesignworksheet.zip
+│   ├── softweirweaponandarmourdesignworksheet.zip
+│   └── softweirworlddesignworksheet.zip
+├── Humble Book Bundle_ The Witcher X Cyberpunk by Dark Horse
+│   ├── andrzejsapkowskisthewitcher_agrainoftruth.pdf
+│   ├── andrzejsapkowskisthewitcher_thelesserevil.pdf
+│   ├── cyberpunk2077_bigcitydreams.pdf
+│   ├── cyberpunk2077_blackout.pdf
+│   ├── cyberpunk2077_traumateam.pdf
+│   ├── cyberpunk2077_wheresjohnny.pdf
+│   ├── cyberpunk2077_youhavemyword.pdf
+│   ├── cyberpunk2077_yourvoice.pdf
+│   ├── gwent_artofthewitchercardgame.pdf
+│   ├── witcher_roninmanga.pdf
+│   ├── witcher_volume2_foxchildren.pdf
+│   ├── witchervolume1_houseofglass.pdf
+│   ├── witchervolume3_curseofcrows.pdf
+│   ├── witchervolume4_offleshandflame.pdf
+│   ├── witchervolume5_fadingmemories.pdf
+│   ├── witchervolume6_witchslament.pdf
+│   ├── witchervolume7_theballadoftwowolves.pdf
+│   ├── worldofcyberpunk2077.pdf
+│   └── worldofthewitcher.pdf
+├── Humble RPG Bundle_ Cypher System TTRPG Collection by Monte Cook Games
+│   ├── afterthenightfall.pdf
+│   ├── aplayersguidetoptolus.pdf
+│   ├── assaultonsingularitybase.pdf
+│   ├── banewarrens.pdf
+│   ├── castaway.pdf
+│   ├── cawdorcomplex.pdf
+│   ├── claimthesky.pdf
+│   ├── consentingaming.zip
+│   ├── cyphersystemcharacterportfolio.zip
+│   ├── cyphersystemcreaturedeck.pdf
+│   ├── cyphersystemrulebook.pdf
+│   ├── cyphersystemxpdeck.pdf
+│   ├── doctrineofghul.pdf
+│   ├── dreadexpectations.pdf
+│   ├── firstresponders.pdf
+│   ├── gmintrusiondeck.pdf
+│   ├── gmnotebook.zip
+│   ├── godforsaken.pdf
+│   ├── godsofthefall.pdf
+│   ├── heistonmiracleiv.pdf
+│   ├── infinityshift.pdf
+│   ├── nightofdissolution.pdf
+│   ├── npcdeck.pdf
+│   ├── origin_montecooke.pdf
+│   ├── pathoftheplanebreaker.pdf
+│   ├── planarbestiary.pdf
+│   ├── planarcharacteroptions.pdf
+│   ├── planarresourcedeck.pdf
+│   ├── planebreakergmscreen.pdf
+│   ├── playernotebook.zip
+│   ├── predation.pdf
+│   ├── ptolus_montecookscitybythespire.pdf
+│   ├── ptoluscharacterportfolios.zip
+│   ├── ptolusgmscreen.pdf
+│   ├── ptolusnpcdeck.pdf
+│   ├── returnoftheebonhand.pdf
+│   ├── runebloodblessing.pdf
+│   ├── rustandredemption.pdf
+│   ├── starsarefire.pdf
+│   ├── stayalive.pdf
+│   ├── takings.pdf
+│   ├── unmasked.pdf
+│   ├── unmaskedinthecity.pdf
+│   ├── weareallmadhere.pdf
+│   ├── weird.pdf
+│   └── yourbestgameever.pdf
+├── Humble Tech Book Bundle_ Code Like a Pro 2024 by Manning
+│   ├── 100gomistakesandhowtoavoidthem.pdf
+│   ├── advancedalgorithmsanddatastructures.pdf
+│   ├── codelikeaproinc.pdf
+│   ├── data-orientedprogramming_reducesoftwarecomplexity.pdf
+│   ├── effectivesoftwaretesting_adevelopersguide.pdf
+│   ├── fivelinesofcode_howandwhentorefactor.pdf
+│   ├── fullstackpythonsecurity.pdf
+│   ├── goodcodebadcode.pdf
+│   ├── grokkingcontinuousdelivery.pdf
+│   ├── learnai-assistedpythonprogramming.pdf
+│   ├── practicesofthepythonpro.pdf
+│   ├── pythonconcurrencywithasyncio.pdf
+│   ├── pythonhow-to_63techniquestoimproveyourpythoncode.pdf
+│   ├── regularexpressionpuzzlesandaicodingassistants.pdf
+│   ├── rustinaction.pdf
+│   ├── rustserversservicesandapps.pdf
+│   ├── skillsofasuccessfulsoftwareengineer.pdf
+│   ├── softwaremistakesandtradeoffs_howtomakegoodprogrammingdecisions.pdf
+│   ├── streetcoder_therulestobreakandhowtobreakthem.pdf
+│   └── unityinaction3e.pdf
+├── Humble Tech Book Bundle_ Elixir and Phoenix Programming 2024 by Pragmatic
+│   ├── adoptingelixir.epub
+│   ├── adoptingelixir.mobi
+│   ├── adoptingelixir.pdf
+│   ├── buildabinaryclockwithelixirandnerves.epub
+│   ├── buildabinaryclockwithelixirandnerves.mobi
+│   ├── buildabinaryclockwithelixirandnerves.pdf
+│   ├── buildaweatherstationwithelixirandnerves.epub
+│   ├── buildaweatherstationwithelixirandnerves.mobi
+│   ├── buildaweatherstationwithelixirandnerves.pdf
+│   ├── buildingtableviewswithphoenixliveview.epub
+│   ├── buildingtableviewswithphoenixliveview.mobi
+│   ├── buildingtableviewswithphoenixliveview.pdf
+│   ├── concurrentdataprocessinginelixir.epub
+│   ├── concurrentdataprocessinginelixir.mobi
+│   ├── concurrentdataprocessinginelixir.pdf
+│   ├── craftgraphqlapisinelixirwithabsinthe.epub
+│   ├── craftgraphqlapisinelixirwithabsinthe.mobi
+│   ├── craftgraphqlapisinelixirwithabsinthe.pdf
+│   ├── designingelixirsystemswithotp.epub
+│   ├── designingelixirsystemswithotp.mobi
+│   ├── designingelixirsystemswithotp.pdf
+│   ├── exploring-graphs-with-elixir.epub
+│   ├── exploring-graphs-with-elixir.mobi
+│   ├── exploring-graphs-with-elixir.pdf
+│   ├── fromrubytoelixir.epub
+│   ├── fromrubytoelixir.mobi
+│   ├── fromrubytoelixir.pdf
+│   ├── functionalwebdevelopmentwithelixirotpandphoenix.epub
+│   ├── functionalwebdevelopmentwithelixirotpandphoenix.mobi
+│   ├── functionalwebdevelopmentwithelixirotpandphoenix.pdf
+│   ├── geneticalgorithmsinelixir.epub
+│   ├── geneticalgorithmsinelixir.mobi
+│   ├── geneticalgorithmsinelixir.pdf
+│   ├── learnfunctionalprogrammingwithelixir.epub
+│   ├── learnfunctionalprogrammingwithelixir.mobi
+│   ├── learnfunctionalprogrammingwithelixir.pdf
+│   ├── metaprogrammingelixir.epub
+│   ├── metaprogrammingelixir.mobi
+│   ├── metaprogrammingelixir.pdf
+│   ├── programmingecto.epub
+│   ├── programmingecto.mobi
+│   ├── programmingecto.pdf
+│   ├── programmingelixir16.epub
+│   ├── programmingelixir16.mobi
+│   ├── programmingelixir16.pdf
+│   ├── programmingphoenix14.epub
+│   ├── programmingphoenix14.mobi
+│   ├── programmingphoenix14.pdf
+│   ├── propertybasedtestingwithpropererlangandelixir.epub
+│   ├── propertybasedtestingwithpropererlangandelixir.mobi
+│   ├── propertybasedtestingwithpropererlangandelixir.pdf
+│   ├── realtimephoenix.epub
+│   ├── realtimephoenix.mobi
+│   ├── realtimephoenix.pdf
+│   ├── testingelixir.epub
+│   ├── testingelixir.mobi
+│   └── testingelixir.pdf
+├── Humble Tech Book Bundle_ Game Architecture, Worldbuilding, and AI by Taylor & Francis
+│   ├── animationwritinganddevelopment_fromscriptdevelopmenttopitch.pdf
+│   ├── characterdevelopmentandstorytellingforgames.pdf
+│   ├── dramaticstorytellingandnarrativedesign_awriteraeurtmsguidetovideogamesandtransmedia.pdf
+│   ├── environmentartinthegameindustry_aguidetorichandrealisticenvironmentsusingsubstancedesigner.pdf
+│   ├── gameaipro_collectedwisdomofgameaiprofessionals.pdf
+│   ├── gamedesigndeepdive_freetoplay.pdf
+│   ├── gamedesigndeepdive_platformers.pdf
+│   ├── gameproduction_prototypingandproducingyourboardgame.pdf
+│   ├── goldenageofvideogames_thebirthofamultibilliondollarindustry.pdf
+│   ├── historyofdigitalgames_developmentsinartdesignandinteraction.pdf
+│   ├── makingithugeinvideogames_memoirsofcomposerchancethomas.pdf
+│   ├── onceuponapixel_storytellingandworldbuildinginvideogames.pdf
+│   ├── passionandplay_aguidetodesigningsexualcontentingames.pdf
+│   ├── pixelartforgamedevelopers.pdf
+│   ├── publishingchallengeforindependentvideogamedevelopers_apracticalgui.pdf
+│   ├── survivinggameschoolandthegameindustryafterthat.pdf
+│   ├── thefundamentalsofccplusplusgameprogramming_usingtarget-baseddevelopmentonsbcs.pdf
+│   ├── theindiegamedeveloperhandbook.pdf
+│   ├── theycreateworlds_thestoryofthepeopleandcompaniesthatshapedthevideogameindustry_voli1971-1982.pdf
+│   └── workflow_apracticalguidetothecreativeprocess.pdf
+├── Humble Tech Book Bundle_ Game Design and AI featuring Steve Rabin, by Taylor & Francis
+│   ├── 20essentialgamestostudy.pdf
+│   ├── craftandscienceofgamedesign_avideogamedesignersmanual.pdf
+│   ├── gameaipro.pdf
+│   ├── gameaipro2.pdf
+│   ├── gameaipro3.pdf
+│   ├── gameaipro360_guidetoarchitecture.pdf
+│   ├── gameaipro360_guidetocharacterbehavior.pdf
+│   ├── gameaipro360_guidetomovementandpathfinding.pdf
+│   ├── gameaipro360_guidetotacticsandstrategy.pdf
+│   ├── gamedesigndeepdive_platformers.pdf
+│   ├── gamedesigntheory.pdf
+│   ├── gameenginegems2.pdf
+│   ├── gameenginegems3.pdf
+│   ├── gamesasaservice_howfreetoplaydesigncanmakebettergames.pdf
+│   ├── makingdeepgames.pdf
+│   ├── pyramidofgamedesign_designingproducingandlaunchingservicegames.pdf
+│   ├── vintagegames2.pdf
+│   └── wedeservebettervillains.pdf
+├── Humble Tech Book Bundle_ Game Design and Programming by Pearson
+│   ├── 3duserinterfaces2ande.pdf
+│   ├── advancedgamedesign.pdf
+│   ├── agamedesignvocabulary.pdf
+│   ├── agilegamedevelopment2e.pdf
+│   ├── augmentedreality_pearson.pdf
+│   ├── digitalvisualeffectsandcompositing.pdf
+│   ├── fundamentalsofgamedesign3e.pdf
+│   ├── gameprogrammingalgorithmsandtechniques.pdf
+│   ├── gameprogrammingincplusplus.pdf
+│   ├── gamesdesignandplay.pdf
+│   ├── introductiontogamedesignprototypinganddevelopment3e.pdf
+│   ├── introductiontogamesystemdesign.pdf
+│   ├── learningblender3e.pdf
+│   ├── multiplayergameprogramming.pdf
+│   ├── playersmakingdecisions.pdf
+│   ├── practicalaugmentedreality.pdf
+│   ├── robloxgamedevelopmentin24hours_theofficialrobloxguide.pdf
+│   ├── unrealenginevrcookbook.pdf
+│   └── writinginteractivemusicforvideogames.pdf
+├── Humble Tech Book Bundle_ Learn You Some Code by No Starch
+│   ├── autotools_2ndedition.epub
+│   ├── autotools_2ndedition.pdf
+│   ├── missingreadme.epub
+│   ├── missingreadme.pdf
+│   ├── perlone-liners.epub
+│   ├── perlone-liners.pdf
+│   ├── rubyunderamicroscope.epub
+│   ├── rubyunderamicroscope.pdf
+│   ├── thegnumakebook.epub
+│   ├── thegnumakebook.pdf
+│   ├── wickedcoolrubyscripts.epub
+│   ├── wickedcoolrubyscripts.pdf
+│   ├── wickedcoolshellscripts2ndedition.epub
+│   └── wickedcoolshellscripts2ndedition.pdf
+├── Humble Tech Book Bundle_ Mastery of C# and .NET awaits
+│   ├── adevelopersguidetonetinazure.epub
+│   ├── c10andnet6_moderncross-platformdevelopment.epub
+│   ├── c12andnet8_moderncross-platformdevelopmentfundamentals.epub
+│   ├── cdatastructuresandalgorithms_secondedition.epub
+│   ├── cinterviewguide.epub
+│   ├── cleancodewithcsharp.epub
+│   ├── cworkshop.epub
+│   ├── enterpriseapplicationdevelopmentwithc10andnet6.epub
+│   ├── hands-onnetworkprogrammingwithcandnetcore.epub
+│   ├── hands-onobject-orientedprogrammingwithc.epub
+│   ├── high-performanceprogrammingincandnet.epub
+│   ├── implementingevent-drivenmicroservicesarchitectureinnet7.epub
+│   ├── microservicescommunicationinnetusinggrpc.epub
+│   ├── microservicesdesignpatternsinnet.epub
+│   ├── mvvmpatterninnetmaui.epub
+│   ├── netmauicross-platformapplicationdevelopment.epub
+│   ├── netmauiforcdevelopers.epub
+│   ├── parallelprogrammingandconcurrencywithc10andnet6.epub
+│   ├── pragmatictest-drivendevelopmentincandnet.epub
+│   ├── real-worldimplementationofcdesignpatterns.epub
+│   ├── refactoringwithc.epub
+│   └── softwarearchitecturewithc10andnet6_thirdedition.epub
+├── Humble Tech Book Bundle_ Programming Mega Bundle by Packt
+│   ├── polishedrubyprogramming
+│   │   └── Polished-Ruby-Programming-main
+│   │       ├── Chapter01
+│   │       │   ├── 00-album-database-2-hash.rb
+│   │       │   ├── 01-album-database-nested-hash.rb
+│   │       │   ├── 03-album-database-array-hash.rb
+│   │       │   ├── 04-lookup-by-artist-array.rb
+│   │       │   ├── 05-lookup-by-artist-hash.rb
+│   │       │   ├── 06-lookup-by-artist-set.rb
+│   │       │   ├── 07-struct-new.rb
+│   │       │   └── chapter-01.rb
+│   │       ├── Chapter02
+│   │       │   ├── 00-array-stack.rb
+│   │       │   ├── 01-stack.rb
+│   │       │   ├── 02-symbol-stack.rb
+│   │       │   ├── 03-single-responsibility-string.rb
+│   │       │   ├── 04-single-responsibility-builder-modifier.rb
+│   │       │   ├── 05-single-responsibility-reports.rb
+│   │       │   ├── 06-open-closed.rb
+│   │       │   ├── 07-liskov-subsitution-max.rb
+│   │       │   ├── 08-dependency-inversion-current-day-v1.rb
+│   │       │   ├── 09-dependency-inversion-current-day-v2.rb
+│   │       │   ├── 10-dependency-inversion-current-day-v3.rb
+│   │       │   ├── 11-dependency-inversion-current-day-v4.rb
+│   │       │   ├── 12-html-table-v1.rb
+│   │       │   ├── 13-html-table-v2.rb
+│   │       │   ├── 14-html-table-v3.rb
+│   │       │   └── chapter-02.rb
+│   │       ├── Chapter03
+│   │       │   ├── 00-time-filter-v1.rb
+│   │       │   ├── 01-time-filter-v2.rb
+│   │       │   ├── 02-time-filter-v3.rb
+│   │       │   ├── 03-time-filter-v4.rb
+│   │       │   ├── 04-scope-gates.rb
+│   │       │   ├── 05-no-scope-gates.rb
+│   │       │   ├── 06-information-hiding-deadlock-public-constant.rb
+│   │       │   ├── 07-information-hiding-deadlock-private-constant.rb
+│   │       │   ├── 08-invoices-v1.rb
+│   │       │   ├── 09-invoices-v2.rb
+│   │       │   ├── 10-invoices-v3.rb
+│   │       │   ├── 11-frozen-invoices-v1.rb
+│   │       │   ├── 12-frozen-invoices-v2.rb
+│   │       │   ├── 13-frozen-invoices-problem-v1.rb
+│   │       │   ├── 14-frozen-invoices-fix-v1.rb
+│   │       │   ├── 15-frozen-invoices-fix-v2.rb
+│   │       │   ├── 16-frozen-invoices-fix-v3.rb
+│   │       │   ├── 17-frozen-invoices-problem-v2.rb
+│   │       │   ├── 18-frozen-line-items-v1.rb
+│   │       │   ├── 19-frozen-line-items-v2.rb
+│   │       │   ├── 20-invoice-line-item-taxes-v1.rb
+│   │       │   ├── 21-invoice-line-item-taxes-v2.rb
+│   │       │   ├── 22-invoice-line-item-taxes-v3.rb
+│   │       │   ├── 23-constant-scope.rb
+│   │       │   ├── 24-private-constants.rb
+│   │       │   ├── 25-class-variables.rb
+│   │       │   ├── 26-replace-class-variable-with-constants.rb
+│   │       │   ├── 27-replace-class-variables-with-class-instance-variables-iterative-superclass-lookup.rb
+│   │       │   ├── 28-replace-class-variables-with-class-instance-variables-recursive-superclass-lookup.rb
+│   │       │   ├── 29-replace-class-variables-with-class-instance-variables-copying.rb
+│   │       │   ├── 30-global-variables.rb
+│   │       │   ├── 31-global-variable-replacement-v1.rb
+│   │       │   ├── 32-global-variable-replacement-v2.rb
+│   │       │   └── chapter-03.rb
+│   │       ├── Chapter04
+│   │       │   ├── 00-class-methods.rb
+│   │       │   ├── 01-screen-box-positional.rb
+│   │       │   ├── 02-screen-box-object.rb
+│   │       │   ├── 03-screen-box-keyword.rb
+│   │       │   ├── 04-screen-box-positional-keyword.rb
+│   │       │   ├── 05-positional-argument-types.rb
+│   │       │   ├── 06-rest-arguments.rb
+│   │       │   ├── 07-keyword-arguments.rb
+│   │       │   ├── 08-block-arguments.rb
+│   │       │   ├── 09-listen-v1.rb
+│   │       │   ├── 10-listen-v2.rb
+│   │       │   ├── 11-listen-v3.rb
+│   │       │   ├── 12-listen-v4.rb
+│   │       │   ├── 13-method-visibility.rb
+│   │       │   ├── 14-constant-visibility.rb
+│   │       │   ├── 15-deprecate-public.rb
+│   │       │   ├── 16-delegating-to-another-method.rb
+│   │       │   ├── 17-delegating-to-another-object.rb
+│   │       │   ├── 18-forwardable.rb
+│   │       │   └── chapter-04.rb
+│   │       ├── Chapter05
+│   │       │   ├── 00-database-update.rb
+│   │       │   ├── 01-authorizer-return-value.rb
+│   │       │   ├── 02-authorizer-exception.rb
+│   │       │   ├── 03-authorizor-both.rb
+│   │       │   ├── 04-exception-backtraces.rb
+│   │       │   ├── 05-broken-circuit.rb
+│   │       │   ├── 06-add-error-class-as-needed.rb
+│   │       │   └── chapter-05.rb
+│   │       ├── Chapter06
+│   │       │   ├── 00-xyz-point.rb
+│   │       │   ├── 01-csv.rb
+│   │       │   └── chapter-06.rb
+│   │       ├── Chapter07
+│   │       │   ├── 00-complexity-tradeoffs-v1.rb
+│   │       │   ├── 01-complexity-tradeoffs-v2.rb
+│   │       │   ├── 02-complexity-tradeoffs-v3.rb
+│   │       │   ├── 03-complexity-tradeoffs-v4.rb
+│   │       │   ├── 04-complexity-tradeoffs-v5.rb
+│   │       │   ├── 05-complexity-tradeoffs-v6.rb
+│   │       │   └── chapter-07.rb
+│   │       ├── Chapter08
+│   │       │   ├── 00-regular-classes.rb
+│   │       │   ├── 01-regular-classes-cursed-book-singleton-method.rb
+│   │       │   ├── 02-regular-classes-cursed-book-extend.rb
+│   │       │   ├── 03-plugin-system-v1.rb
+│   │       │   ├── 04-plugin-system-v2.rb
+│   │       │   ├── 05-plugin-system-v3.rb
+│   │       │   ├── 06-plugin-system-v4.rb
+│   │       │   ├── 07-plugin-system-v5.rb
+│   │       │   ├── 08-plugin-system-v6.rb
+│   │       │   ├── 09-plugin-system-v7.rb
+│   │       │   ├── 10-plugin-system-v8.rb
+│   │       │   ├── 11-plugin-system-v9.rb
+│   │       │   ├── 12-globally-frozen-locally-mutable.rb
+│   │       │   └── chapter-08.rb
+│   │       ├── Chapter09
+│   │       │   ├── 00-metastruct.rb
+│   │       │   ├── 01-memomer.rb
+│   │       │   ├── 02-foostruct-v1.rb
+│   │       │   ├── 03-foostruct-v2.rb
+│   │       │   ├── 04-hash-accessor.rb
+│   │       │   ├── 05-rusty-block.rb
+│   │       │   ├── 06-rusty-eval.rb
+│   │       │   ├── 07-guarded-eval.rb
+│   │       │   ├── 08-words.rb
+│   │       │   ├── 09-struct-50-method-missing.rb
+│   │       │   └── chapter-09.rb
+│   │       ├── Chapter10
+│   │       │   ├── 00-rspec.rb
+│   │       │   ├── 01-foo-process-bars.rb
+│   │       │   ├── 02-sequel.rb
+│   │       │   ├── 03-minitest.rb
+│   │       │   ├── 04-sinatra.rb
+│   │       │   └── chapter-10.rb
+│   │       ├── Chapter11
+│   │       │   ├── 00-syntax-checking.rb
+│   │       │   ├── 01-whichfaster-tad.rb
+│   │       │   ├── 02-whichfaster-tdd.rb
+│   │       │   ├── 03-test-complexity.rb
+│   │       │   ├── 04-unit-testing.rb
+│   │       │   ├── 05-code-coverage.rb
+│   │       │   └── chapter-11.rb
+│   │       ├── Chapter12
+│   │       │   ├── 00-extract-method-v1.rb
+│   │       │   ├── 01-extract-method-v2.rb
+│   │       │   ├── 02-extract-method-v3.rb
+│   │       │   ├── 03-extract-method-v4.rb
+│   │       │   ├── 04-extract-method-v5.rb
+│   │       │   ├── 05-extract-class-v1.rb
+│   │       │   ├── 06-extract-class-v2.rb
+│   │       │   ├── 07-extract-class-v3.rb
+│   │       │   ├── 08-method-deprecation.rb
+│   │       │   ├── 09-argument-change.rb
+│   │       │   ├── 10-constant-deprecation.rb
+│   │       │   └── chapter-12.rb
+│   │       ├── Chapter13
+│   │       │   ├── 00-singleton-v1.rb
+│   │       │   ├── 01-singleton-v2.rb
+│   │       │   ├── 02-null-object-v1.rb
+│   │       │   ├── 03-null-object-v2.rb
+│   │       │   ├── 04-null-object-v3.rb
+│   │       │   ├── 05-null-object-v4.rb
+│   │       │   ├── 06-null-object-v5.rb
+│   │       │   ├── 07-null-object-v6.rb
+│   │       │   ├── 08-null-object-v7.rb
+│   │       │   ├── 09-null-object-v8.rb
+│   │       │   ├── 10-arbitrary-visitor.rb
+│   │       │   ├── 11-hashed-arbitrary-visitor-v1.rb
+│   │       │   ├── 12-hashed-arbitrary-visitor-v2.rb
+│   │       │   ├── 14-adapter.rb
+│   │       │   ├── 15-strategy.rb
+│   │       │   ├── 16-adapter-and-strategy.rb
+│   │       │   └── chapter-13.rb
+│   │       ├── Chapter14
+│   │       │   ├── 00-multiply-prof-v1.rb
+│   │       │   ├── 01-multiply-prof-v2.rb
+│   │       │   ├── 02-multiply-prof-v3.rb
+│   │       │   ├── 03-multiply-prof-v4.rb
+│   │       │   ├── 04-multiply-prof-v5.rb
+│   │       │   └── chapter-14.rb
+│   │       ├── Chapter15
+│   │       │   └── chapter-15.rb
+│   │       ├── Chapter16
+│   │       │   ├── 00-nested-routes.rb
+│   │       │   ├── 01-flat-routes.rb
+│   │       │   └── chapter-16.rb
+│   │       ├── Chapter17
+│   │       │   ├── 00-input-validation-v1.rb
+│   │       │   ├── 01-input-validation-v2.rb
+│   │       │   ├── 02-input-validation-v3.rb
+│   │       │   ├── 03-input-validation-v4.rb
+│   │       │   ├── 04-input-validation-v5.rb
+│   │       │   ├── 05-access-control-rails-before-action.rb
+│   │       │   ├── 06-access-control-rails-skip-before-action.rb
+│   │       │   ├── 07-access-control-sinatra.rb
+│   │       │   ├── 08-access-control-roda.rb
+│   │       │   └── chapter-17.rb
+│   │       ├── LICENSE
+│   │       └── README.md
+│   ├── appliedcomputationalthinkingwithpython.epub
+│   ├── applyingmathwithpython.epub
+│   ├── applyingmathwithpython.zip
+│   ├── artofwritingefficientprograms.epub
+│   ├── artofwritingefficientprograms.zip
+│   ├── buildyourownprogramminglanguage.epub
+│   ├── buildyourownprogramminglanguage.zip
+│   ├── completecodinginterviewguideinjava.epub
+│   ├── completecodinginterviewguideinjava.zip
+│   ├── computerprogrammingforabsolutebeginners.epub
+│   ├── cplusplus20stlcookbook.epub
+│   ├── cplusplushighperformance.epub
+│   ├── cplusplushighperformance_supplement.zip
+│   ├── hands-ondesignpatternsandbestpracticeswithjulia.epub
+│   ├── handsondatastructuresandalgorithmswithpython.epub
+│   ├── handsondatastructuresandalgorithmswithpython_ebook.zip
+│   ├── kotlindesignpatternsandbestpractices.epub
+│   ├── kotlindesignpatternsandbestpractices.zip
+│   ├── learncprogramming.epub
+│   ├── learncprogramming.zip
+│   ├── learnjava17programming.epub
+│   ├── learnjava17programming.zip
+│   ├── masteringgo.epub
+│   ├── masteringgo_supplement.zip
+│   ├── masteringpython.epub
+│   ├── masteringpython.zip
+│   ├── moderncomputerarchitectureandorganization.epub
+│   ├── moderncplusplusprogrammingcookbook.epub
+│   ├── polishedrubyprogramming.epub
+│   ├── polishedrubyprogramming.zip
+│   ├── practicaldiscretemathematics.epub
+│   └── practicaldiscretemathematics_supplement.zip
+├── Humble Tech Book Bundle_ Rust Mastery by Packt
+│   ├── asynchronousprogramminginrust.epub
+│   ├── blazorwebassemblybyexample2e.epub
+│   ├── creativediymicrocontrollerprojectswithtinygoandwebassembly.epub
+│   ├── creativeprojectsforrustprogrammers.epub
+│   ├── gamedevelopmentwithrustandwebassembly.epub
+│   ├── hands-onconcurrencywithrust.epub
+│   ├── hands-ondatastructuresandalgorithmswithrust.epub
+│   ├── hands-ongamedevelopmentwithwebassembly.epub
+│   ├── hands-onmicroserviceswithrust.epub
+│   ├── learnwebassembly.epub
+│   ├── masteringblazorwebassembly.epub
+│   ├── practicalsystemprogrammingforrustdevelopers.epub
+│   ├── practicalwebassembly.epub
+│   ├── rustprogrammingbyexample.epub
+│   ├── rustquickstartguide.epub
+│   ├── rustwebdevelopmentwithrocket.epub
+│   ├── rustwebprogramming.epub
+│   ├── speedupyourpythonwithrust.epub
+│   └── zerotrustoverviewandplaybookintroduction.epub
+├── Humble Tech Book Bundle_ The Craft of Game Design
+│   ├── 20essentialgamestostudy.pdf
+│   ├── bettergamecharactersbydesign_apsychologicalapproach.pdf
+│   ├── craftandscienceofgamedesign_avideogamedesignersmanual.pdf
+│   ├── designingtheuserexperienceofgamedevelopmenttools.pdf
+│   ├── dungeonsanddesktops_thehistoryofcomputerrole-playinggames2e.pdf
+│   ├── extendingvirtualworlds_advanceddesignforvirtualenvironments.pdf
+│   ├── gameaudioprogramming3_principlesandpractices.pdf
+│   ├── gamedesign_fromblueskytogreenlight.pdf
+│   ├── gamedesigndeepdive_platformers.pdf
+│   ├── gamedesigntheory.pdf
+│   ├── gamesastexts_apracticalapplicationoftextualanalysistogames.pdf
+│   ├── honoringthecode_V2.pdf
+│   ├── mobileandsocialgamedesign.pdf
+│   ├── narrativedesign_thecraftofwritingforgames.pdf
+│   ├── professionaltechniquesforvideogamewriting.pdf
+│   ├── pyramidofgamedesign_designingproducingandlaunchingservicegames.pdf
+│   ├── reversedesign_chronotrigger.pdf
+│   ├── reversedesign_finalfantasyvi.pdf
+│   ├── reversedesign_finalfantasyvii.pdf
+│   ├── reversedesign_half-life.pdf
+│   ├── reversedesign_supermarioworld.pdf
+│   ├── virtualworlddesign.pdf
+│   ├── whitespaceisnotyourenemy.pdf
+│   └── writeyourwayintoanimationandgames.pdf
+├── Essential Knowledge_ Computers and Tech By MIT Press.tar.gz
+├── Game Design Document STEM Bundle.tar.gz
+├── Humble Book Bundle_ The Witcher X Cyberpunk by Dark Horse.tar.gz
+├── Humble RPG Bundle_ Cypher System TTRPG Collection by Monte Cook Games.tar.gz
+├── Humble Tech Book Bundle_ Code Like a Pro 2024 by Manning.tar.gz
+├── Humble Tech Book Bundle_ Elixir and Phoenix Programming 2024 by Pragmatic.tar.xz
+├── Humble Tech Book Bundle_ Game Architecture, Worldbuilding, and AI by Taylor & Francis.tar.gz
+├── Humble Tech Book Bundle_ Game Design and AI featuring Steve Rabin, by Taylor & Francis.tar.gz
+├── Humble Tech Book Bundle_ Game Design and Programming by Pearson.tar.gz
+├── Humble Tech Book Bundle_ Learn You Some Code by No Starch.tar.gz
+├── Humble Tech Book Bundle_ Mastery of C# and .NET awaits.tar.gz
+├── Humble Tech Book Bundle_ Programming Mega Bundle by Packt.tar.gz
+├── Humble Tech Book Bundle_ Rust Mastery by Packt.tar.gz
+└── Humble Tech Book Bundle_ The Craft of Game Design.tar.gz
