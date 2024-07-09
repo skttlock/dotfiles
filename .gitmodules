@@ -1,0 +1,3 @@
+[submodule ".scripts/fw-fanctrl"]
+	path = .scripts/fw-fanctrl
+	url = https://github.com/TamtamHero/fw-fanctrl
