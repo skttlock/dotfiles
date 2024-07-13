@@ -242,7 +242,14 @@ use window macros for panes?
   - Other:
     - SHIFT + CONTROL + P = activate command palette
 
-# TODO(s)
+# /new/ To-Dos (072024)
+- [ ] clean-up read me
+  - merge-clean old todos into new
+  - simplify readme; less is more
+- [ ] dotfiles (v2)
+  - better obsidian usage
+  - 
+# TODO(s) /old/
 ## Repo Stuff
 - [/] link external github repos, i.e. rbenv, plugins, bash scripts, etc.
 ## Config Stuff
@@ -334,3 +341,9 @@ use window macros for panes?
     - [x] vencord (does this break discord rules?)
     - [ ] pomotroid
   - [ ] to remove
+
+- to config
+  - [ ] sway
+    - keybinds
+    - workspaces
+    - disable follow mouse focus
