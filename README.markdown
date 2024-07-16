@@ -20,6 +20,11 @@ Ensure you have the following installed on your system
 6. Test & Debug
 
 ## Whats Included?
+here's a handy lil list of all the things!
+- these things are actually saved inside this repo
+  - configs
+- these things are downloaded from elsewhere, like applications
+
 ### Appearance
 - **Fonts** patched with Nerds Font Patcher
   - Liberation Fonts
@@ -243,12 +248,15 @@ use window macros for panes?
     - SHIFT + CONTROL + P = activate command palette
 
 # /new/ To-Dos (072024)
-- [ ] clean-up read me
-  - merge-clean old todos into new
-  - simplify readme; less is more
-  - hyperlinks
+- [ ] readme (v2) 
+  - clean-up read me
+    - merge-clean old todos into new
+    - [ ] simplify readme; less is more
+      - [ ] better "whats included" section
+      - [ ] "keybinds" to its own md file
+    - hyperlinks
   - general file management outline/instruction
-  - obsidian vault explanation
+    - obsidian vault explanation + where to find it + backups
   - applications list
 - [ ] dotfiles (v2)
   - uhhhhuhuhuh
@@ -268,7 +276,6 @@ use window macros for panes?
       - compare
       - document
     - [ ] simplify
-    
   - [ ]
 # TODO(s) /old/
 ## Repo Stuff
