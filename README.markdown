@@ -246,9 +246,30 @@ use window macros for panes?
 - [ ] clean-up read me
   - merge-clean old todos into new
   - simplify readme; less is more
+  - hyperlinks
+  - general file management outline/instruction
+  - obsidian vault explanation
+  - applications list
 - [ ] dotfiles (v2)
-  - better obsidian usage
+  - uhhhhuhuhuh
+- [ ] research & test
+  - [/] [pop-os/shell](https://github.com/pop-os/shell)
+  - [/] cosmic-settings, how are keybinds handled->[pull 376](https://github.com/pop-os/cosmic-settings/pull/376)
+  - dotfiles on ubuntu, install.sh on ubuntu
+  - standard keybind adoption
   - 
+- [ ] reinstall
+  - [ ] pre-reqs
+    - [ ] clean
+    - [ ] document
+    - [ ] test on vm
+      - [ ] test 1: manual install (ubuntu & fedora)
+      - [ ] test 2: script install (ubuntu & fedora)
+      - compare
+      - document
+    - [ ] simplify
+    
+  - [ ]
 # TODO(s) /old/
 ## Repo Stuff
 - [/] link external github repos, i.e. rbenv, plugins, bash scripts, etc.
