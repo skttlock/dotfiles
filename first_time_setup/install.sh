@@ -252,13 +252,16 @@ detect_package_manager
 detect_flatpak
 
 echo -e "${STAGE}Select option (1-9):${RESET}"
-select item in "all" "exit" "update" "list" "programming languages" "cli tools" "dev apps" "general applications" "art applications" ;
+select item in "exit" "barebones" "all" "update" "list" "programming languages" "cli tools" "dev apps" "general applications" "art applications" ;
 do
 	echo "$item"
 	case "$item" in
 		"exit")
 			echo "cya"
 			break
+			;;
+		"barebones")
+			echo "this should be used when you probably shouldn't install anything; instead this will configure what is already present."
 			;;
 		"update")
 			echo "[Update] selected. Updating all software."
