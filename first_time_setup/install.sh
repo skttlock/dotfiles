@@ -28,7 +28,7 @@ Languages=('crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'rust' 'sqlite' 'ty
 CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'yarn' 'tldr' 'tmux')
 Art_Apps=('audacity' 'gimp' 'godot' 'inkscape' 'kdenlive' 'linux show player' 'obs studio' 'reaper' 'synfig')
 Dev_Apps=('penpot desktop' 'wezterm')
-General_Apps=('authenticator' 'calibre' 'deja-dup' 'discord' 'vencord' 'libreoffice' 'obsidian' 'proton drive' 'proton mail' 'proton VPN' 'wike')
+General_Apps=('authenticator' 'calibre' 'deja-dup' 'discord' 'vencord' 'flameshot' 'libreoffice' 'obsidian' 'proton drive' 'proton mail' 'proton VPN' 'wike')
 # Extensions=()
 # Fonts=()
 # Wallpapers=()
@@ -171,6 +171,7 @@ install_synfig() {
 # NOTE: dev apps
 
 # NOTE: general apps
+install_flameshot() { }
 
 #?TODO: add options: full install, custom install, etc.
 # add selections... whole thing in selections?
