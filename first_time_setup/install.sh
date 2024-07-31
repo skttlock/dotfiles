@@ -24,7 +24,7 @@ RESET_DIR=$(pwd)
 # Define variables for detected technologies
 FLATPAK_FOUND=0
 
-Languages=('crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'rust' 'sqlite' 'typescript' 'vala' 'zig')
+Languages=('crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'rust' 'scala' 'sqlite' 'typescript' 'vala' 'zig')
 CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'yarn' 'tldr' 'tmux')
 Art_Apps=('audacity' 'gimp' 'godot' 'inkscape' 'kdenlive' 'linux show player' 'obs studio' 'reaper' 'synfig')
 Dev_Apps=('penpot desktop' 'wezterm')
@@ -76,6 +76,8 @@ install_rust() {
 	else
 		echo -e "${ERROR}Failed:${RESET} rustup install via sh.rustup.rs."
 	fi
+}
+install_scala() {
 }
 install_sqlite() {
 	# TODO: implement
