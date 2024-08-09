@@ -24,7 +24,7 @@ RESET_DIR=$(pwd)
 # Define variables for detected technologies
 FLATPAK_FOUND=0
 
-Languages=('crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'rust' 'scala' 'sqlite' 'typescript' 'vala' 'zig')
+Languages=('crystal' 'elm' 'julia' 'mercury' 'nodejs' 'ruby' 'rust' 'scala' 'sqlite' 'typescript' 'Novala' 'zig')
 CLI_Apps=('bat' 'bats' 'fastfetch' 'flatpak' 'gh' 'lsd' 'mise' 'neovim' 'rsync' 'starship' 'yarn' 'tldr' 'tmux')
 Art_Apps=('audacity' 'gimp' 'godot' 'inkscape' 'kdenlive' 'linux show player' 'obs studio' 'reaper' 'synfig')
 Dev_Apps=('penpot desktop' 'wezterm')
@@ -36,7 +36,7 @@ General_Apps=('authenticator' 'calibre' 'deja-dup' 'discord' 'vencord' 'flamesho
 # TODO: OR use functions?
 # NOTE:
 # Define arrays (dictionaries?) of things to be installed
-# OR: 
+# OR:
 # declare -a languages=( rust vala crystal )
 # rust() { echo "Hello from function: rust" }
 # etc...
@@ -167,7 +167,7 @@ install_reaper() {
 install_synfig() {
 	# TODO: implement
 }
- 
+
 # NOTE: dev apps
 
 # NOTE: dev apps
