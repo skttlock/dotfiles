@@ -1,0 +1,136 @@
+git-info:
+name: "test"
+email: "testemail"
+install_scripts:
+    dnf: dnf install $NAME -y
+    mise: mise use $NAME
+    curl: curl $SOURCE | sh
+    git: git pull $SOURCE -y
+tools:
+    - name: mise
+      version: stable
+      description: dev tool version manager
+      install_tool: curl
+      source: https://mise.run
+    - name: flatpak
+      version: stable
+      description: ""
+      install_tool: ""
+      source: ""
+    - name: lsd
+      version: stable
+      description: ls with symbols and pretty colors
+      install_tool: ""
+      source: ""
+    - name: bat
+      version: stable
+      description: drop-in cat replacement
+      install_tool: ""
+      source: ""
+    - name: stow
+      version: stable
+      description: sym-link manager
+      install_tool: ""
+      source: ""
+    - name: fastfetch
+      version: stable
+      description: display system info in the terminal
+      install_tool: ""
+      source: ""
+    - name: starship
+      version: stable
+      description: ""
+      install_tool: ""
+      source: ""
+    - name: gh
+      version: stable
+      description: ""
+      install_tool: ""
+      source: ""
+    - name: tldr
+      version: stable
+      description: ""
+      install_tool: ""
+      source: ""
+    - name: docker
+      version: stable
+      description: ""
+      install_tool: ""
+      source: ""
+    - name: nushell
+      version: stable
+      description: ""
+      install_tool: ""
+      source: ""
+apps:
+    - name: vs-codium
+      version: stable
+      description: code editor
+      install_tool: 
+    - name: godot
+      version: stable
+      description: game engine
+      install_tool: dnf
+    - name: audacity
+      version: stable
+      description: audio editing and recording
+      install_tool: dnf
+    - name: synfig
+      version: stable
+      description: 2d animation tool
+      install_tool: dnf
+    - name: krita
+      version: stable
+      description: drawing tool
+      install_tool: dnf
+    - name: tiled
+      version: stable
+      description: tilemap tool
+      install_tool: dnf
+    - name: spotify
+      version: stable
+      description: music streaming service
+      install_tool: dnf
+    - name: gimp
+      version: stable
+      description: photo editor
+      install_tool: dnf
+    - name: discord
+      version: stable
+      description: server-based communication
+      install_tool: dnf
+    - name: firefox-dev
+      version: stable
+      description: developer edition of firefox web browser
+      install_tool: ""
+    - name: obs-studio
+      version: stable
+      description: broadcast software
+      install_tool: "dnf"
+prog-langs:
+    - name: ruby
+      version: stable
+      description: object-oriented programming language
+      install_tool: mise
+    - name: scala
+      version: stable
+      description: jvm-based programming language
+      install_tool: mise
+    - name: rust
+      version: stable
+      description: ""
+      install_tool: mise
+    - name: julia
+      version: stable
+      description: ""
+      install_tool: mise
+    - name: ada
+      version: stable
+      description: ""
+      install_tool: ""
+    - name: zig
+    - name: go
+    - name: dart
+    - name: vala
+    - name: python
+    - name: elixir

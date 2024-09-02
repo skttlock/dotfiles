@@ -1,11 +1,169 @@
+[git-info]
+name = "test"
+email = "testemail"
 
-[[softwares]]
-title
-type
-type
-version
-description
-install_script
+[install_scripts]
+dnf = "dnf install $NAME -y"
+mise = "mise use $NAME"
+curl = "curl $SOURCE | sh"
+git = "git pull $SOURCE -y"
 
-[[softwares]]
-[softwares]
+[[tools]]
+name = "mise"
+version = "stable"
+description = "dev tool version manager"
+install_tool = "curl"
+source = "https://mise.run"
+
+[[tools]]
+name = "flatpak"
+version = "stable"
+description = ""
+install_tool = ""
+source = ""
+
+[[tools]]
+name = "lsd"
+version = "stable"
+description = "ls with symbols and pretty colors"
+install_tool = ""
+source = ""
+
+[[tools]]
+name = "bat"
+version = "stable"
+description = "drop-in cat replacement"
+install_tool = ""
+source = ""
+
+[[tools]]
+name = "stow"
+version = "stable"
+description = "sym-link manager"
+install_tool = ""
+source = ""
+
+[[tools]]
+name = "fastfetch"
+version = "stable"
+description = "display system info in the terminal"
+install_tool = ""
+source = ""
+
+[[tools]]
+name = "starship"
+version = "stable"
+description = ""
+install_tool = ""
+source = ""
+
+[[tools]]
+name = "gh"
+version = "stable"
+description = ""
+install_tool = ""
+source = ""
+
+[[tools]]
+name = "tldr"
+version = "stable"
+description = ""
+install_tool = ""
+source = ""
+
+[[apps]]
+name = "zed"
+version = "stable"
+description = "code editor"
+install_tool = "curl"
+source = "https://zed.dev/install.sh"
+
+[[apps]]
+name = "godot"
+version = "stable"
+description = "game engine"
+install_tool = "dnf"
+
+[[apps]]
+name = "audacity"
+version = "stable"
+description = "audio editing and recording"
+install_tool = "dnf"
+
+[[apps]]
+name = "synfig"
+version = "stable"
+description = "2d animation tool"
+install_tool = "dnf"
+
+[[apps]]
+name = "tiled"
+version = "stable"
+description = "tilemap tool"
+install_tool = "dnf"
+
+[[apps]]
+name = "spotify"
+version = "stable"
+description = "music streaming service"
+install_tool = "dnf"
+
+[[apps]]
+name = "gimp"
+version = "stable"
+description = "photo editor"
+install_tool = "dnf"
+
+[[apps]]
+name = "discord"
+version = "stable"
+description = "server-based communication"
+install_tool = "dnf"
+
+[[apps]]
+name = "firefox-dev"
+version = "stable"
+description = "developer edition of firefox web browser"
+install_tool = ""
+
+[[apps]]
+name = "obs-studio"
+version = "stable"
+description = "broadcast software"
+install_tool = "dnf"
+
+[[prog-langs]]
+name = "ruby"
+version = "stable"
+description = "object-oriented programming language"
+install_tool = "mise"
+
+[[prog-langs]]
+name = "scala"
+version = "stable"
+description = "jvm-based programming language"
+install_tool = "mise"
+
+[[prog-langs]]
+name = "rust"
+version = "stable"
+description = ""
+install_tool = "mise"
+
+[[prog-langs]]
+name = "julia"
+version = "stable"
+description = ""
+install_tool = "mise"
+
+[[prog-langs]]
+name = "ada"
+version = "stable"
+description = ""
+install_tool = ""
+
+[[[prog-langs]]
+name = "lua"
+version = "stable"
+description = ""
+install_tool = ""
