@@ -19,6 +19,7 @@ _darcs
 \#.*\#       # emacs autosave files
 
 first_time_setup # my setup scripts & media file
+dotfiles.code-workspace
 
 ^/README.*
 ^/LICENSE.*
