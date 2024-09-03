@@ -15,6 +15,7 @@
     firefox
     spotify
     calibre
+    protonvpn-gui
     firefox-devedition
     vscodium
     libreoffice-qt6-still
